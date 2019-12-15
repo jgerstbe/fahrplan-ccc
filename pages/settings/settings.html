@@ -1,13 +1,13 @@
 <ion-header>
 	<ion-navbar>
 		<ion-title>
-			Settings
+			Sync & Settings
 		</ion-title>
-		<ion-buttons end>
-			<button ion-button icon-only (click)="delete()">
-        <ion-icon name="trash" color="danger" title="delete account"></ion-icon>
+		<!-- <ion-buttons end>
+			<button ion-button icon-only (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
       </button>
-    </ion-buttons>
+    </ion-buttons> -->
 	</ion-navbar>
 </ion-header>
 
@@ -16,22 +16,21 @@
     <ion-item-divider color="light">Sync</ion-item-divider>
 		<ion-item>
 			<ion-label floating>UUID</ion-label>
-			<ion-input [ngModel]="user.uuid" type="text" disabled></ion-input>
+			<ion-input [ngModel]="favoriteService.uuid" type="text" disabled></ion-input>
 		</ion-item>
+    <ion-item-divider color="light">Friends</ion-item-divider>
 		<ion-item>
-			<ion-label floating>Name</ion-label>
-			<ion-input [(ngModel)]="user.name" type="text"></ion-input>
+			<ion-label floating>Friend ID</ion-label>
+			<ion-input [(ngModel)]="friend_id" type="text"></ion-input>
 		</ion-item>
     <ion-item>
-      <button ion-button color="secondary" full round (click)="saveUser()">Save name</button>
+      <button ion-button color="secondary" full round (click)="onAddFriend()">Add Friend</button>
     </ion-item>
-		<ion-item>
-			<ion-label floating>Group ID</ion-label>
-			<ion-input [ngModel]="group_id" type="text"></ion-input>
+		<ion-item *ngFor="let f of favoriteService.friends">      
+      <!-- <ion-label>{{f}}</ion-label> -->
+      {{f}}
+      <ion-icon name="trash" (click)="onDeleteFriend(f)" class="f-del"></ion-icon>
 		</ion-item>
-    <ion-item>
-      <button ion-button color="secondary" full round (click)="saveGroup()">Save group id</button>
-    </ion-item>
     <ion-item-divider color="light">Source</ion-item-divider>
 		<ion-item>
       <span class="break">

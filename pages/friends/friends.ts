@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { ModalController, NavController } from 'ionic-angular';
 import * as fahrplan from '../../data/36c3.json';
 import { User } from '../../data/models';
+import { SettingsPage } from '../settings/settings';
 
 @Component({
   selector: 'page-friends',
@@ -13,7 +14,8 @@ export class FriendsPage {
   fahrplan;
 
   constructor(
-    public navCtrl: NavController
+    public navCtrl: NavController,
+    public modalCtrl: ModalController,
     ) {
       this.fahrplan = fahrplan;
       this.fahrplan.timestamp = new Date(this.fahrplan.timestamp);
@@ -45,6 +47,11 @@ export class FriendsPage {
     // TODO call API delete
     delete(this.user);
     localStorage.clear();
+  }
+  
+  presentModal() {
+    let modal = this.modalCtrl.create(SettingsPage);
+    modal.present();
   }
 
 }

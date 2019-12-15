@@ -1,3 +1,7 @@
 .break {  
   white-space: normal;
 }
+
+.f-del {
+  float:right;
+}
