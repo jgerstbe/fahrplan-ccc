@@ -12,6 +12,7 @@ import { FavoriteService } from '../../data/favorite.service';
 export class SettingsPage {
   fahrplan;
   friend_id:string = '';
+  editUUID:boolean = false;
 
   constructor(
     public navCtrl: NavController,
@@ -32,6 +33,14 @@ export class SettingsPage {
 
   onDeleteFriend(id) {
     this.favoriteService.removeFriend(id);
+  }
+
+  saveUUID() {
+    localStorage.setItem('fpccc_uuid', this.favoriteService.uuid);
+    this.favoriteService.favorites = [];
+    this.favoriteService.friends = [];
+    this.favoriteService.load();
+    this.editUUID = false;
   }
 
 }

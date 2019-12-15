@@ -37,7 +37,7 @@ export class FavoriteService {
 
   load() {
     const loadLocal = () => {        
-      let local = localStorage.getItem('favorites');
+      let local = localStorage.getItem('fpccc_favorites');
       this.favorites = JSON.parse(local);
     }
     // api 
@@ -64,10 +64,13 @@ export class FavoriteService {
 
   save() {
     console.log('favorites', this.favorites);
-    localStorage.setItem('favorites', JSON.stringify(this.favorites));
-    // TODO save to api
+    localStorage.setItem('fpccc_favorites', JSON.stringify(this.favorites));
+    if (this.uuid !== null) {
+       localStorage.setItem('fpccc_uuid', this.uuid);
+    }
+    // save to api
     if (true) {
-      const uuid = localStorage.getItem('fpccc_uuid');
+      const uuid = this.uuid || localStorage.getItem('fpccc_uuid');
       const data = {
         favorites: this.favorites,
         friends: this.friends,

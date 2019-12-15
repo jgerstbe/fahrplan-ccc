@@ -13,11 +13,17 @@
 
 <ion-content>
 	<ion-list>
-    <ion-item-divider color="light">Sync</ion-item-divider>
+    <ion-item-divider color="light">
+      Sync
+      <ion-icon name="create" (click)="editUUID ? editUUID = false: editUUID = true" class="f-del"></ion-icon>
+    </ion-item-divider>
 		<ion-item>
 			<ion-label floating>UUID</ion-label>
-			<ion-input [ngModel]="favoriteService.uuid" type="text" disabled></ion-input>
+			<ion-input [(ngModel)]="favoriteService.uuid" type="text" [disabled]="!editUUID"></ion-input>
 		</ion-item>
+    <ion-item *ngIf="editUUID">
+      <button ion-button color="secondary" full round (click)="saveUUID()">Save</button>
+    </ion-item>
     <ion-item-divider color="light">Friends</ion-item-divider>
 		<ion-item>
 			<ion-label floating>Friend ID</ion-label>
