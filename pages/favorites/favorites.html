@@ -13,7 +13,7 @@
           <ion-label (click)="clickDetail(room)">
             {{room.title}}
             <br>
-            {{room.start}} - {{calcEnd(room.start, room.duration)}}, {{room.room}}
+            {{room.start}} - {{eventService.calcEnd(room.start, room.duration)}}, {{room.room}}
             <br>
             <span [ngStyle]="{color: tracks[room.track]}">
               {{room.track}}

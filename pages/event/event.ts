@@ -5,6 +5,7 @@ import * as fahrplan from '../../data/36c3.json';
 import { Day } from ' ../../data/models';
 import * as tracks from '../../data/tracks.json';
 import { FavoriteService } from '../../data/favorite.service';
+import { EventService } from '../../data/event.service';
 
 @Component({
   selector: 'page-event',
@@ -15,14 +16,16 @@ export class EventPage {
   constructor(
     public navCtrl: NavController,
     public modalCtrl: ModalController,
-    public favoriteService: FavoriteService
+    public favoriteService: FavoriteService,
+    public eventService: EventService,
   ) { }
 
   days:Day[] = [];
-  tracks = tracks;
+  tracks;
 
   ngOnInit() {
-    fahrplan.schedule.conference.days.forEach(day => {
+    this.tracks = this.eventService.tracks;
+    this.eventService.conference.days.forEach(day => {
       const parsedDay = new Day(day.index, day.date, day.day_start, day.day_end, day.rooms);
       this.days.push(parsedDay);
     });
