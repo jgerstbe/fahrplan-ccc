@@ -1,0 +1,27 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Favorites</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-list>
+    <ion-item-group *ngFor="let day of days">
+		  <ion-item-divider color="light">{{day.date.toDateString()}}</ion-item-divider>
+      <ion-item *ngFor="let room of day.rooms">
+          <ion-icon name="bookmark" [ngStyle]="{color: tracks[room.track]}" item-start></ion-icon>
+          <ion-label (click)="clickDetail(room)">
+            {{room.title}}
+            <br>
+            {{room.start}} - {{calcEnd(room.start, room.duration)}}, {{room.room}}
+            <br>
+            <span [ngStyle]="{color: tracks[room.track]}">
+              {{room.track}}
+            </span>
+          </ion-label>
+          <ion-icon name="{{favoriteService.isFavorite(room.guid)}}" style="color:gold;" item-end (click)="removeFavorite(room)"></ion-icon>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+</ion-content>

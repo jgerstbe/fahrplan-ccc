@@ -1,0 +1,42 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Settings
+		</ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only (click)="delete()">
+        <ion-icon name="trash" color="danger" title="delete account"></ion-icon>
+      </button>
+    </ion-buttons>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-list>
+    <ion-item-divider color="light">Sync</ion-item-divider>
+		<ion-item>
+			<ion-label floating>UUID</ion-label>
+			<ion-input [ngModel]="user.uuid" type="text" disabled></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Name</ion-label>
+			<ion-input [(ngModel)]="user.name" type="text"></ion-input>
+		</ion-item>
+    <ion-item>
+      <button ion-button color="secondary" full round (click)="saveUser()">Save name</button>
+    </ion-item>
+		<ion-item>
+			<ion-label floating>Group ID</ion-label>
+			<ion-input [ngModel]="group_id" type="text"></ion-input>
+		</ion-item>
+    <ion-item>
+      <button ion-button color="secondary" full round (click)="saveGroup()">Save group id</button>
+    </ion-item>
+    <ion-item-divider color="light">Source</ion-item-divider>
+		<ion-item>
+      <span class="break">
+			  Based on data from <a target="_blank" [attr.href]="fahrplan.schedule.base_url">fahrplan</a>, version provided by {{fahrplan.schedule.version}}. Retrieved on {{fahrplan.timestamp.toLocaleString()}}.
+      </span>
+		</ion-item>
+	</ion-list>
+</ion-content>

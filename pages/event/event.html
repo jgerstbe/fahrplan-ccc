@@ -1,0 +1,23 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Events
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-item-group *ngFor="let day of days">
+		<ion-item-divider color="dark">{{day.date.toDateString()}}</ion-item-divider>
+		<ion-item-group *ngFor="let room of day.roomList; let i = index;">
+      <ion-item-divider color="light">{{room}}</ion-item-divider>
+			<ion-item *ngFor="let event of day.rooms[room]" (click)="clickDetail(event)">
+        <ion-icon name="bookmark" item-start [ngStyle]="{color: tracks[event.track]}" title="{{event.track}}"></ion-icon>
+        <ion-label>
+          {{event.start}} -
+          {{event.title}}
+        </ion-label>
+			</ion-item>
+		</ion-item-group>
+	</ion-item-group>
+</ion-content>

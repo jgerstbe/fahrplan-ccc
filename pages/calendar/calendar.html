@@ -1,0 +1,34 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Calendar</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<div>
+		<ion-segment [(ngModel)]="activeDay">
+			<ion-segment-button *ngFor="let day of days; let i = index" [value]="i">
+				{{day.date.toLocaleDateString()}}
+			</ion-segment-button>
+		</ion-segment>
+	</div>
+
+	<ion-list>
+		<ion-item *ngFor="let room of days[activeDay].rooms" (click)="clickDetail(room)">
+      <!-- <ion-icon name="{{favoriteService.isFavorite(room.guid)}}" item-start>
+      </ion-icon> -->
+      <ion-icon name="bookmark" [ngStyle]="{color: tracks[room.track]}" item-start>
+      </ion-icon>
+        <ion-label>
+          {{room.title}}
+          <br>
+          {{room.start}} - {{calcEnd(room.start, room.duration)}}, {{room.room}}
+          <br>
+          <span [ngStyle]="{color: tracks[room.track]}">
+            {{room.track}}
+          </span>
+        </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
