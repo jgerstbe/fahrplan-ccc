@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { ModalController, NavController } from 'ionic-angular';
 import * as fahrplan from '../../data/36c3.json';
 import { User } from '../../data/models';
 import { FavoriteService } from '../../data/favorite.service';
+import { FriendsPage } from '../friends/friends';
 
 @Component({
   selector: 'page-settings',
@@ -16,6 +17,7 @@ export class SettingsPage {
 
   constructor(
     public navCtrl: NavController,
+    public modalCtrl: ModalController,
     public favoriteService: FavoriteService
   ) {
     this.fahrplan = fahrplan;
@@ -41,6 +43,11 @@ export class SettingsPage {
     this.favoriteService.friends = [];
     this.favoriteService.load();
     this.editUUID = false;
+  }
+
+  openFriendsSchedule(f) {
+    let modal = this.modalCtrl.create(FriendsPage, {friendUuid: f});
+    modal.present();
   }
 
 }

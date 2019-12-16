@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { ModalController, NavController } from 'ionic-angular';
-import * as fahrplan from '../../data/36c3.json';
-import { User } from '../../data/models';
-import { SettingsPage } from '../settings/settings';
+import { ModalController, NavController, NavParams, ViewController } from 'ionic-angular';
+import { Day } from ' ../../data/models';
+import { FavoriteService } from '../../data/favorite.service';
+import { EventService } from '../../data/event.service';
+import { EventDetailPage } from '../eventDetail/eventDetail';
+import { cloneDeep } from 'lodash';
 
 @Component({
   selector: 'page-friends',
@@ -10,48 +12,60 @@ import { SettingsPage } from '../settings/settings';
   styleUrls: ['friends.css']
 })
 export class FriendsPage {
-  user: User;
-  fahrplan;
 
   constructor(
-    public navCtrl: NavController,
+    public params: NavParams,
+    public viewCtrl: ViewController,
     public modalCtrl: ModalController,
-    ) {
-      this.fahrplan = fahrplan;
-      this.fahrplan.timestamp = new Date(this.fahrplan.timestamp);
+    public favoriteService: FavoriteService,
+    public eventService: EventService,
+  ) {
+    console.log('params', params);
+  }
+  days:Day[] = [];
+  tracks;
+  friend: any;
+
+  ionViewDidEnter() {
+    if (!this.params.data.friendUuid) {
+      return;
     }
-
-  ngOnInit() {
-    const local = localStorage.getItem('user');
-    if (local) {
-      this.loadUser();
-    } else {
-      this.saveUser(new User("=12313ljhlj123", "Bob"))
-    }
-  }
-  
-  loadUser() {
-    let local = localStorage.getItem('user');
-    if (local) {
-     this.user = JSON.parse(local);
-    } 
+    this.favoriteService.loadFriendsFavorites(this.params.data.friendUuid).subscribe(
+      (data:any) =>{
+        console.log('GOT FRIEND DATA', data)
+        this.friend = data;
+        this.init();
+      }
+    )
   }
 
-  saveUser(user: User) {
-    // TODO call API to update name
-    this.user = user;
-    localStorage.setItem('user', JSON.stringify(user))
+  init() {    
+    this.days = cloneDeep(this.eventService.daysWithSessionsByTime);
+    this.tracks = this.eventService.tracks;
+
+    // filter favs
+    this.days.map(day => {
+      day.rooms = day.rooms.filter(room => {
+        if (this.friend.favorites.indexOf(room.guid) !== -1) {
+          // enthalten
+          return true;
+        } 
+        return false;
+      })
+    })
+
+    // mark active day if today is a congress day
+    const today = new Date().getUTCDay();
+    const isToday = this.days.filter(d => d.date.getUTCDay() === today);
   }
 
-  delete() {
-    // TODO call API delete
-    delete(this.user);
-    localStorage.clear();
+  clickDetail(event) {
+    this.presentEventDetailModal({event: event});
   }
-  
-  presentModal() {
-    let modal = this.modalCtrl.create(SettingsPage);
-    modal.present();
+
+  presentEventDetailModal(data) {
+    let profileModal = this.modalCtrl.create(EventDetailPage, data);
+    profileModal.present();
   }
 
 }

@@ -9,6 +9,7 @@ export class FavoriteService {
   public favorites: string[] = [];
   public friends: string[] = [];
   public uuid:string = '';
+  public nickname:string = '';
 
   constructor(
     private http: HttpClient,
@@ -48,8 +49,14 @@ export class FavoriteService {
         this.http.get(this.jsonbox+uuid).subscribe(
           (data:any) =>  {
             console.log('LOAD', data)
+            this.nickname = data.nickname ? data.nickname : 'Anon_'+uuid;
             this.favorites = data.favorites && data.favorites.length > 0 ? data.favorites : [];
             this.friends = data.friends && data.friends.length > 0 ? data.friends : [];
+            // this.friends.map(f => {
+            //   this.http.get(this.jsonbox+f).subscribe(
+            //     (data) => this.friends.indexOf
+            //   )
+            // });
           },
           (error) => {
             console.error('Could not load data.', error);
@@ -72,6 +79,7 @@ export class FavoriteService {
     if (true) {
       const uuid = this.uuid || localStorage.getItem('fpccc_uuid');
       const data = {
+        nickname: this.nickname ? this.nickname : 'Anon'+(uuid ? '_'+uuid : ''),
         favorites: this.favorites,
         friends: this.friends,
       };
@@ -106,6 +114,10 @@ export class FavoriteService {
       this.friends.splice(index, 1);
       this.save();
     }
+  }
+
+  loadFriendsFavorites(friendsUuid: string) {
+    return this.http.get(this.jsonbox+friendsUuid);
   }
 
 }

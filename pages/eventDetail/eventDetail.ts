@@ -25,8 +25,4 @@ export class EventDetailPage {
     this.keys = Object.keys(this.event);
   }
 
-  closeModal() {
-    this.viewCtrl.dismiss();
-  }
-
 }

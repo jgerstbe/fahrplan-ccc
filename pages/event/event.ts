@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController, NavController } from 'ionic-angular';
 import { EventDetailPage } from '../eventDetail/eventDetail';
-import * as fahrplan from '../../data/36c3.json';
 import { Day } from ' ../../data/models';
-import * as tracks from '../../data/tracks.json';
 import { FavoriteService } from '../../data/favorite.service';
 import { EventService } from '../../data/event.service';
 
@@ -29,7 +27,6 @@ export class EventPage {
       const parsedDay = new Day(day.index, day.date, day.day_start, day.day_end, day.rooms);
       this.days.push(parsedDay);
     });
-    console.log(this.days[0])
   }
 
   clickDetail(event) {

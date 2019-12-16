@@ -22,7 +22,17 @@
 			<ion-input [(ngModel)]="favoriteService.uuid" type="text" [disabled]="!editUUID"></ion-input>
 		</ion-item>
     <ion-item *ngIf="editUUID">
-      <button ion-button color="secondary" full round (click)="saveUUID()">Save</button>
+      <button ion-button color="secondary" full round (click)="saveUUUID()">Save</button>
+    </ion-item>    
+    <ion-item-divider color="light">
+      Nickname
+    </ion-item-divider>
+		<ion-item>
+			<ion-label floating>Nickname</ion-label>
+			<ion-input [(ngModel)]="favoriteService.nickname" type="text"></ion-input>
+		</ion-item>
+    <ion-item>
+      <button ion-button color="primary" full round (click)="favoriteService.save()">Save</button>
     </ion-item>
     <ion-item-divider color="light">Friends</ion-item-divider>
 		<ion-item>
@@ -34,7 +44,7 @@
     </ion-item>
 		<ion-item *ngFor="let f of favoriteService.friends">      
       <!-- <ion-label>{{f}}</ion-label> -->
-      {{f}}
+      <span (click)="openFriendsSchedule(f)">{{f}}</span>
       <ion-icon name="trash" (click)="onDeleteFriend(f)" class="f-del"></ion-icon>
 		</ion-item>
     <ion-item-divider color="light">Source</ion-item-divider>
