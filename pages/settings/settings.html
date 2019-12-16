@@ -22,7 +22,7 @@
 			<ion-input [(ngModel)]="favoriteService.uuid" type="text" [disabled]="!editUUID"></ion-input>
 		</ion-item>
     <ion-item *ngIf="editUUID">
-      <button ion-button color="secondary" full round (click)="saveUUUID()">Save</button>
+      <button ion-button color="secondary" full round (click)="saveUUID()">Save</button>
     </ion-item>    
     <ion-item-divider color="light">
       Nickname
