@@ -77,7 +77,7 @@ export class FavoriteService {
     }
     // save to api
     if (true) {
-      const uuid = this.uuid || localStorage.getItem('fpccc_uuid');
+      const uuid = this.uuid && this.uuid.length > 0 ? this.uuid : localStorage.getItem('fpccc_uuid') && localStorage.getItem('fpccc_uuid').length > 0 ? localStorage.getItem('fpccc_uuid') : null ;
       const data = {
         nickname: this.nickname ? this.nickname : 'Anon'+(uuid ? '_'+uuid : ''),
         favorites: this.favorites,
