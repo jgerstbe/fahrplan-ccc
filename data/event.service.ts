@@ -24,7 +24,9 @@ export class EventService {
     fahrplan.schedule.conference.days.forEach(day => {
       const parsedDay = new Day(day.index, day.date, day.day_start, day.day_end, day.rooms);
       // merge rooms into a single list
-      let allRooms = parsedDay.rooms.Adams.concat(parsedDay.rooms.Borg, parsedDay.rooms.Clarke, parsedDay.rooms.Dijkstra, parsedDay.rooms.Eliza);
+      // let allRooms = parsedDay.rooms.Adams.concat(parsedDay.rooms.Borg, parsedDay.rooms.Clarke, parsedDay.rooms.Dijkstra, parsedDay.rooms.Eliza);
+      let allRooms = [];
+      Object.keys(parsedDay.rooms).map((key:string) => allRooms.push(...Object.values(parsedDay.rooms[key])));
       // sort rooms
       allRooms.sort(function(a, b) {
         // const startA = Number(a.start.replace(":", ""));
