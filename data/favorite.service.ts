@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -8,6 +9,7 @@ export class FavoriteService {
   jsonbox:string = 'https://jsonbox.io/box_8d91a03c191deec9b3b0/';
   public favorites: string[] = [];
   public friends: string[] = [];
+  public friendsNicks: Map<string, string> = new Map();
   public uuid:string = '';
   public nickname:string = '';
 
@@ -52,11 +54,7 @@ export class FavoriteService {
             this.nickname = data.nickname ? data.nickname : 'Anon_'+uuid;
             this.favorites = data.favorites && data.favorites.length > 0 ? data.favorites : [];
             this.friends = data.friends && data.friends.length > 0 ? data.friends : [];
-            // this.friends.map(f => {
-            //   this.http.get(this.jsonbox+f).subscribe(
-            //     (data) => this.friends.indexOf
-            //   )
-            // });
+            this.friendsNicks = data.friendsNicks && data.friendsNicks.length > 0 ? new Map(data.friendsNicks) : new Map();
           },
           (error) => {
             console.error('Could not load data.', error);
@@ -82,6 +80,7 @@ export class FavoriteService {
         nickname: this.nickname ? this.nickname : 'Anon'+(uuid ? '_'+uuid : ''),
         favorites: this.favorites,
         friends: this.friends,
+        friendsNicks: this.friendsNicks,
       };
       if (uuid !== null) {
         this.http.put(this.jsonbox+uuid, data).subscribe(
@@ -117,7 +116,11 @@ export class FavoriteService {
   }
 
   loadFriendsFavorites(friendsUuid: string) {
-    return this.http.get(this.jsonbox+friendsUuid);
+    return this.http.get(this.jsonbox+friendsUuid).pipe(
+      tap((friend:any) => {
+        this.friendsNicks.set(friend._id, friend.nickname);
+      })
+    );
   }
 
 }

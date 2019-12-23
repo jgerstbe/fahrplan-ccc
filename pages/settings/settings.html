@@ -44,7 +44,7 @@
     </ion-item>
 		<ion-item *ngFor="let f of favoriteService.friends">      
       <!-- <ion-label>{{f}}</ion-label> -->
-      <span (click)="openFriendsSchedule(f)">{{f}}</span>
+      <span (click)="openFriendsSchedule(f)">{{favoriteService.friendsNicks.get(f) ? favoriteService.friendsNicks.get(f) : f}}</span>
       <ion-icon name="trash" (click)="onDeleteFriend(f)" class="f-del"></ion-icon>
 		</ion-item>
     <ion-item-divider color="light">Source</ion-item-divider>
