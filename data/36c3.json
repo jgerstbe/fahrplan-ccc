@@ -1,6 +1,6 @@
 {
     "schedule": {
-        "version": "bison",
+        "version": "dd",
         "base_url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/",
         "conference": {
             "acronym": "36c3",
@@ -15,7 +15,7 @@
                 "day_start": "2019-12-27T11:00:00+01:00",
                 "day_end": "2019-12-28T04:00:00+01:00",
                 "rooms": {
-                    "Adams": [{
+                    "Ada": [{
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11223.html",
                         "id": 11223,
                         "guid": "6a32cb72-a69d-423c-91b5-60d88eb8e6c7",
@@ -23,18 +23,49 @@
                         "date": "2019-12-27T11:00:00+01:00",
                         "start": "11:00",
                         "duration": "00:30",
-                        "room": "Adams",
-                        "slug": "36c3-11223-opening_ceremony",
-                        "title": "Opening Ceremony",
+                        "room": "Ada",
+                        "slug": "36c3-11223-opening_ceremony_de",
+                        "title": "Opening Ceremony (de)",
                         "subtitle": "",
                         "track": "CCC",
                         "type": "lecture",
-                        "language": "en",
-                        "abstract": "",
+                        "language": "de",
+                        "abstract": "Welcome!",
                         "description": "",
                         "recording_license": "",
                         "do_not_record": false,
-                        "persons": [],
+                        "persons": [{
+                            "id": 9891,
+                            "public_name": "bleeptrack"
+                        }, {
+                            "id": 6697,
+                            "public_name": "blinry"
+                        }],
+                        "links": [],
+                        "attachments": []
+                    }, {
+                        "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11220.html",
+                        "id": 11220,
+                        "guid": "3aae5c0a-9c9b-483a-8c09-b4402d749a82",
+                        "logo": null,
+                        "date": "2019-12-27T11:30:00+01:00",
+                        "start": "11:30",
+                        "duration": "01:00",
+                        "room": "Ada",
+                        "slug": "36c3-11220-the_case_for_scale_in_cyber_security",
+                        "title": "The Case for Scale in Cyber Security",
+                        "subtitle": "Security Track Keynote",
+                        "track": "CCC",
+                        "type": "lecture",
+                        "language": "en",
+                        "abstract": "The impact of scale in our field has been enormous and it has transformed the tools, the jobs and the face of the Infosec community. In this talk we discuss some of the ways in which defense has benefitted from scale, how the industry might be transitioning to a new phase of its growth and how the community will have to evolve to stay relevant.",
+                        "description": "",
+                        "recording_license": "",
+                        "do_not_record": false,
+                        "persons": [{
+                            "id": 9846,
+                            "public_name": "Vincenzo Iozzo"
+                        }],
                         "links": [],
                         "attachments": []
                     }, {
@@ -45,7 +76,7 @@
                         "date": "2019-12-27T12:50:00+01:00",
                         "start": "12:50",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10565-what_s_left_for_private_messaging",
                         "title": "What's left for private messaging?",
                         "subtitle": "",
@@ -66,11 +97,11 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10497.html",
                         "id": 10497,
                         "guid": "1bf01a7d-2c24-491e-ab2b-4455339ea7d3",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/497/large/Screenshot_2019-12-19_at_15.07.43.png?1576764495",
                         "date": "2019-12-27T14:10:00+01:00",
                         "start": "14:10",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10497-messenger_hacking_remotely_compromising_an_iphone_through_imessage",
                         "title": "Messenger Hacking: Remotely Compromising an iPhone through iMessage",
                         "subtitle": "",
@@ -88,6 +119,37 @@
                         "links": [],
                         "attachments": []
                     }, {
+                        "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10595.html",
+                        "id": 10595,
+                        "guid": "c73debf0-e6be-4bde-84b5-afaddbe0e3fa",
+                        "logo": "/system/events/logos/000/010/595/large/tresor.png?1571148674",
+                        "date": "2019-12-27T16:10:00+01:00",
+                        "start": "16:10",
+                        "duration": "01:00",
+                        "room": "Ada",
+                        "slug": "36c3-10595-hacker_hin_oder_her_die_elektronische_patientenakte_kommt",
+                        "title": "\"Hacker hin oder her\": Die elektronische Patientenakte kommt!",
+                        "subtitle": "",
+                        "track": "Security",
+                        "type": "lecture",
+                        "language": "de",
+                        "abstract": "Herzstück der digitalen Gesundheitsversorgung für 73 Millionen Versicherte ist die hochsichere, kritische Telematik-Infrastruktur mit bereits 115.000 angeschlossenen Arztpraxen. Nur berechtigte Teilnehmer haben über dieses geschlossene Netz Zugang zu unseren medizinischen Daten. Ein \"Höchstmaß an Schutz\" also, wie es das Gesundheitsministerium behauptet? Bewaffnet mit 10.000 Seiten Spezifikation und einem Faxgerät lassen wir Illusionen platzen und stellen fest: Technik allein ist auch keine Lösung. Braucht es einen Neuanfang?",
+                        "description": "Schon in 12 Monaten können 73 Millionen gesetzlich Versicherte ihre Gesundheitsdaten in einer elektronischen Patientenakte speichern lassen. Dazu werden zurzeit alle Arztpraxen, Krankenhäuser und Apotheken Deutschlands über die neu geschaffene kritische Telematik-Infrastruktur verbunden.\r\n\r\nDieses hochverfügbare Netz genügt \"militärischen Sicherheitsstandards\", bietet ein \"europaweit einzigartiges Sicherheitsniveau\" und verspricht ein \"Höchstmaß an Schutz für die personenbezogenen medizinischen Daten\" wie Arztbriefe, Medikamentenpläne, Blutbilder und Chromosomenanalysen.\r\n\r\n\"Wir tun alles, damit Patientendaten sicher bleiben.\"\r\n\r\n\"Selbst dem Chaos Computer Club ist es nicht gelungen, sich in die Telematik-Infrastruktur einzuhacken.\"\r\n\r\n\"Nach den Lehren aus PC-Wahl, Ladesäulen und dem besonderen elektronischen Anwaltspostfach brauchen wir kein weiteres Exempel.\"",
+                        "recording_license": "",
+                        "do_not_record": false,
+                        "persons": [{
+                            "id": 7912,
+                            "public_name": "Martin Tschirsich"
+                        }, {
+                            "id": 9376,
+                            "public_name": "cbro"
+                        }, {
+                            "id": 9406,
+                            "public_name": "Dr. André Zilch"
+                        }],
+                        "links": [],
+                        "attachments": []
+                    }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10883.html",
                         "id": 10883,
                         "guid": "479cc703-bacb-49e2-b364-e16f5ba000b9",
@@ -95,7 +157,7 @@
                         "date": "2019-12-27T17:30:00+01:00",
                         "start": "17:30",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10883-plundervolt_flipping_bits_from_software_without_rowhammer",
                         "title": "Plundervolt: Flipping Bits from Software without Rowhammer",
                         "subtitle": "",
@@ -123,7 +185,7 @@
                         "date": "2019-12-27T18:50:00+01:00",
                         "start": "18:50",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11141-geheimdienstliche_massenuberwachung_vs_menschenrechte",
                         "title": "Geheimdienstliche Massenüberwachung vs. Menschenrechte",
                         "subtitle": "",
@@ -151,7 +213,7 @@
                         "date": "2019-12-27T20:50:00+01:00",
                         "start": "20:50",
                         "duration": "01:30",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10933-what_the_world_can_learn_from_hongkong",
                         "title": "What the World can learn from Hongkong",
                         "subtitle": "From Unanimity to Anonymity ",
@@ -176,7 +238,7 @@
                         "date": "2019-12-27T22:30:00+01:00",
                         "start": "22:30",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10884-practical_cache_attacks_from_the_network_and_bad_cat_puns",
                         "title": "Practical Cache Attacks from the Network and Bad Cat Puns",
                         "subtitle": "",
@@ -207,15 +269,15 @@
                         "date": "2019-12-27T23:30:00+01:00",
                         "start": "23:30",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10737-sim_card_technology_from_a-z",
                         "title": "SIM card technology from A-Z",
                         "subtitle": "",
                         "track": "Hardware \u0026 Making",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "Billions of subscribers use SIM cards in their phones.  Yet, outside a relatively small circle, information about SIM card technology is not widely known. This talk aims to be an in-depth technical overview.",
-                        "description": "\u003cp\u003e\r\nToday, billions of subscribers use SIM cards in their phones.  Yet, outside\r\na relatively small circle, information about SIM card technology is not\r\nwidely known.  If at all, people know that once upon a time, they were\r\nstoring phone books on SIM cards.\r\n\u003c/p\u003e\r\n\u003cp\u003e\r\nEvery so often there are some IT security news about SIM card\r\nvulnerabilities, and SIM card based attacks on subscribers.\r\n\u003c/p\u003e\r\n\u003cp\u003e\r\nLet's have a look at SIM card technology during the past almost 30\r\nyears and cover topics like\r\n\u003cul\u003e\r\n\u003cli\u003eQuick intro to ISO7816 smart cards\u003c/li\u003e\r\n\u003cli\u003eSIM card hardware, operating system, applications\u003c/li\u003e\r\n\u003cli\u003eSIM card related specification bodies, industry, processes\u003c/li\u003e\r\n\u003cli\u003efrom SIM to UICC, USIM, ISIM and more\u003c/li\u003e\r\n\u003cli\u003eSIM toolkit, proactive SIM\u003c/li\u003e\r\n\u003cli\u003eeSIM\u003c/li\u003e\r\n\u003c/ul\u003e\r\n\u003c/p\u003e",
+                        "abstract": "Billions of subscribers use SIM cards in their phones. Yet, outside a relatively small circle, information about SIM card technology is not widely known. This talk aims to be an in-depth technical overview.",
+                        "description": "\u003cp\u003eToday, billions of subscribers use SIM cards in their phones. Yet, outside a relatively small circle, information about SIM card technology is not widely known. If at all, people know that once upon a time, they were storing phone books on SIM cards.\u003c/p\u003e\r\n\u003cp\u003eEvery so often there are some IT security news about SIM card\r\nvulnerabilities, and SIM card based attacks on subscribers.\u003c/p\u003e\r\n\u003cp\u003eLet's have a look at SIM card technology during the past almost 30 years and cover topics like\r\n\u003cul\u003e\r\n\u003cli\u003eQuick intro to ISO7816 smart cards\u003c/li\u003e\r\n\u003cli\u003eSIM card hardware, operating system, applications\u003c/li\u003e\r\n\u003cli\u003eSIM card related specification bodies, industry, processes\u003c/li\u003e\r\n\u003cli\u003efrom SIM to UICC, USIM, ISIM and more\u003c/li\u003e\r\n\u003cli\u003eSIM toolkit, proactive SIM\u003c/li\u003e\r\n\u003cli\u003eeSIM\u003c/li\u003e\r\n\u003c/ul\u003e\r\n\u003c/p\u003e",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -232,7 +294,7 @@
                         "date": "2019-12-28T00:30:00+01:00",
                         "start": "00:30",
                         "duration": "02:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11177-hacker_jeopardy",
                         "title": "Hacker Jeopardy",
                         "subtitle": "Zahlenraten für Geeks",
@@ -306,6 +368,9 @@
                         "persons": [{
                             "id": 7110,
                             "public_name": "Ruben Neugebauer"
+                        }, {
+                            "id": 6404,
+                            "public_name": "Sebastian Jünemann"
                         }],
                         "links": [{
                             "url": "www.cadus.org",
@@ -492,6 +557,37 @@
                         }],
                         "links": [],
                         "attachments": []
+                    }, {
+                        "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10936.html",
+                        "id": 10936,
+                        "guid": "27300e0d-e9a3-4e59-8261-c1b67cc0d86d",
+                        "logo": null,
+                        "date": "2019-12-27T23:30:00+01:00",
+                        "start": "23:30",
+                        "duration": "01:00",
+                        "room": "Borg",
+                        "slug": "36c3-10936-inside_the_fake_like_factories",
+                        "title": "Inside the Fake Like Factories",
+                        "subtitle": "How thousands of Facebook, You Tube and Instagram pages benefited from purchased likes and how we reverse engineered facebooks user IDs",
+                        "track": "Ethics, Society \u0026 Politics",
+                        "type": "lecture",
+                        "language": "en",
+                        "abstract": "This talk investigates the business of fake likes and fake accounts: In a world, where the number of followers, likes, shares and views are worth money, the temptation and the will to cheat is high. With some luck, programming knowledge and persistence we obtained thousands of fanpages, You Tube and Instagram account, where likes have been bought from a Likes seller. We were also able to meet people working behind the scenes and we will prove, that Facebook is a big bubble, with a very high percentage of dead or at least zombie accounts. The talk presents the methodology, findings and outcomes from a team of scientists and investigative journalists, who delved into the parallel universe of Fake Like Factories.",
+                        "description": "When you hear about fake likes and fake accounts, you instantly think of mobile phones strung together in multiple lines in front of an Asian woman or man. What if we tell you, that this is not necessarily the whole truth?  That you better imagine a ordinary guy sitting at home at his computer? In a longterm investigation we met and talked to various of these so called “clickworkers” - liking, watching, clicking Facebook, You Tube and Instagram for a small amount of money the whole day in their living room.\r\nFortuitously we could access thousand campaigns, Facebook Fanpages, You Tube videos or Instagram accounts. Thousands of websites and accounts, for which somebody bought likes in the past years.\r\nBut we did not stop the investigation there: We dived deeper into the Facebook Fake Accounts and Fake Likes universe, bought likes at various other Fake Likes sellers. To get the big picture, we also developed a statistical method to calculate the alleged total number of Facebok User IDs, with surprising results.",
+                        "recording_license": "",
+                        "do_not_record": false,
+                        "persons": [{
+                            "id": 7209,
+                            "public_name": "@sveckert"
+                        }, {
+                            "id": 9611,
+                            "public_name": "Dennis Tatang"
+                        }, {
+                            "id": 9372,
+                            "public_name": "pkreissel"
+                        }],
+                        "links": [],
+                        "attachments": []
                     }],
                     "Clarke": [{
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10690.html",
@@ -642,13 +738,13 @@
                         "start": "18:50",
                         "duration": "01:00",
                         "room": "Clarke",
-                        "slug": "36c3-11236-technochauvinism",
-                        "title": "Technochauvinism",
-                        "subtitle": "What are the material and human costs of our “technochauvinist” culture? ",
+                        "slug": "36c3-11236-the_internet_of_rubbish_things_and_bodies",
+                        "title": "The Internet of rubbish things and bodies",
+                        "subtitle": "A review of the best art \u0026 tech projects from 2019. With a focus on e-waste",
                         "track": "Art \u0026 Culture",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "An exploration, through the works of artists, of the geopolitical forces behind the production, design and exploitation of technology. And of the ways to fight back. ",
+                        "abstract": "Once you start looking at electronic trash you see it everywhere: in laptops of course but also increasingly in cars, fridges, even inside the bodies of humans and other animals. The talk will look at how artists have been exploring the e-junk invasion.",
                         "description": "Régine Debatty is a curator, critic and founder of http://we-make-money-not-art.com/, a blog which has received numerous distinctions over the years, including two Webby awards and an honorary mention at the STARTS Prize, a competition launched by the European Commission to acknowledge \"innovative projects at the interface of science, technology and art\".\r\nRégine writes and lectures internationally about the way artists, hackers, and designers use science and technology as a medium for critical discussion. She also created A.I.L. (Artists in Laboratories), a weekly radio program about the connections between art and science for Resonance104.4fm in London (2012–14), is the co-author of the “sprint book” New Art/Science Affinities, published by Carnegie Mellon University (2011) and is currently co-writing a book about culture and artificial intelligence.",
                         "recording_license": "",
                         "do_not_record": false,
@@ -705,7 +801,7 @@
                         "type": "lecture",
                         "language": "en",
                         "abstract": "This spring marked the 30th anniversary of the public uncovering of the so-called KGB Hack, bringing with it a number of new articles remembering the event and forging bridges to the present.",
-                        "description": "The 36C3 seems an excellent opportunity to take a look back at the instance of hacking which, even more so than previous events like the BTX Hack, brought the CCC into the focus of the (West-)German public – and, additionally, the Federal Office for the Protection of the Constitution (Verfassungsschutz) and the Federal Intelligence Service (Bundesnachrichtendienst).\r\n\r\nThis talk aims to focus on the uncovering of the KGB Hack, which began in 1986 when Clifford Stoll, a systems administrator at the University of California in Berkeley, noticed an intruder in his laboratory’s computer system. It took three more years of relentless investigation on Stoll’s part and laborious convincing of the authorities of the United States and the Federal Republic of Germany to trace back the intruder to a young man loosely connected to the CCC who worked with the KGB, selling information from US military networks to the Soviet Union. \r\n\r\nIn early March of 1989, the widely watched television news program ARD Im Brennpunkt informed the public of the “biggest instance of espionage since the Guillaume affair”. It presented a new quality of high tech espionage, undertaken by “computer freaks”, somewhat shady young men connected to the Chaos Computer Club.\r\n\r\nThe reporting on the KGB Hack had a tremendously negative effect on the public image of hackers in general and the CCC in particular. Now the “computer freaks” were not benevolent geeks who pointed out flaws in computer systems anymore - they were criminals, working with the Russians, harming their own country. This negative image has been lingering until today.",
+                        "description": "This spring marked the 30th anniversary of the public uncovering of the so-called KGB Hack, bringing with it a number of new articles remembering the event and forging bridges to the present. \r\nThe 36C3 seems an excellent opportunity to take a look back at the instance of hacking which, even more so than previous events like the BTX and NASA Hacks, brought the CCC into the focus of the (West-)German public – and, additionally, the Federal Office for the Protection of the Constitution (Verfassungsschutz) and the Federal Intelligence Service (Bundesnachrichtendienst). \r\n\r\nThis talk aims to focus on the uncovering of the KGB Hack, which began in 1986 when Clifford Stoll, a systems administrator at the University of California in Berkeley, noticed an intruder in his laboratory’s computer system – and, unlike other admins of the time, decided to do something about it. It took three more years of relentless investigation on Stoll’s part and laborious convincing of the authorities of the United States and the Federal Republic of Germany to trace back the intruder to a group of young men loosely connected to the CCC who worked with the KGB, selling information gained from breaking into US military computers to the Soviet Union.  \r\n\r\nIn March of 1989, the widely watched West-German television news program \"ARD Im Brennpunkt\" informed the public of the “biggest instance of espionage since the Guillaume affair”. It presented a new quality of high tech espionage, undertaken by “computer freaks”, somewhat shady-seeming young men connected to the Chaos Computer Club. \r\n\r\nThe reporting on the KGB Hack had a tremendously negative effect on the public image of hackers in general and the CCC in particular. Now the “computer freaks” were no longer seen as benevolent geeks who pointed out flaws in computer systems - they were criminals, working with the Russians, harming their own country. Sounds familiar? It’s an image which has been lingering until today. ",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -754,7 +850,7 @@
                         "type": "lecture",
                         "language": "de",
                         "abstract": "Manche Spiele will man gewinnen, andere will man einfach nur spielen. Bei vielen Spielen will man beides. Spielen macht Spaß. Gewinnen auch. Warum also nicht immer und überall spielen? Warum nicht Politik spielen wie einen Multiplayer-Shooter? Mit motivierten Kameraden und ahnungslosen Gegnern? Mit zerstörbarer Umgebung, erfolgreichen Missionen und zu erobernden Flaggen? Teile der radikalen Rechten tun das mit Erfolg. Der Vortrag schaut sich einige Beispiele aus Deutschland und den USA näher an.",
-                        "description": "Wir sprechen von “Spielifizierung”, wenn typische Elemente von Spielmechaniken genutzt werden, um in spielfremden Kontexten motivationssteigernd zu wirken. Während diese Strategie vor allem umfassend genutzt wird, um Kundenbindung und Mitarbeiterproduktivität zu erhöhen, ist sie auch zu einem zunehmend wichtigen Teil politischer Kultur geworden. Insbesondere Online-Communities verwenden Spielelemente, Memes/Lore und spielnahe Unterhaltungsformate, um ihre Beziehung zur Realität zu gestalten und zu strukturieren. \r\n\r\nInnerhalb solcher Beziehungen war es nur eine Frage der Zeit, bis archetypische NPCs wie der gewöhnliche Troll sich zu Lone-Wolf-Spielercharakteren entwickeln, Rudel bilden und sich in einem stetig wachsenden System von Gilden und meritokratischen Jagdverbänden organisieren würden. Die Politisierung solcher neuer Stammesgesellschaften ist auch eine logische Konsequenz dieser Evolution.\r\n\r\nDer Vortrag beleuchtet einerseits den US-kulturellen Hintergrund des Feldes: von der Spielmetapher als legitimierenden Rahmen in der “Manosphere”, “#Gamergate” und Operationen der chan-übergreifenden /pol/-Community. Andererseits sucht er Strategien, die darauf abzielen, Teile des politischen Diskurses zu “gamen”, zu kapern und zu verstärken, auch in deutscher Trollkultur auf, vom genreprägenden “Drachengame” bis zu explizit politischen Initiativen wie “Reconquista Germanica”... und dem live gestreamten Terror einer neuen faschistischen Subkultur.",
+                        "description": "Wir sprechen von “Spielifizierung”, wenn typische Elemente von Spielmechaniken genutzt werden, um in spielfremden Kontexten motivationssteigernd zu wirken. Während diese Strategie vor allem wirtschaftlich genutzt wird, um Kundenbindung und Mitarbeiterproduktivität zu erhöhen, ist sie auch zu einem zunehmend wichtigen Teil politischer Kultur geworden. Insbesondere Online-Communities verwenden Spielelemente, Memes/Lore und spielnahe Unterhaltungsformate, um ihre sozialen Beziehungen und jene zur Realität zu gestalten und zu strukturieren. \r\n\r\nInnerhalb solcher Beziehungen war es nur eine Frage der Zeit, bis archetypische NPCs wie der gewöhnliche Troll sich zu Lone-Wolf-Spielercharakteren entwickeln, Rudel bilden und sich in einem stetig wachsenden und ausdifferenzierenden System von Gilden und meritokratischen Jagdverbänden organisieren würden. Die Politisierung solcher neuer Stammesgesellschaften ist eine logische Konsequenz dieser Evolution.\r\n\r\nDer Vortrag beleuchtet einerseits den US-kulturellen Hintergrund des Feldes: von der Spielmetapher als legitimierenden Rahmen in der “Manosphere”, “#Gamergate” und Operationen der chan-übergreifenden /pol/-Community. Andererseits sucht er Strategien, die darauf abzielen, Teile des politischen Diskurses zu “gamen”, zu kapern und zu verstärken, auch in deutscher Trollkultur auf, vom genreprägenden “Drachengame” bis zu explizit politischen Initiativen wie “Reconquista Germanica”... und dem live gestreamten Terror einer neuen faschistischen Subkultur.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -775,7 +871,7 @@
                         "room": "Dijkstra",
                         "slug": "36c3-11172-leaving_legacy_behind",
                         "title": "Leaving legacy behind",
-                        "subtitle": "towards secure network services",
+                        "subtitle": "Reducing carbon footprint of network services with MirageOS unikernels",
                         "track": "Security",
                         "type": "lecture",
                         "language": "en",
@@ -1091,8 +1187,8 @@
                         "track": "Hardware \u0026 Making",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "Modern smartphones offer a whole range of sensors like magnetometers, accelerometers or gyroscopes. The open source app \"phyphox\", developed at the RWTH Aachen University, repurposes these sensors as measuring instruments in physics education. When put into a salad spinner, the phone can acquire the relation of centripetal acceleration and angular velocity. Its barometer can be used to measure the velocity of an elevator. And when using two phones, it is easy to determine the speed of sound with a very simple method.\r\n\r\nIn this talk, I will show these possibilities in demonstration experiments, discuss available sensors and their limitations and introduce interfaces to integrate phyphox into other projects.",
-                        "description": "In this talk, the developer of the app \"phyphox\" at the RWTH Aachen University will first introduce how sensors in smartphones can be used to enable experimentation and data acquisition in physics teaching with several demonstrations on stage. Available sensors and their limitations will be discussed along with interfaces allowing the integration of phyphox into other project, either as a means to access sensor data or to display data from other sources.\r\n\r\nThe app is open source under the GNU GPLv3 licence and available for Android (\u003e=4.0) and iOS (\u003e=8.0). It is designed around experiment configurations for physics education at school and university, allowing for a quick setup with a single tap. At the same time, these configurations may be modified by any user to set up customized sensor configurations along with data analysis and data visualization, defined in an XML format. These configurations are Turing complete and can easily be transferred via QR codes, so an experienced user (teacher) can create a specific configuration and allow less experienced users (students) to use it with ease.\r\n",
+                        "abstract": "Modern smartphones offer a whole range of sensors like magnetometers, accelerometers or gyroscopes. The open source app \"phyphox\", developed at the RWTH Aachen University, repurposes these sensors as measuring instruments in physics education.",
+                        "description": "When put into a salad spinner, the phone can acquire the relation of centripetal acceleration and angular velocity. Its barometer can be used to measure the velocity of an elevator. And when using two phones, it is easy to determine the speed of sound with a very simple method.\r\n\r\nIn this talk, I will show these possibilities in demonstration experiments, discuss available sensors and their limitations and introduce interfaces to integrate phyphox into other projects.\r\n\r\nIn this talk, the developer of the app \"phyphox\" at the RWTH Aachen University will first introduce how sensors in smartphones can be used to enable experimentation and data acquisition in physics teaching with several demonstrations on stage. Available sensors and their limitations will be discussed along with interfaces allowing the integration of phyphox into other project, either as a means to access sensor data or to display data from other sources.\r\n\r\nThe app is open source under the GNU GPLv3 licence and available for Android (\u003e=4.0) and iOS (\u003e=8.0). It is designed around experiment configurations for physics education at school and university, allowing for a quick setup with a single tap. At the same time, these configurations may be modified by any user to set up customized sensor configurations along with data analysis and data visualization, defined in an XML format. These configurations are Turing complete and can easily be transferred via QR codes, so an experienced user (teacher) can create a specific configuration and allow less experienced users (students) to use it with ease.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -1226,7 +1322,7 @@
                         "type": "lecture",
                         "language": "de",
                         "abstract": "Einführung in das Forschungsfeld der Kritikalitätsanalysen. Anhand der Rohstoffe Tantal, Wolfram, Zinn und Gold werden exemplarisch die quantitativen und qualitativen Indikatoren für eine Versorgungsengpassanalyse vorgestellt.",
-                        "description": "Moderne High-Tech Produkte benötigen chemische Elemente, die in spezifischen Rohstoffen (z.B. Erze) vorkommen. Dabei unterliegen Verfügbarkeit und Preis dieser Rohstoffe in hohem Maße den Einflussfaktoren der Konzentrationsrisken, politischen Risiken, Angebotsreduktions- und Nachfrageanstiegsrisiken. Da Unternehmen oftmals über Jahre hinweg an bestimmte Rohstoffe gebunden sind, müssen sie den Unsicherheiten mit vielfältigen Strategien begegnen. Vom Abbau und der Verarbeitung bis zur Nutzung und Entsorgung, wird die gesamte Wertschöpfungskettenkritikalität bewertet. Dadurch können Verwundbarkeiten von Unternehmen und Ländern durch Rohstoffengpässe objektiv identifiziert und Handlungsempfehlungen definiert werden. Die Kritikalitätsanalyse wird am Beispiel der 3TG Materialien (Tantal, Wolfram, Zinn und Gold) veranschaulicht.",
+                        "description": "Moderne High-Tech-Produkte benötigen chemische Elemente, die in spezifischen Rohstoffen (z. B. Erze) vorkommen. Dabei unterliegen Verfügbarkeit und Preis dieser Rohstoffe in hohem Maße den Einflussfaktoren der Konzentrationsrisken, politischen Risiken, Angebotsreduktions- und Nachfrageanstiegsrisiken. Da Unternehmen oftmals über Jahre hinweg an bestimmte Rohstoffe gebunden sind, müssen sie den Unsicherheiten mit vielfältigen Strategien begegnen. Vom Abbau und der Verarbeitung bis zur Nutzung und Entsorgung wird die gesamte Wertschöpfungskettenkritikalität bewertet. Dadurch können Verwundbarkeiten von Unternehmen und Ländern durch Rohstoffengpässe objektiv identifiziert und Handlungsempfehlungen definiert werden. Die Kritikalitätsanalyse wird am Beispiel der 3TG-Materialien (Tantal, Wolfram, Zinn und Gold) veranschaulicht.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -1234,8 +1330,8 @@
                             "public_name": "Martin Hillenbrand"
                         }],
                         "links": [{
-                            "url": "www.ressourcen.fm",
-                            "title": "Ressourcen.fm Podcast"
+                            "url": "https://ressourcen.fm",
+                            "title": "Ressourcen.fm-Podcast"
                         }],
                         "attachments": []
                     }, {
@@ -1260,6 +1356,9 @@
                         "persons": [{
                             "id": 5610,
                             "public_name": " Gabriella \"Biella\" Coleman"
+                        }, {
+                            "id": 9892,
+                            "public_name": "Paula Bialski"
                         }],
                         "links": [{
                             "url": "Hack_Curio, Decoding the Cultures of Hacking",
@@ -1274,7 +1373,7 @@
                 "day_start": "2019-12-28T11:00:00+01:00",
                 "day_end": "2019-12-29T04:00:00+01:00",
                 "rooms": {
-                    "Adams": [{
+                    "Ada": [{
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10542.html",
                         "id": 10542,
                         "guid": "725733e7-b96f-400d-a2d5-769d967236c1",
@@ -1282,7 +1381,7 @@
                         "date": "2019-12-28T11:30:00+01:00",
                         "start": "11:30",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10542-der_pfad_von_4g_zu_5g",
                         "title": "Der Pfad von 4G zu 5G",
                         "subtitle": " Die Luftschnittstelle und das Core im Wandel der Zahlen",
@@ -1310,7 +1409,7 @@
                         "date": "2019-12-28T12:50:00+01:00",
                         "start": "12:50",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10801-sigover_alpha",
                         "title": "SigOver + alpha",
                         "subtitle": "Signal overshadowing attack on LTE and its applications",
@@ -1341,7 +1440,7 @@
                         "date": "2019-12-28T14:10:00+01:00",
                         "start": "14:10",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11006-der_deep_learning_hype",
                         "title": "Der Deep Learning Hype",
                         "subtitle": "Wie lange kann es so weitergehen?",
@@ -1369,7 +1468,7 @@
                         "date": "2019-12-28T16:10:00+01:00",
                         "start": "16:10",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11086-the_ecosystem_is_moving",
                         "title": "The ecosystem is moving",
                         "subtitle": "Challenges for distributed and decentralized technology",
@@ -1394,7 +1493,7 @@
                         "date": "2019-12-28T17:10:00+01:00",
                         "start": "17:10",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10531-all_wireless_communication_stacks_are_equally_broken",
                         "title": "All wireless communication stacks are equally broken",
                         "subtitle": "",
@@ -1419,7 +1518,7 @@
                         "date": "2019-12-28T18:10:00+01:00",
                         "start": "18:10",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10642-harry_potter_and_the_not-so-smart_proxy_war",
                         "title": "Harry Potter and the Not-So-Smart Proxy War",
                         "subtitle": "Taking a look at a covert CIA virtual fencing solution",
@@ -1444,7 +1543,7 @@
                         "date": "2019-12-28T19:10:00+01:00",
                         "start": "19:10",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10924-the_sustainability_of_safety_security_and_privacy",
                         "title": "The sustainability of safety, security and privacy",
                         "subtitle": "",
@@ -1475,7 +1574,7 @@
                         "date": "2019-12-28T20:50:00+01:00",
                         "start": "20:50",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10806-ktrw_the_journey_to_build_a_debuggable_iphone",
                         "title": "KTRW: The journey to build a debuggable iPhone",
                         "subtitle": "",
@@ -1503,7 +1602,7 @@
                         "date": "2019-12-28T22:10:00+01:00",
                         "start": "22:10",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10652-bahnmining_-_punktlichkeit_ist_eine_zier",
                         "title": "BahnMining - Pünktlichkeit ist eine Zier",
                         "subtitle": "",
@@ -1528,7 +1627,7 @@
                         "date": "2019-12-28T23:30:00+01:00",
                         "start": "23:30",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10754-zombieload_attack",
                         "title": "ZombieLoad Attack",
                         "subtitle": "Leaking Your Recent Memory Operations on Intel CPUs",
@@ -1562,7 +1661,7 @@
                         "date": "2019-12-29T00:30:00+01:00",
                         "start": "00:30",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11242-chaos_communication_slam",
                         "title": "Chaos Communication Slam",
                         "subtitle": "",
@@ -1926,10 +2025,13 @@
                         "do_not_record": false,
                         "persons": [{
                             "id": 9118,
-                            "public_name": "Extinction Rebellion Berlin"
+                            "public_name": "Maria"
                         }, {
                             "id": 9888,
                             "public_name": "Lu Yen Roloff"
+                        }, {
+                            "id": 9895,
+                            "public_name": "sina"
                         }],
                         "links": [{
                             "url": "https://extinctionrebellion.de/",
@@ -1948,10 +2050,10 @@
                         "start": "18:10",
                         "duration": "00:40",
                         "room": "Clarke",
-                        "slug": "36c3-11237-framing_digital_industry_into_planetary_limits",
-                        "title": "Framing digital industry into planetary limits",
+                        "slug": "36c3-11237-today_s_digital_industry_is_unsustainable_so_where_to_go",
+                        "title": "Today's digital industry is unsustainable so where to go?",
                         "subtitle": "The environmental costs of digital industry and pathways to sustainability",
-                        "track": "Art \u0026 Culture",
+                        "track": "Resilience \u0026 Sustainability",
                         "type": "lecture",
                         "language": "en",
                         "abstract": "A lecture on the environmental impacts of digital industry today and how to think about and design digital tools with limited energy and resources.",
@@ -1971,7 +2073,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10751.html",
                         "id": 10751,
                         "guid": "4799e975-6a42-4570-a637-84b0bfa47bd7",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/751/large/1R3VdhcVj7Cn3eykkqSs%28%E5%B7%B2%E5%8E%BB%E5%BA%95%29.jpg?1576641244",
                         "date": "2019-12-28T19:10:00+01:00",
                         "start": "19:10",
                         "duration": "00:40",
@@ -1982,10 +2084,10 @@
                         "track": "Security",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "With the rapid development of mobile internet, apps become more and more complex. However, their most used functions are limited to a few pages.\r\n\r\nEnters instant app. It has many advantages over normal apps, such as click-to-play and concise design, and it's becoming more and more popular. There is some form of instant app framework in many popular apps, such as Google Play, WeChat, TikTok, etc. In addition, many phone vendors have also embedded instant app frameworks in their pre-installed applications.\r\n\r\nHowever, there is barely any public research on attacking instant apps.",
-                        "description": "In this talk, we will dive into a common architecture of instant app framework, and demonstrate attack models for it. Based on these attack models, we have reverse engineered top instant app frameworks. We will show how to bypass various kinds of sandboxing and restriction technologies to break isolations between instant apps.\r\n\r\nThese vulnerabilities could lead to sensitive information leakage, identity theft, account takeover and other severe consequences. During the study of Google Instant app, we also bypassed component access restrictions, which greatly expands attack surface.\r\n\r\nThese vulnerabilities and attack models affects more than 60% of Android devices and at least 1 billion users.\r\n\r\nFinally, we summarize the root causes of these vulnerabilities at the architectural level and point out the potential attack points. We will also propose practical mitigation measures for specific vulnerabilities. \r\n\r\nWe hope we could make users and developers aware of the potential security risks while enjoying the convenience of instant apps. We also hope to make security community aware of this emerging new attack surface.\r\n\r\nMy Presentation Outline as follows:\r\n1. Introduction\r\n\r\nBrief introduction to instant app. We define terms that appears later in the talk, such as “supervisor app”, “render layer”, “logic layer”, etc. Supervisor app is a platform application that manages and runs instant app.\r\n\r\n2. WebView based architecture\r\n\r\nDetailed description of a common architecture of WebView based instant app. Explain its similarities and differences with React Native and traditional WebView. We abstract it as a multiple domains - API asynchronous communication model.\r\n\r\n3. RPC communication between instant app, supervisor app and backend server\r\n\r\nWe describe how an instant app invoke APIs provided by supervisor app through cross-domain access. \r\n\r\nAnd we explain how the supervisor app and backend server identify the RPC caller. \r\n\r\n4. Vulnerabilities to break instant app isolation\r\n\r\nBased on the communication described in the previous section, we detail two different approaches to break the isolation between instant apps. \r\n\r\nWe encountered some problem in actual exploitation. To make our payload run on victim’s phone, we need to bypass security policies enforced during server-side compilation. We combined features of Webpack and JavaScript to break API restrictions to complete the attack.\r\n\r\nAt the end of this section we will demonstrate an attack that breaks app isolation to steal sensitive information and take over accounts.\r\n\r\n5. Mitigation\r\n\r\nWe summarize the root causes of these vulnerabilities at the architectural level. We also propose practical mitigation measures for specific vulnerabilities.\r\n\r\n6. Other architectures and vulnerabilities\r\n\r\nThere are some other different architectures, such as the one used by Google Play. We will briefly describe a vulnerability we found that bypass the Google Instant App component access sandbox. It can expand the attack surface and transform local attacks to remote attacks.\r\n\r\n7. Closing\r\n\r\nFinally, we will give a outlook to the future evolvement of instant app and potential attack surfaces.\r\n\r\nThe up to date research you can take away from my presentation is as follows:\r\n\r\n1. A common architecture of WebView based instant app and communication mechanism between modules. This is completely new mobile attack surface.\r\n\r\n2. Instant app attack model, and the approach to extend attack surface in Android, which may be a key gadget for your exploit chain in a remote attack.\r\n\r\n3. Two vulnerabilities that break instant app isolation in XXX. And a vulnerability that bypass components access sandbox in Google Instant App.\r\n\r\n4. Mitigation for these vulnerabilities, and how to build a safer instant app framework.",
+                        "abstract": "With the rapid development of mobile internet, apps become more and more complex. However, their most used functions are limited to a few pages.\r\n\r\nEnters instant app. It has many advantages over normal apps, such as click-to-play and concise design, and it's becoming more and more popular. There is some form of instant app framework in many popular apps, such as Google Play, TikTok, etc. In addition, many phone vendors have also embedded instant app frameworks in their pre-installed applications.\r\n\r\nHowever, there is barely any public research on attacking instant apps.",
+                        "description": "In this talk, we will dive into a common architecture of instant app framework, and demonstrate attack models for it. Based on these attack models, we have reverse engineered top instant app frameworks. We will show how to bypass various kinds of sandboxing and restriction technologies to break isolations between instant apps.\r\n\r\nThese vulnerabilities could lead to sensitive information leakage, identity theft, account takeover and other severe consequences. During the study of Google Instant app, we also bypassed component access restrictions, which greatly expands attack surface.\r\n\r\nThese vulnerabilities and attack models affects more than 60% of Android devices and at least 1 billion users.\r\n\r\nFinally, we summarize the root causes of these vulnerabilities at the architectural level and point out the potential attack points. We will also propose practical mitigation measures for specific vulnerabilities. \r\n\r\nWe hope we could make users and developers aware of the potential security risks while enjoying the convenience of instant apps. We also hope to make security community aware of this emerging new attack surface.",
                         "recording_license": "",
-                        "do_not_record": false,
+                        "do_not_record": true,
                         "persons": [{
                             "id": 9557,
                             "public_name": "RonnyXing"
@@ -2070,7 +2172,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10983.html",
                         "id": 10983,
                         "guid": "7bdf7688-8620-4170-93bf-3c2adfd30030",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/983/large/noPAG.png?1576693771",
                         "date": "2019-12-28T23:30:00+01:00",
                         "start": "23:30",
                         "duration": "01:00",
@@ -2195,7 +2297,7 @@
                         "type": "lecture",
                         "language": "de",
                         "abstract": "Für Sinti*zze und Roma*nja gehören Anfeindungen zum Alltag. Auch bei Ermittlungsbehörden stehen sie unter Generalverdacht: Es steht zu befürchten, dass die Polizei in unterschiedlichen Bundesländern rechtswidrig Daten zu ethnischer Herkunft erhebt und veröffentlicht.\r\n\r\nWarum ist es so gefährlich, ethnische Herkunft in Polizeidatenbanken zu erfassen? Und was für Konsequenzen hat es, sie in Berichterstattung zu erwähnen? Wann darf die Polizei überhaupt Daten zu ethnischer Herkunft erheben? Und wann und mit welchen Methoden tut sie es vielleicht trotz Verbots? ",
-                        "description": "Für Sinti*zze und Roma*nja gehören auch in Deutschland Anfeindungen in allen Lebenslagen zum Alltag. Auch bei Ermittlungsbehörden stehen sie unter Generalverdacht: Es steht zu befürchten, dass die Polizei in unterschiedlichen Bundesländern rechtswidrig Daten zu ethnischer Herkunft erhebt und veröffentlicht. In Pressemitteilungen der Polizei tauchen immer wieder Hinweise auf die ethnische Herkunft auf, vor allem bei Tatverdächtigen, seltener bei Opfern oder Zeug*innen. Die Berliner Polizei hat in der Kriminalstatistik 2017 den Hinweis veröffentlicht, dass die Mehrheit der Tatverdächtigen von „Trickdiebstahl in Wohnungen“ Angehörige der Volksgruppe Sinti und Roma seien: Dass es rechtswidrig ist, wenn die Polizei die zugrunde liegenden Daten tatsächlich erhebt, ist unstreitig. \r\n\r\nIn Kooperation mit dem Zentralrat hat die Gesellschaft für Freiheitsrechte e.V. (GFF) im Fall der Berliner Polizeikriminalstatistik bei der Berliner Landesdatenschutzbeauftragten ein Beschwerdeverfahren wegen des Verdachts auf Diskriminierung von Sinti*zze und Roma*nja lanciert. Beide Organisationen prüfen gemeinsam weitere rechtliche Möglichkeiten.\r\n\r\nWarum ist es so gefährlich, ethnische Herkunft in Polizeidatenbanken zu erfassen? Und was für Konsequenzen hat es, sie in Berichterstattung zu erwähnen? Wann darf die Polizei überhaupt Daten zu ethnischer Herkunft erheben? Und wann tut sie es vielleicht trotz Verbots? Und mit welchen Methoden erhebt die Polizei überhaupt die ethnische Herkunft? \r\n\r\nDie Gesellschaft für Freiheitsrechte e.V. (GFF) und der Zentralrat Deutscher Sinti und Roma wollen diese Fragen gemeinsam mit dem Publikum diskutieren. \r\n\r\nAnja Reuss ist Politische Referentin des Zentralrats Deutscher Sinti und Roma, der sich seit Jahren für eine diskriminierungsfreie Polizeiarbeit einsetzt. \r\n\r\nLea Beckmann ist Juristin und Verfahrenskoordinatorin der Gesellschaft für Freiheitsrechte e.V. (GFF). Die GFF ist eine NGO, die durch strategische Prozesse Grund- und Menschenrechte stärkt und zivilgesellschaftlichen Partnerorganisationen rechtlich unterstützt. In ihren Verfahren setzt sich die GFF dabei immer wieder kritisch mit polizeilichen Ermittlungsbefugnissen auseinander, sei dies im Zusammenhang mit dem Einsatz von Späh-Software oder bei der Datenerhebung. ",
+                        "description": "Für Sinti*zze und Roma*nja gehören auch in Deutschland Anfeindungen in allen Lebenslagen zum Alltag. Auch bei Ermittlungsbehörden stehen sie unter Generalverdacht: Es steht zu befürchten, dass die Polizei in unterschiedlichen Bundesländern rechtswidrig Daten zu ethnischer Herkunft erhebt und veröffentlicht. In Pressemitteilungen der Polizei tauchen immer wieder Hinweise auf die ethnische Herkunft auf, vor allem bei Tatverdächtigen, seltener bei Opfern oder Zeug*innen. Die Berliner Polizei hat in der Kriminalstatistik 2017 den Hinweis veröffentlicht, dass die Mehrheit der Tatverdächtigen von „Trickdiebstahl in Wohnungen“ Angehörige der Volksgruppe Sinti und Roma seien: Dass es rechtswidrig ist, wenn die Polizei die zugrunde liegenden Daten tatsächlich erhebt, ist unstreitig. \r\n\r\nIn Kooperation mit dem Zentralrat hat die Gesellschaft für Freiheitsrechte e.V. (GFF) im Fall der Berliner Polizeikriminalstatistik bei der Berliner Landesdatenschutzbeauftragten ein Beschwerdeverfahren wegen des Verdachts auf Diskriminierung von Sinti*zze und Roma*nja lanciert. Beide Organisationen prüfen gemeinsam weitere rechtliche Möglichkeiten.\r\n\r\nWarum ist es so gefährlich, ethnische Herkunft in Polizeidatenbanken zu erfassen? Und was für Konsequenzen hat es, sie in Berichterstattung zu erwähnen? Wann darf die Polizei überhaupt Daten zu ethnischer Herkunft erheben? Und wann tut sie es vielleicht trotz Verbots? Und mit welchen Methoden erhebt die Polizei überhaupt die ethnische Herkunft? \r\n\r\nDie Gesellschaft für Freiheitsrechte e.V. (GFF) und der Zentralrat Deutscher Sinti und Roma wollen diese Fragen gemeinsam mit dem Publikum diskutieren. \r\n\r\nAnja Reuss ist Politische Referentin des Zentralrats Deutscher Sinti und Roma, der politischen Interessenvertretung der deutschen Sinti und Roma mit Sitz in Heidelberg. Als Dachverband setzt sich der Zentralrat auf nationaler und internationaler Ebene für eine gleichberechtigte Teilhabe von Sinti und Roma in Politik und Gesellschaft sowie für die Auseinandersetzung mit und Bekämpfung von Antiziganismus ein.\r\n\r\nLea Beckmann ist Juristin und Verfahrenskoordinatorin der Gesellschaft für Freiheitsrechte e.V. (GFF). Die GFF ist eine NGO, die durch strategische Prozesse Grund- und Menschenrechte stärkt und zivilgesellschaftlichen Partnerorganisationen rechtlich unterstützt. In ihren Verfahren setzt sich die GFF dabei immer wieder kritisch mit polizeilichen Ermittlungsbefugnissen auseinander, sei dies im Zusammenhang mit dem Einsatz von Späh-Software oder bei der Datenerhebung. ",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -2203,7 +2305,7 @@
                             "public_name": "Lea Beckmann"
                         }, {
                             "id": 9481,
-                            "public_name": "Anja"
+                            "public_name": "Anja Reuss"
                         }],
                         "links": [{
                             "url": "https://freiheitsrechte.org/kriminalstatistik-berlin/",
@@ -2245,7 +2347,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10862.html",
                         "id": 10862,
                         "guid": "c2619236-c88d-40ee-9d9d-9dfffd5212ef",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/862/large/sensebox_logo_neu.png?1576613698",
                         "date": "2019-12-28T18:10:00+01:00",
                         "start": "18:10",
                         "duration": "00:40",
@@ -2515,8 +2617,8 @@
                         "track": "Ethics, Society \u0026 Politics",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "Robots, Satellites and biometrical traps - more than a Billion Euro will be spent in 2021 for what they call \"Border Security.\" The European Border and Coastguard, formerly Frontex, dreams of a fully automomus border surveillance system. As a humanitarian \u0026 human rights organisation involved in sea rescue, we recognise however that the shift towards new technologies correlates with a shift away from basic human rights standards. The robots, sattelites \u0026 co. are not used to make society safer \u0026 life easier but to spy on us and to deport people to torture in Libya. ",
-                        "description": "At Sea-Watch e.V. we are involved in a non-profit initiative dedicated to the civilian rescue of refugees at sea. In view of the humanitarian disaster on the Mediterranean Sea-Watch provides emergency aid, demands and forces at the same time the rescue by the responsible European institutions and stands publicly for legal escape routes and open borders. We are politically and religiously independent and finance ourselves exclusively through donations.\r\nAt sea, we formerly cooperated with Frontex ships in rescues when they were still involved in live saving operations. Now we regularly observe them actually being involved in illegal refoulements, especially with our surveillance aircraft Moonbird. \r\n\r\nFrontex was formerly an agency that advised governments on border control and did risk assessments on border crossings, it had basically a coordinating role within the European framework. They were called \"European Agency for the Management of Operational Cooperation at the External Borders\". In 2016, during the so-called refugee crisis, the European Commission proposed to strengthen them and they became the European Border and Coast Guard Agency.\r\n\r\nFrontex is working and developing satellite observation, the development of drone capabilities and other surveillance technologies like IMSI-Catchers with the help of European universities and companies like EADS and esri. All this happens right now without a lot of public or transparency from the site of the agency. While they provide national authorities with equipment and justify their yearly growing budget with out border security there are no sources to measure the effectivity of their methods.\r\n\r\nWhile they present themselves as the friendly boarderguard next door it has evolved into an engency which is developing capabilities in all kinds of surveillance technologies with pilot projects which sound like they are taken out of a science fiction movie:\r\n\r\nSMILE\r\n\"SMILE proposes a novel mobility concept, using privacy by design principles, that will enable low cost secure exchange and processing of biometric data, addressing in parallel the aforementioned challenges by designing, implementing and evaluating in relevant environments (TRL6) prototype management architecture, for the accurate verification, automated control, monitoring and optimization of people’ flows at Land Border Infrastructures.\"\r\n    \r\nRoborder\r\n\"ROBORDER aims at developing and demonstrating a fully-functional autonomous border surveillance system with unmanned mobile robots including aerial, water surface, underwater and ground vehicles, capable of functioning both as standalone and in swarms, which will incorporate multimodal sensors as part of an interoperable network.\"\r\nhttp://btn.frontex.europa.eu/projects/external/roborder\r\n    \r\nCamelot\r\n\"\"iBorderCtrl envisages to enable faster thorough border control for third country nationals crossing the borders of EU, with technologies that adopt the future development of the Schengen Border Management.\r\nThe project will present an optimal mixture of an enhanced, voluntary form of a Registered Traveller Programme and an auxiliary solution for the Entry/Exit System based on involving bona fide travellers\"\r\nhttp://btn.frontex.europa.eu/projects/external/iborderctrl    \r\n    \r\niBorderCtrl\r\n\"iBorderCtrl envisages to enable faster thorough border control for third country nationals crossing the borders of EU, with technologies that adopt the future development of the Schengen Border Management.\r\nThe project will present an optimal mixture of an enhanced, voluntary form of a Registered Traveller Programme and an auxiliary solution for the Entry/Exit System based on involving bona fide travellers\"\r\nhttp://btn.frontex.europa.eu/projects/external/iborderctrl\r\n\r\nWhile the people in charge do not manage to organize a proper search- and rescue program, Europe is setting up and spending more and more on a massive surveillance agency for border protection which has a big focus in surveillance and \"protecting\" the European external borders while no one ever evaluated the effectivity of this massive border militarization.",
+                        "abstract": "Robots, Satellites and biometrical traps - more than a Billion Euro will be spent in 2021 for what they call \"Border Security.\" The European Border and Coastguard, formerly Frontex, dreams of a fully automomus border surveillance system.",
+                        "description": "As a humanitarian \u0026 human rights organisation involved in sea rescue, we recognise however that the shift towards new technologies correlates with a shift away from basic human rights standards. The robots, satellites \u0026 co. are not used to make society safer \u0026 life easier but to spy on us and to deport people to torture in Libya.\r\n\r\nAt Sea-Watch e.V. we are involved in a non-profit initiative dedicated to the civilian rescue of refugees at sea. In view of the humanitarian disaster on the Mediterranean Sea-Watch provides emergency aid, demands and forces at the same time the rescue by the responsible European institutions and stands publicly for legal escape routes and open borders. We are politically and religiously independent and finance ourselves exclusively through donations.\r\n\r\nAt sea, we formerly cooperated with Frontex ships in rescues when they were still involved in live saving operations. Now we regularly observe them actually being involved in illegal refoulements, especially with our surveillance aircraft Moonbird.\r\n\r\nFrontex was formerly an agency that advised governments on border control and did risk assessments on border crossings, it had basically a coordinating role within the European framework. They were called \"European Agency for the Management of Operational Cooperation at the External Borders\". In 2016, during the so-called refugee crisis, the European Commission proposed to strengthen them and they became the European Border and Coast Guard Agency.\r\n\r\nFrontex is working and developing satellite observation, the development of drone capabilities and other surveillance technologies like IMSI-Catchers with the help of European universities and companies like EADS and esri. All this happens right now without a lot of public or transparency from the site of the agency. While they provide national authorities with equipment and justify their yearly growing budget with out border security there are no sources to measure the effectivity of their methods.\r\n\r\nWhile they present themselves as the friendly boarderguard next door it has evolved into an engency which is developing capabilities in all kinds of surveillance technologies with pilot projects which sound like they are taken out of a science fiction movie:\r\n\r\nSMILE\r\n\"SMILE proposes a novel mobility concept, using privacy by design principles, that will enable low cost secure exchange and processing of biometric data, addressing in parallel the aforementioned challenges by designing, implementing and evaluating in relevant environments (TRL6) prototype management architecture, for the accurate verification, automated control, monitoring and optimization of people’ flows at Land Border Infrastructures.\"\r\n    \r\nRoborder\r\n\"ROBORDER aims at developing and demonstrating a fully-functional autonomous border surveillance system with unmanned mobile robots including aerial, water surface, underwater and ground vehicles, capable of functioning both as standalone and in swarms, which will incorporate multimodal sensors as part of an interoperable network.\"\r\nhttp://btn.frontex.europa.eu/projects/external/roborder    \r\n    \r\niBorderCtrl\r\n\"iBorderCtrl envisages to enable faster thorough border control for third country nationals crossing the borders of EU, with technologies that adopt the future development of the Schengen Border Management.\r\nThe project will present an optimal mixture of an enhanced, voluntary form of a Registered Traveller Programme and an auxiliary solution for the Entry/Exit System based on involving bona fide travellers\"\r\nhttp://btn.frontex.europa.eu/projects/external/iborderctrl\r\n\r\nWhile the people in charge do not manage to organize a proper search- and rescue program, Europe is setting up and spending more and more on a massive surveillance agency for border protection which has a big focus in surveillance and \"protecting\" the European external borders while no one ever evaluated the effectivity of this massive border militarization.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -2540,9 +2642,9 @@
                         "start": "19:10",
                         "duration": "00:40",
                         "room": "Eliza",
-                        "slug": "36c3-10855-the_sound_of_surveillance",
-                        "title": "The Sound of Surveillance",
-                        "subtitle": "Listening Back",
+                        "slug": "36c3-10855-listening_back_-_the_sound_of_surveillance",
+                        "title": "Listening Back - The Sound of Surveillance",
+                        "subtitle": "",
                         "track": "Art \u0026 Culture",
                         "type": "lecture",
                         "language": "en",
@@ -2558,8 +2660,11 @@
                             "url": "https://chrome.google.com/webstore/detail/listening-back/gdkmphlncmoloepkpifnhneogcliiiah",
                             "title": "Listening Back Chrome Browser Add-On"
                         }, {
+                            "url": "https://addons.mozilla.org/en-GB/firefox/addon/listening-back/",
+                            "title": "Listening Back Firefox Browser Add-On"
+                        }, {
                             "url": "http://jasmineguffond.com/",
-                            "title": "My Website"
+                            "title": "jasmineguffond.com"
                         }],
                         "attachments": []
                     }, {
@@ -2663,7 +2768,7 @@
                 "day_start": "2019-12-29T11:00:00+01:00",
                 "day_end": "2019-12-30T04:00:00+01:00",
                 "rooms": {
-                    "Adams": [{
+                    "Ada": [{
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11097.html",
                         "id": 11097,
                         "guid": "7efbe48e-7673-4c72-b990-cb9db88f57b9",
@@ -2671,7 +2776,7 @@
                         "date": "2019-12-29T11:30:00+01:00",
                         "start": "11:30",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11097-von_menschen_radikalisiert_uber_rassismus_im_internet",
                         "title": "Von Menschen radikalisiert: Über Rassismus im Internet",
                         "subtitle": "",
@@ -2696,7 +2801,7 @@
                         "date": "2019-12-29T12:50:00+01:00",
                         "start": "12:50",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11114-die_affare_hannibal",
                         "title": "Die Affäre Hannibal",
                         "subtitle": "Eine erste Bilanz",
@@ -2710,6 +2815,9 @@
                         "persons": [{
                             "id": 9645,
                             "public_name": "Sebastian Erb"
+                        }, {
+                            "id": 9893,
+                            "public_name": "Daniel Schulz"
                         }],
                         "links": [{
                             "url": "www.taz.de/hannibal",
@@ -2724,7 +2832,7 @@
                         "date": "2019-12-29T14:10:00+01:00",
                         "start": "14:10",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10541-gefluchtete_schmuggeln_kohlelobby_unterwandern_passe_falschen",
                         "title": "Geflüchtete schmuggeln, Kohlelobby unterwandern, Pässe fälschen",
                         "subtitle": "Warum wir zivilen Ungehorsam und Subversion mehr brauchen denn je",
@@ -2755,7 +2863,7 @@
                         "date": "2019-12-29T16:10:00+01:00",
                         "start": "16:10",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11217-finfisher_verklagen",
                         "title": "Finfisher verklagen",
                         "subtitle": "Rechtsbrüche beim Export von Überwachungssoftware",
@@ -2783,7 +2891,7 @@
                         "date": "2019-12-29T17:30:00+01:00",
                         "start": "17:30",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10574-human_rights_at_a_global_crossroads",
                         "title": "Human Rights at a Global Crossroads",
                         "subtitle": "Whistleblowers and the Cases of The Snowden Refugees and Edward Snowden",
@@ -2811,7 +2919,7 @@
                         "date": "2019-12-29T18:50:00+01:00",
                         "start": "18:50",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10961-boeing_737max_automated_crashes",
                         "title": "Boeing 737MAX: Automated Crashes",
                         "subtitle": "Underestimating the dangers of designing a protection system",
@@ -2836,7 +2944,7 @@
                         "date": "2019-12-29T20:50:00+01:00",
                         "start": "20:50",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11238-the_one_weird_trick_securerom_hates",
                         "title": "The One Weird Trick SecureROM Hates",
                         "subtitle": "",
@@ -2867,7 +2975,7 @@
                         "date": "2019-12-29T21:50:00+01:00",
                         "start": "21:50",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11175-hirne_hacken",
                         "title": "Hirne Hacken",
                         "subtitle": "Menschliche Faktoren der IT-Sicherheit",
@@ -2892,7 +3000,7 @@
                         "date": "2019-12-29T22:50:00+01:00",
                         "start": "22:50",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10895-15_jahre_deutsche_telematikinfrastruktur_ti",
                         "title": "15 Jahre deutsche Telematikinfrastruktur (TI)",
                         "subtitle": "Die Realität beim Arztbesuch nach 15 Jahren Entwicklung einer medizinischen Digitalstrategie",
@@ -2923,7 +3031,7 @@
                         "date": "2019-12-29T23:50:00+01:00",
                         "start": "23:50",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10935-aus_dem_schimpfworterbuch_der_neuen_rechten",
                         "title": "Aus dem Schimpfwörterbuch der neuen Rechten",
                         "subtitle": "",
@@ -2948,7 +3056,7 @@
                         "date": "2019-12-30T00:40:00+01:00",
                         "start": "00:40",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10776-hebocon",
                         "title": "Hebocon",
                         "subtitle": "The sumo robot fight for the technically ungifted",
@@ -3023,7 +3131,7 @@
                         "subtitle": "An introduction without maths",
                         "track": "Security",
                         "type": "lecture",
-                        "language": "de",
+                        "language": "en",
                         "abstract": "This talk will explain the basic building blocks of cryptography in a manner that will (hopefully) be understandable by everyone. The talk will not require any understanding of maths or computer science.\r\nIn particular, the talk will explain encryption, what it is and what it does, what it is \u003cem\u003enot\u003c/em\u003e and what it \u003cem\u003edoesn't\u003c/em\u003e do, and what other tools cryptography can offer.",
                         "description": "This talk will explain the basic building blocks of cryptography in a manner that will (hopefully) be understandable by everyone, in particular by a non-technical audience. The talk will not require any understanding of maths or computer science.\r\nThis talk will cover the following topics:\r\n\u003cul\u003e\r\n  \u003cli\u003eWhat is encryption and what does it do?\u003c/li\u003e\r\n  \u003cli\u003eWhat are the different kinds of encryption?\u003c/li\u003e\r\n  \u003cli\u003eWhat is authenticity? Are authenticity and encryption related?\u003c/li\u003e\r\n  \u003cli\u003eHow can authenticity be achieved?\u003c/li\u003e\r\n  \u003cli\u003eWhat are certificates for?\u003c/li\u003e\r\n  \u003cli\u003eWhat is TLS and what does it do?\u003c/li\u003e\r\n\u003c/ul\u003e\r\nWhile covering the above topcis, I will \u003cem\u003enot\u003c/em\u003e explain the technical details of common cryptographic schemes (like RSA, AES, HMAC and so on), in order to avoid keep this talk accessible to a broad audience.",
                         "recording_license": "",
@@ -3147,7 +3255,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10571.html",
                         "id": 10571,
                         "guid": "f01cfe55-1ef7-4c9f-84be-276730cdbef8",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/571/large/streifen.png?1577045110",
                         "date": "2019-12-29T21:50:00+01:00",
                         "start": "21:50",
                         "duration": "00:40",
@@ -3172,7 +3280,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10682.html",
                         "id": 10682,
                         "guid": "d3c6b3a2-08ae-4208-9002-332d237ef88e",
-                        "logo": "/system/events/logos/000/010/682/large/BUBSPORANGIUM.jpg?1571862501",
+                        "logo": "/system/events/logos/000/010/682/large/191217_Thumb_Sporangium_1920x1920.jpg?1577097728",
                         "date": "2019-12-29T22:50:00+01:00",
                         "start": "22:50",
                         "duration": "01:40",
@@ -3184,7 +3292,7 @@
                         "type": "lecture",
                         "language": "de",
                         "abstract": "So wie Farnpflanzen ihre Sporen aus der Kapsel mit bis zu 10m/s heraus in die Welt katapultieren, auf dass sie dort auf fruchtbaren Boden fallen, werden unsere 8 Expert*innen ihr Nerd- und Fach-Wissen weitergeben – spektakulär, wirkungsvoll und unterhaltsam. So bunt wie die besten Slams, so dicht wie die besten Lightning Talks: 8 Antworten auf die Frage, warum Techies und Ökos zusammengehören.",
-                        "description": "Bei der Bits\u0026Bäume 2018 kamen Aktivist*innen der Tech-Community und jene der Nachhaltigkeitsrichtungen zusammen, um einander ihre Fragen und Lösungsansätze zu erklären, sie zu diskutieren und gemeinsam eine bessere Zukunft zu erdenken. Wichtiger Teil war dabei auch einzutauchen in die jeweilig anderen Mikrokosmen, einander abzuholen und die Schnittstellen zu finden. Das erste \"Sporangium\" hat in diesem Sinne wichtige Themen beider Bereiche aufgegriffen. Für de C3 liegt nun der Fokus auf der Verbindung von Technologie und Nachhaltigkeit: Wie kann digitale Nachhaltigkeit, wie nachhaltige Digitalisierung aussehen?\r\n\r\nSpeaker*innen:\r\nlislis: Der Hürdenlauf für grüne Daten\r\ntba – technologische Fragen in der Entwicklungsarbeit\r\nCarina Haupt: Nachhaltige Software\r\nJulia – aktivistische Mikrozellen der Stadt\r\nviktor: Datenschutz? Klimaschutz? Zukunft!\r\ntba – technische Infrastrukturen des Aktivismus\r\nIsabella Hermann: Ökos im Weltraum? Nachhaltigkeit in Science Fiction\r\nelenos Manifesti: Bits\u0026Bäume fordert!\r\n\r\nDurchs Sporangium katapultieren wie immer julika \u0026 Rainer",
+                        "description": "Bei der Bits\u0026Bäume 2018 kamen Aktivist*innen der Tech-Community und jene der Nachhaltigkeitsrichtungen zusammen, um einander ihre Fragen und Lösungsansätze zu erklären, sie zu diskutieren und gemeinsam eine bessere Zukunft zu erdenken. Wichtiger Teil war dabei auch einzutauchen in die jeweilig anderen Mikrokosmen, einander abzuholen und die Schnittstellen zu finden. Das erste \"Sporangium\" hat in diesem Sinne wichtige Themen beider Bereiche aufgegriffen. Für de C3 liegt nun der Fokus auf der Verbindung von Technologie und Nachhaltigkeit: Wie kann digitale Nachhaltigkeit, wie nachhaltige Digitalisierung aussehen?\r\n\r\nSpeaker*innen:\r\ntba – Klimawandel?! Echt jetzt?!!!\r\ntba – technologische Fragen in der Entwicklungsarbeit\r\nCarina Haupt: Nachhaltige Softwareentwicklung (für weniger explodierende Raketen)\r\nElenos Manifesti: Wir fordern! Das Bits\u0026Bäume-Manifest\r\nIsabella Hermann: Ökos im Weltraum? Nachhaltigkeit in Science Fiction\r\njoliyea – Raum für Wissen\r\nLisa Passing: Ökostrom != Ökostrom. Down the green energy rabbit hole\r\nViktor Schlüter: Datenschutz? Klimaschutz? Zukunft!\r\n\r\n\r\nDurchs Sporangium katapultieren wie immer julika \u0026 Rainer",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -3207,7 +3315,7 @@
                             "public_name": "joliyea"
                         }, {
                             "id": 9427,
-                            "public_name": "Viktor"
+                            "public_name": "Viktor Schlüter"
                         }, {
                             "id": 3752,
                             "public_name": "Carina Haupt"
@@ -3370,8 +3478,8 @@
                         "track": "Ethics, Society \u0026 Politics",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "In September 2019, Privacy International released exclusive research on the data-sharing practices of menstruation apps. Using traffic analysis, we shed lights on the shady practices of companies that shared your most intimate data with Facebook and other third parties. In this talk we will go over the findings of this research, sharing the tools we have used and explaining why this is not just a privacy problem, but also a cybersecurity one. This talk will also be a call to action to app developers whose tools have concrete impact on the lives of their users. ",
-                        "description": "Does anyone – aside from the person you had sex with – know when you last had sex? Would you like them to know if your partner used a condom or not? Would you share the date of your last period with them? Does that person know how you feel on any particular day? Do they know about your medical history? Do they know when you masturbate? Chances are this person does not exist, as there is only so much we want to share, even with our most intimate partner. Yet this is all information that menstruation apps expect their users to fill. \r\n\r\nWith all this private information you would expect those apps to uphold the highest standards when it comes to handling the data they collect. So, Privacy International set out to look at the most commonly used menstruation apps to find out if that was the case. Using traffic analysis, we wanted to see if those apps were sharing data with third parties and Facebook in particular, through the Facebook SDK.\r\n\r\nOur research shed light on the horrific practices of some menstruation apps that shared their users’ most intimate data – about their sexual life, their health and lifestyle – with Facebook and others. \r\n\r\nIn this talk, we will take you through the research we have conducted by using Privacy International’s publicly available and free testing environment. We will briefly explain how the testing environment work and we will showcase the menstruation apps that have the most problematic practices to show you how very granular and intimate data is shared with third parties and security implications. \r\n",
+                        "abstract": "In September 2019, Privacy International released exclusive research on the data-sharing practices of menstruation apps. Using traffic analysis, we shed lights on the shady practices of companies that shared your most intimate data with Facebook and other third parties.",
+                        "description": "In this talk we will go over the findings of this research, sharing the tools we have used and explaining why this is not just a privacy problem, but also a cybersecurity one. This talk will also be a call to action to app developers whose tools have concrete impact on the lives of their users.\r\n\r\nDoes anyone – aside from the person you had sex with – know when you last had sex? Would you like them to know if your partner used a condom or not? Would you share the date of your last period with them? Does that person know how you feel on any particular day? Do they know about your medical history? Do they know when you masturbate? Chances are this person does not exist, as there is only so much we want to share, even with our most intimate partner. Yet this is all information that menstruation apps expect their users to fill. \r\n\r\nWith all this private information you would expect those apps to uphold the highest standards when it comes to handling the data they collect. So, Privacy International set out to look at the most commonly used menstruation apps to find out if that was the case. Using traffic analysis, we wanted to see if those apps were sharing data with third parties and Facebook in particular, through the Facebook SDK.\r\n\r\nOur research shed light on the horrific practices of some menstruation apps that shared their users’ most intimate data – about their sexual life, their health and lifestyle – with Facebook and others.\r\n\r\nIn this talk, we will take you through the research we have conducted by using Privacy International’s publicly available and free testing environment. We will briefly explain how the testing environment work and we will showcase the menstruation apps that have the most problematic practices to show you how very granular and intimate data is shared with third parties and security implications.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -3586,7 +3694,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10630.html",
                         "id": 10630,
                         "guid": "3be4da1b-7efd-4ab3-9f51-297c42c06d6a",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/630/large/tower.png?1576682663",
                         "date": "2019-12-29T14:10:00+01:00",
                         "start": "14:10",
                         "duration": "00:40",
@@ -3632,9 +3740,6 @@
                         "persons": [{
                             "id": 9298,
                             "public_name": "Simon Hegelich"
-                        }, {
-                            "id": 9519,
-                            "public_name": "Florina Speth"
                         }],
                         "links": [{
                             "url": "https://soundcloud.com/florinaspeth",
@@ -3799,7 +3904,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10672.html",
                         "id": 10672,
                         "guid": "afd7efb3-f594-4938-aa7f-5a42e54fbec7",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/672/large/Talk_Logo_3D_printer_Tshirts.png?1576667942",
                         "date": "2019-12-29T22:50:00+01:00",
                         "start": "22:50",
                         "duration": "00:40",
@@ -3949,7 +4054,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11030.html",
                         "id": 11030,
                         "guid": "cc3e9b8a-14e3-425a-b683-4eab463ed1bd",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/011/030/large/repair.jpg?1576772458",
                         "date": "2019-12-29T16:10:00+01:00",
                         "start": "16:10",
                         "duration": "01:00",
@@ -3967,6 +4072,9 @@
                         "persons": [{
                             "id": 8992,
                             "public_name": "Anja Höfner"
+                        }, {
+                            "id": 9067,
+                            "public_name": "Nicolas Guenot"
                         }],
                         "links": [],
                         "attachments": []
@@ -4019,7 +4127,7 @@
                         "track": "Art \u0026 Culture",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "This is a technical, artistic, theoretical reflection on how we use technology to run and experiment with decentralised chaos festivals. We will look into implementations / realisations and talk about how they influenced our way of discussing and producing art and technology. Finally we will discuss p2panda, an idea of a p2p protocol for (self-)organising resources, places and events, which is based on the SSB protocol.",
+                        "abstract": "Festivals and events are organized by a small group of deciders. But what would Eris do? (chaos!) We will look at some of our experiences with decentralised festivals where every participant can truly participate, reflect on how they influence our way of discussing and producing art and technology and discuss p2panda, an idea of a p2p protocol for (self-)organising resources, places and events, which is based on the SSB protocol.",
                         "description": "\u003cp\u003eThis is a technical, artistic, theoretical reflection on how we use technology to run and experiment with decentralised festivals. VERANTWORTUNG 3000 (2016), HOFFNUNG 3000 (2017) and now p2panda are platforms and protocols to setup groups, festivals, gatherings, events or spaces in a decentralised, self-organised manner which allow us to raise questions on how we organise ourselves in our social, artistic \u0026 theoretical communities.\u003c/p\u003e\r\n\r\n\u003cp\u003eIn this presentation we want to:\u003c/p\u003e\r\n\r\n\u003cul\u003e\r\n\u003cli\u003eShow work and reflection processes of BLATT 3000 and Liebe Chaos Verein e. V. i. G. in Berlin on how technology informs art production and how these systemic \"meta\"-questions can be made the actual means of art, theory and discussion.\u003c/li\u003e\r\n\r\n\u003cli\u003eIntroduce some technical key-concepts of the p2panda protocol and how offline-first, append-only data-types, user authorization through cryptographic keys are interesting for ephemerality, self-organization, non-individuality, decentralization and anonymity in art and theory production.\u003c/li\u003e\r\n\r\n\u003cli\u003ePresent fictional ideas for festivals of the future.\u003c/li\u003e\r\n\r\n\u003cli\u003eTalk about pandas.\u003c/li\u003e\r\n\u003c/ul\u003e",
                         "recording_license": "",
                         "do_not_record": false,
@@ -4031,7 +4139,7 @@
                             "public_name": "sophiiistika"
                         }, {
                             "id": 9483,
-                            "public_name": "Vincent Ahrend"
+                            "public_name": "cafca"
                         }],
                         "links": [{
                             "url": "https://github.com/p2panda/design-document",
@@ -4043,10 +4151,7 @@
                             "url": "https://liebechaos.org/",
                             "title": "Liebe Chaos Verein e. V."
                         }],
-                        "attachments": [{
-                            "url": "/attachments/original/missing.png",
-                            "title": "file"
-                        }]
+                        "attachments": []
                     }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10890.html",
                         "id": 10890,
@@ -4145,18 +4250,18 @@
                 "day_start": "2019-12-30T11:00:00+01:00",
                 "day_end": "2019-12-30T19:00:00+01:00",
                 "rooms": {
-                    "Adams": [{
+                    "Ada": [{
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10879.html",
                         "id": 10879,
                         "guid": "8cd18c98-4e30-4f3c-ab82-90178e7076ad",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/879/large/hal_9000_by_johnnyslowhand_1_.png?1576657105",
                         "date": "2019-12-30T11:30:00+01:00",
                         "start": "11:30",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10879-hal_-_the_open-source_hardware_analyzer",
                         "title": "HAL - The Open-Source Hardware Analyzer",
-                        "subtitle": "",
+                        "subtitle": "A dive into the foundations of hardware reverse engineering and our netlist analysis framework HAL",
                         "track": "Hardware \u0026 Making",
                         "type": "lecture",
                         "language": "en",
@@ -4181,7 +4286,7 @@
                         "date": "2019-12-30T12:50:00+01:00",
                         "start": "12:50",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10976-understanding_millions_of_gates",
                         "title": "Understanding millions of gates ",
                         "subtitle": "Introduction to IC reverse engineering for non-chip-reverse-engineers. ",
@@ -4206,7 +4311,7 @@
                         "date": "2019-12-30T13:50:00+01:00",
                         "start": "13:50",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11218-weichenstellung",
                         "title": "Weichenstellung",
                         "subtitle": "In welcher digitalen Welt werden wir leben?",
@@ -4231,7 +4336,7 @@
                         "date": "2019-12-30T15:10:00+01:00",
                         "start": "15:10",
                         "duration": "00:40",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-10496-das_mauern_muss_weg",
                         "title": "Das Mauern muss weg",
                         "subtitle": "Best of Informationsfreiheit",
@@ -4256,7 +4361,7 @@
                         "date": "2019-12-30T16:10:00+01:00",
                         "start": "16:10",
                         "duration": "01:00",
-                        "room": "Adams",
+                        "room": "Ada",
                         "slug": "36c3-11164-security_nightmares_0x14",
                         "title": "Security Nightmares 0x14",
                         "subtitle": "Was Sie schon immer nicht über darüber wissen wollten wer Ihre Geräte wirklich kontrolliert.",
@@ -4284,18 +4389,24 @@
                         "date": "2019-12-30T17:20:00+01:00",
                         "start": "17:20",
                         "duration": "00:30",
-                        "room": "Adams",
-                        "slug": "36c3-11224-closing_ceremony",
-                        "title": "Closing Ceremony",
+                        "room": "Ada",
+                        "slug": "36c3-11224-closing_ceremony_de",
+                        "title": "Closing Ceremony (de)",
                         "subtitle": "",
                         "track": "CCC",
                         "type": "lecture",
-                        "language": "en",
+                        "language": "de",
                         "abstract": "",
                         "description": "",
                         "recording_license": "",
                         "do_not_record": false,
-                        "persons": [],
+                        "persons": [{
+                            "id": 9891,
+                            "public_name": "bleeptrack"
+                        }, {
+                            "id": 6697,
+                            "public_name": "blinry"
+                        }],
                         "links": [],
                         "attachments": []
                     }],
@@ -4368,13 +4479,13 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10666.html",
                         "id": 10666,
                         "guid": "325622ae-8785-47f3-81f5-fe62db3209e7",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/666/large/BatRecLau-Cover-white.jpg?1577030760",
                         "date": "2019-12-30T15:10:00+01:00",
                         "start": "15:10",
                         "duration": "00:40",
                         "room": "Borg",
-                        "slug": "36c3-10666-nach_der_braunkohle_li-io_batterierecycling",
-                        "title": "Nach der Braunkohle: Li-Io Batterierecycling",
+                        "slug": "36c3-10666-wandel_im_braunkohlerevier_lithium-ionen-batterierecycling",
+                        "title": "Wandel im Braunkohlerevier: Lithium-Ionen-Batterierecycling",
                         "subtitle": "Eine industrielle Perspektive für die Lausitz?",
                         "track": "Science",
                         "type": "lecture",
@@ -4391,7 +4502,10 @@
                             "url": "https://www.otto-brenner-stiftung.de/stiftung-neue-laender-snl/projektergebnisse-der-snl/petitel/studie-batterie-recycling-als-beschaeftigungs-perspektive-fuer-die-lausitz/peaktion/show/pecon/Projectresults/",
                             "title": "2018/12 | Studie \"Batterie-Recycling als Beschäftigungsperspektive für die Lausitz\""
                         }],
-                        "attachments": []
+                        "attachments": [{
+                            "url": "/system/event_attachments/attachments/000/004/035/original/Batt_Rec_Lau_Leipzig_123019.pptx?1577031864",
+                            "title": "Batt_Rec_Lau_PPP_Folien"
+                        }]
                     }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11235.html",
                         "id": 11235,
@@ -4456,7 +4570,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10919.html",
                         "id": 10919,
                         "guid": "2fb147d5-27be-49a4-a85c-998940f3ae46",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/919/large/nopnreu_logo.png?1576657717",
                         "date": "2019-12-30T12:30:00+01:00",
                         "start": "12:30",
                         "duration": "00:40",
@@ -4544,7 +4658,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11178.html",
                         "id": 11178,
                         "guid": "9af057bd-eb94-41f6-8005-f322ecf66662",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/011/178/large/fck.PNG?1576712719",
                         "date": "2019-12-30T11:30:00+01:00",
                         "start": "11:30",
                         "duration": "00:40",
@@ -4556,7 +4670,7 @@
                         "type": "lecture",
                         "language": "en",
                         "abstract": "Currently Facebook has a tight grip on the cultural scene with its events-calendar and with Instagram as a spectacular image feed. But there is graffiti in the ruins of the feed and the party-info-capital is emigrating. The talk calls upon the critical net scene to contribute arguments and skills - theory and practice - in order to build bridges and include many.",
-                        "description": "Currently Facebook has a tight grip on the cultural scene with its events-calendar and with Instagram as a spectacular image feed. Even the leftist-critical scene of alternative culture and protests is busy contributing for the sake of outreach. Their contributions feed the filter systems, and profiling and affect loops run hot.\r\n\u003cbr\u003e\r\nBut an opposition is rising. Graffiti and net-art are merging with hacking. Activists in Berlin, Paris, Rio and Sao Paulo are using facebook graffiti, through circulating UTF-8 textbombs that cross the layout of the feed (Check the wiki for workshop materials from 34C3).\r\n\u003cbr\u003e\r\nThe Berlin network Reclaim Club Culture meanwhile is calling for a Facebook Exodus (CCCamp2019). They want to motivate the club and cultural scene to support free alternatives, by moving their biggest information capital, which are the event announcements. Once the information monopoly is cut through, maybe more people will make the step to leave the platform they don't even like anymore.\r\n\u003cbr\u003e\r\nAll of this is part of a bigger network of refusal, from Fuck Off Google (31C3) to Facebook Resistance Artists. The talk calls upon the critical net scene to contribute arguments and skills - theory and practice - in order to build bridges and include many.",
+                        "description": "Currently Facebook has a tight grip on the cultural scene with its events-calendar and with Instagram as a spectacular image feed. Even the leftist-critical scene of alternative culture and protests is busy contributing for the sake of outreach. Their contributions feed the filter systems, and profiling and affect loops run hot.\r\nBut an opposition is rising. Graffiti and net-art are merging with hacking. Activists in Berlin, Paris, Rio and Sao Paulo are using facebook graffiti, through circulating UTF-8 textbombs that cross the layout of the feed (Check the wiki for workshop materials from 34C3).\r\nThe Berlin network Reclaim Club Culture meanwhile is calling for a Facebook Exodus (CCCamp2019). They want to motivate the club and cultural scene to support free alternatives, by moving their biggest information capital, which are the event announcements. Once the information monopoly is cut through, maybe more people will make the step to leave the platform they don't even like anymore.\r\nAll of this is part of a bigger network of refusal, from Fuck Off Google (31C3) to Facebook Resistance Artists. The talk calls upon the critical net scene to contribute arguments and skills - theory and practice - in order to build bridges and include many.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -4726,5 +4840,5 @@
             }]
         }
     },
-    "timestamp": "2019-12-19T16:34:29.191Z"
+    "timestamp": "2019-12-23T17:34:29.191Z"
 }
