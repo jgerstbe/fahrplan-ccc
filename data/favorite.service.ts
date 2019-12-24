@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
+import { forkJoin } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -9,6 +10,7 @@ export class FavoriteService {
   jsonbox:string = 'https://jsonbox.io/box_8d91a03c191deec9b3b0/';
   public favorites: string[] = [];
   public friends: string[] = [];
+  public localFriends: Map<string, string> = new Map();
   public friendsNicks: Map<string, string> = new Map();
   public uuid:string = '';
   public nickname:string = '';
@@ -55,12 +57,20 @@ export class FavoriteService {
             this.favorites = data.favorites && data.favorites.length > 0 ? data.favorites : [];
             this.friends = data.friends && data.friends.length > 0 ? data.friends : [];
             this.friendsNicks = data.friendsNicks && data.friendsNicks.length > 0 ? new Map(data.friendsNicks) : new Map();
+            // load friends data
+            this.loadAllFriends().subscribe(
+              (data) => {},
+              (error) => console.error('loadAllFriends', error)
+            );
           },
           (error) => {
             console.error('Could not load data.', error);
             loadLocal();
           }
         )
+      } else {
+        console.warn('HAD NO SYNC ACC');
+        this.save();
       }
     } else {
       loadLocal();
@@ -90,8 +100,10 @@ export class FavoriteService {
       } else {
         this.http.post(this.jsonbox, data).subscribe(
           (data:any) => {
-            console.log('SAVE', data);
-            localStorage.setItem('fpccc_uuid', data._id)
+            console.log('CREATE + SAVE', data);
+            localStorage.setItem('fpccc_uuid', data._id);
+            this.uuid = data._id;
+            this.nickname = data.nickname;
           },
           (error) => console.error('Could not save data.', error)
         )
@@ -119,8 +131,14 @@ export class FavoriteService {
     return this.http.get(this.jsonbox+friendsUuid).pipe(
       tap((friend:any) => {
         this.friendsNicks.set(friend._id, friend.nickname);
+        this.localFriends.set(friend._id, friend);
       })
     );
+  }
+
+  loadAllFriends() {
+    const obs = this.friends.map((f:any) => this.loadFriendsFavorites(f));
+    return forkJoin(obs);
   }
 
 }

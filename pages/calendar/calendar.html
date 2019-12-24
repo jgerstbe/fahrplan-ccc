@@ -27,6 +27,8 @@
           <span [ngStyle]="{color: tracks[room.track]}">
             {{room.track}}
           </span>
+          <br>
+          <i>{{friendsInSession(room.guid)}}</i>
         </ion-label>
     </ion-item>
   </ion-list>

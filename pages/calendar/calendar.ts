@@ -42,4 +42,14 @@ export class CalendarPage {
     profileModal.present();
   }
 
+  friendsInSession(sessId:string) {
+    let nameList = [];
+    this.favoriteService.localFriends.forEach((friend:any) => {
+      if (friend.favorites.indexOf(sessId) !== -1) {
+        nameList.push(friend.nickname);
+      }
+    });
+    return nameList.join(', ')
+  }
+
 }
