@@ -50,5 +50,9 @@
       <span [ngStyle]="{color: tracks[event.track]}">{{event.track}}</span>
       <!-- <ion-icon name="bookmark" [ngStyle]="{color: tracks[event.track]}" title="{{event.track}}"></ion-icon>  -->
     </ion-item>
+    <ion-item-divider color="light">Friends</ion-item-divider>
+    <ion-item>
+      {{favoriteService.friendsInSession(event.guid) || 'No friends are attending this session.'}}
+    </ion-item>
   </ion-list>
 </ion-content>
