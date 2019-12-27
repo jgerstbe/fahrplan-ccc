@@ -1,6 +1,6 @@
 {
     "schedule": {
-        "version": "dd",
+        "version": "hexdump",
         "base_url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/",
         "conference": {
             "acronym": "36c3",
@@ -24,8 +24,8 @@
                         "start": "11:00",
                         "duration": "00:30",
                         "room": "Ada",
-                        "slug": "36c3-11223-opening_ceremony_de",
-                        "title": "Opening Ceremony (de)",
+                        "slug": "36c3-11223-opening_ceremony",
+                        "title": "Opening Ceremony",
                         "subtitle": "",
                         "track": "CCC",
                         "type": "lecture",
@@ -83,15 +83,18 @@
                         "track": "Security",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "It is easier to chat online securely today than it ever has been. Widespread adoption of signal, wire, and the private mode of WhatsApp have led a broader recognition of the importance of end-to-end encryption. There's still plenty of work to be done in finding new designs that balance privacy and usability in online communication.\r\n\r\nThis introduction to secure messaging will lay out the different risks that are present in communications, and talk about the projects and techniques under development to do better.",
-                        "description": "The talk will begin with a threat modeling exercise to be able to concretely talk about the different actors and potential risks that a secure messaging system can attempt to address. From there, we'll dive into end-to-end encryption, OTR and deniability, and then the axolotl construction used by Signal (and now the noise framework).\r\n\r\nThe bulk of the talk will focus on the rest of the problem which is more in-progress, and in particular consider the various metadata risks around communication. We'll survey the problems that can arise around contact discovery, network surveillance, and server compromise. In doing so, we'll look at the forays into communication systems that attempt to address these issues. Pond offered a novel design point for discovery and a global network adversary. Katzenpost adapts mixnets to limit the power of network adversaries and server compromise in a different way. Private Information Retrieval (PIR) trades off high server costs for a scheme that could more realistically work with mobile clients. Others, for instance Secure Scuttlebutt attempt to remove the need for infrastructural servers entirely with gossip and partial views of the network, a whole other set of tradeoffs.",
+                        "abstract": "It is easier to chat online securely today than it ever has been. Widespread adoption of signal, wire, and the private mode of WhatsApp have led a broader recognition of the importance of end-to-end encryption. There's still plenty of work to be done in finding new designs that balance privacy and usability in online communication.",
+                        "description": "This introduction to secure messaging will lay out the different risks that are present in communications, and talk about the projects and techniques under development to do better.\r\n\r\nThe talk will begin with a threat modeling exercise to be able to concretely talk about the different actors and potential risks that a secure messaging system can attempt to address. From there, we'll dive into end-to-end encryption, OTR and deniability, and then the axolotl construction used by Signal (and now the noise framework).\r\n\r\nThe bulk of the talk will focus on the rest of the problem which is more in-progress, and in particular consider the various metadata risks around communication. We'll survey the problems that can arise around contact discovery, network surveillance, and server compromise. In doing so, we'll look at the forays into communication systems that attempt to address these issues. Pond offered a novel design point for discovery and a global network adversary. Katzenpost adapts mixnets to limit the power of network adversaries and server compromise in a different way. Private Information Retrieval (PIR) trades off high server costs for a scheme that could more realistically work with mobile clients. Others, for instance Secure Scuttlebutt attempt to remove the need for infrastructural servers entirely with gossip and partial views of the network, a whole other set of tradeoffs.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
                             "id": 4821,
                             "public_name": "Will Scott"
                         }],
-                        "links": [],
+                        "links": [{
+                            "url": "https://wills.co.tt/bitbucket/36c3/messaging.pdf",
+                            "title": "Slides"
+                        }],
                         "attachments": []
                     }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10497.html",
@@ -142,7 +145,7 @@
                             "public_name": "Martin Tschirsich"
                         }, {
                             "id": 9376,
-                            "public_name": "cbro"
+                            "public_name": "cbro - Dr. med. Christian Brodowski"
                         }, {
                             "id": 9406,
                             "public_name": "Dr. André Zilch"
@@ -193,7 +196,7 @@
                         "type": "lecture",
                         "language": "de",
                         "abstract": "Der Europäische Menschenrechtsgerichtshof beschäftigt sich nun schon seit Jahren mit der Frage, ob die durch Edward Snowden öffentlich bekanntgewordene geheimdienstliche Massenüberwachung mit der Europäischen Menschenrechtskonvention kompatibel ist. Wie ist der Stand der Dinge?",
-                        "description": "Dieses Jahr gab es zwei neuerliche Anhörungen in Straßburg, die sich mit der britischen und schwedischen Massenüberwachung durch die Geheimdienste auseinandersetzten. Im Vortrag werden die bisher gefällten Urteile und die neuen vorgetragenen Argumente beleuchtet.\r\n\r\nInsbesondere der britische Fall ist das erste Mal, dass der Gerichtshof nicht nur die Massenüberwachung an der Menschenrechtskonvention misst, sondern auch das Datenkarussell zwischen den Geheimdiensten, namentlich dem GCHQ und der NSA.\r\n\r\nOffenlegung: Ich bin eine der Beschwerdeführerinnen in dem britischen Fall.",
+                        "description": "Dieses Jahr gab es zwei neuerliche Anhörungen in Straßburg, die sich mit der britischen und schwedischen Massenüberwachung durch die Geheimdienste auseinandersetzten. Im Vortrag werden die bisher gefällten Urteile und die neuen vorgetragenen Argumente beleuchtet.\r\n\r\nInsbesondere der britische Fall ist das erste Mal, dass der Gerichtshof nicht nur die Massenüberwachung an der Menschenrechtskonvention misst, sondern auch das Datenkarussell zwischen den Geheimdiensten, namentlich dem GCHQ und der NSA.\r\n\r\nWegen der schon Mitte Januar vom Bundesverfassungsgericht anberaumten mündlichen Anhörung zum BND-Gesetz wird sich ein Teil des Vortrags auch mit der deutschen geheimdienstlichen Massenüberwachung beschäftigen. Der CCC hat eine Stellungnahme zur Ausland-Ausland-Fernmeldeaufklärung abgegeben, deren Inhalt kurz zusammengefasst wird.\r\n\r\nOffenlegung: Ich bin eine der Beschwerdeführerinnen in dem britischen Fall.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -291,8 +294,8 @@
                         "id": 11177,
                         "guid": "d1b8ed3f-2c22-47d2-9aca-0f9d3cf48eb8",
                         "logo": "/system/events/logos/000/011/177/large/events_logos_000_009_007_large_1567.png?1572194778",
-                        "date": "2019-12-28T00:30:00+01:00",
-                        "start": "00:30",
+                        "date": "2019-12-28T00:50:00+01:00",
+                        "start": "00:50",
                         "duration": "02:00",
                         "room": "Ada",
                         "slug": "36c3-11177-hacker_jeopardy",
@@ -355,14 +358,14 @@
                         "start": "12:50",
                         "duration": "01:00",
                         "room": "Borg",
-                        "slug": "36c3-10957-katastrophe_und_kommunikation_am_beispiel_rojava",
-                        "title": "Katastrophe und Kommunikation am Beispiel Rojava",
+                        "slug": "36c3-10957-katastrophe_und_kommunikation_am_beispiel_nord-ost-syrien",
+                        "title": "Katastrophe und Kommunikation am Beispiel Nord-Ost-Syrien",
                         "subtitle": "Humanitäre Hilfe zwischen Propaganda, Information und Spendenwerbung",
                         "track": "Ethics, Society \u0026 Politics",
                         "type": "lecture",
                         "language": "de",
-                        "abstract": "Katastrophen, Krisen \u0026 Kriege lassen sich heute live mitverfolgen. Wir erleben eine kaum überblickbare Quellendiversität in den sozialen Medien – jeder wird zur Quelle. Welchen Einfluss hat das darauf, wie ein Konflikt wahrgenommen wird, wie setzen Konfliktparteien aber auch Helfende die sozialen Medien ein und was bedeutet das für Diejenigen, die vor Ort humanitäre Hilfe leisten. Wir diskutieren dies anhand des türkischen Überfalls auf Rojava. ",
-                        "description": "Katastrophen, Krisen \u0026 Kriege lassen sich heute live mitverfolgen. Wir erleben eine kaum überblickbare Quellendiversität in den sozialen Medien – jeder wird zur Quelle. Welchen Einfluss hat das darauf, wie ein Konflikt wahrgenommen wird, wie setzen Konfliktparteien aber auch Helfende die sozialen Medien ein und was bedeutet das für Diejenigen, die vor Ort humanitäre Hilfe leisten. Wir diskutieren dies anhand des türkischen Überfalls auf Rojava.\r\n\r\nFand Live-Berichterstattung aus Kriegsgebieten zu Zeiten des 2. Golfkrieges noch überwiegend durch ein paar wenige Journalist*innen, oft “embedded” statt, die für CNN\u0026Co im grünlichen Nachtsicht-Look aus dem Panzer berichteten, kann in den sozialen Medien heute jede*r zur Quelle werden. Auf diese Weise gelangt die Öffentlichkeit an Informationen die vorher nur sehr schwer zu bekommen gewesen wären \u0026 schon gar nicht in Echtzeit.\r\n\r\nDie Quellenvielfalt birgt große Chancen für die Bewertung einer Lage und auch zur Überprüfung von Informationen durch mehrere Quellen oder Image Reverse Suche. Gleichzeitig verbreiten sich Gerüchte und Falschinformationen ebenfalls sehr viel schneller. Zudem können soziale Medien auch gezielt, etwa von Kriegsparteien manipuliert werden. Die Türkei setzte neben Deutschen Panzern etwa auch Bot-Armeen ein, im Ergebnis: Zwar verurteilte ein großteil der Welt den türkischen Einmarsch in Rojava, aber Twitter-Hashtags zeichneten zeitweilig ein ganz anderes Bild. Gleichzeitig kann es schon auch mal passieren, dass Türkei nahe Djihadistische Gruppen ausversehen selbst Videos ihrer Kriegsverbrechen prahlerisch ins Netz stellen.\r\n\r\nWas bedeutet all das für humanitäre Helfende vor Ort, die Twitter \u0026 co mittlerweile nicht nur zur Spendenwerbung sondern auch zur Lagebewertung nutzen: Wie kann man in der Praxis damit umgehen, dass sich auf Twitter gegebenenfalls ein ganz anderes Bild zeichnet als vor Ort und vor allem: Welches davon ist näher an der Realität?\r\n\r\nDarum geht es in diesem Talk am Beispiel des Türkischen Überfalls auf Rojava, von Sebastian Jünemann und Ruben Neugebauer von der Hilfsorganisation Cadus, die vor Ort mit mehreren, im wesentlichen medizinischen Projekten aktiv war. Außerdem werden wir klären wie man sich per Selfie bequem ins Jenseits befördern kann und was sonst noch so für die persönliche Sicherheit zu beachten ist, im Umgang mit modernen Medien in Kriegsgebieten.\r\n\r\n\r\n",
+                        "abstract": "Katastrophen, Krisen \u0026 Kriege lassen sich heute live mitverfolgen. Wir erleben eine kaum überblickbare Quellendiversität in den sozialen Medien – jeder wird zur Quelle. Welchen Einfluss hat das darauf, wie ein Konflikt wahrgenommen wird, wie setzen Konfliktparteien aber auch Helfende die sozialen Medien ein und was bedeutet das für Diejenigen, die vor Ort humanitäre Hilfe leisten. Wir diskutieren dies anhand des türkischen Überfalls auf Nord-Ost-Syrien gemeinsam mit Fee Baumann von Heyva Sor A Kurd, live aus Nord-Ost-Syrien",
+                        "description": "Katastrophen, Krisen \u0026 Kriege lassen sich heute live mitverfolgen. Wir erleben eine kaum überblickbare Quellendiversität in den sozialen Medien – jeder wird zur Quelle. Welchen Einfluss hat das darauf, wie ein Konflikt wahrgenommen wird, wie setzen Konfliktparteien aber auch Helfende die sozialen Medien ein und was bedeutet das für Diejenigen, die vor Ort humanitäre Hilfe leisten. Wir diskutieren dies anhand des türkischen Überfalls auf Nord-Ost-Syrien.\r\n\r\nFand Live-Berichterstattung aus Kriegsgebieten zu Zeiten des 2. Golfkrieges noch überwiegend durch ein paar wenige Journalist*innen, oft “embedded” statt, die für CNN\u0026Co im grünlichen Nachtsicht-Look aus dem Panzer berichteten, kann in den sozialen Medien heute jede*r zur Quelle werden. Auf diese Weise gelangt die Öffentlichkeit an Informationen die vorher nur sehr schwer zu bekommen gewesen wären \u0026 schon gar nicht in Echtzeit.\r\n\r\nDie Quellenvielfalt birgt große Chancen für die Bewertung einer Lage und auch zur Überprüfung von Informationen durch mehrere Quellen oder Image Reverse Suche. Gleichzeitig verbreiten sich Gerüchte und Falschinformationen ebenfalls sehr viel schneller. Zudem können soziale Medien auch gezielt, etwa von Kriegsparteien manipuliert werden. Die Türkei setzte neben Deutschen Panzern etwa auch Bot-Armeen ein, im Ergebnis: Zwar verurteilte ein großteil der Welt den türkischen Einmarsch in Nord-Ost-Syrien, aber Twitter-Hashtags zeichneten zeitweilig ein ganz anderes Bild. Gleichzeitig kann es schon auch mal passieren, dass Türkei nahe Djihadistische Gruppen ausversehen selbst Videos ihrer Kriegsverbrechen prahlerisch ins Netz stellen.\r\n\r\nWas bedeutet all das für humanitäre Helfende vor Ort, die Twitter \u0026 co mittlerweile nicht nur zur Spendenwerbung sondern auch zur Lagebewertung nutzen: Wie kann man in der Praxis damit umgehen, dass sich auf Twitter gegebenenfalls ein ganz anderes Bild zeichnet als vor Ort und vor allem: Welches davon ist näher an der Realität?\r\n\r\nDarum geht es in diesem Talk am Beispiel des Türkischen Überfalls auf Nord-Ost-Syrien, von Sebastian Jünemann und Ruben Neugebauer von der Hilfsorganisation Cadus, die vor Ort mit mehreren, im wesentlichen medizinischen Projekten aktiv war, sowie Fee Baumann von der Organisation Heyvasor a Kurd, dem kurdischen roten Halbmond. Außerdem werden wir klären wie man sich per Selfie bequem ins Jenseits befördern kann und was sonst noch so für die persönliche Sicherheit zu beachten ist, im Umgang mit modernen Medien in Kriegsgebieten.\r\n\r\n\r\n",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -520,9 +523,6 @@
                         "persons": [{
                             "id": 9225,
                             "public_name": "f1yyy"
-                        }, {
-                            "id": 9226,
-                            "public_name": "Hanqing Zhao"
                         }],
                         "links": [],
                         "attachments": []
@@ -789,7 +789,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11031.html",
                         "id": 11031,
                         "guid": "d1d0c29a-a8c3-4c96-b98e-3823b3d27902",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/011/031/large/Logo.jpeg?1577136387",
                         "date": "2019-12-27T22:10:00+01:00",
                         "start": "22:10",
                         "duration": "01:00",
@@ -875,7 +875,7 @@
                         "track": "Security",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "Is the way we run services these days sustainable? The trusted computing base -- the lines of code where, if a flaw is discovered, jeopardizes the security and integrity of the entire service -- is enormous. Using orchestration systems that contain millions of lines of code, and that execute shell code, does not decrease this. This talk will present an alternative, minimalist approach to secure network services - relying on a programming language that guarantees memory safety - composing small libraries (open source, permissively licensed) to build so-called MirageOS unikernels -- special purpose services. Besides web services, other digital infrastructure such as VPN gateway, calendar server, DNS server and resolver, and a minimalistic orchestration system, will be presented. Each unikernel can either run as virtual machine (KVM, Xen, BHyve, virtio), as a sandboxed process (with seccomp filters allowing only 8 system calls), or in smaller containments (GenodeOS, muen separation kernel) -- even a prototypical ESP32 backend is available.",
+                        "abstract": "Is the way we run services these days sustainable? The trusted computing base -- the lines of code where, if a flaw is discovered, jeopardizes the security and integrity of the entire service -- is enormous. Using orchestration systems that contain millions of lines of code, and that execute shell code, does not decrease this. This talk will present an alternative, minimalist approach to secure network services - relying on OCaml, a programming language that guarantees memory safety - composing small libraries (open source, permissively licensed) to build so-called MirageOS unikernels -- special purpose services. Besides web services, other digital infrastructure such as VPN gateway, calendar server, DNS server and resolver, and a minimalistic orchestration system, will be presented. Each unikernel can either run as virtual machine (KVM, Xen, BHyve, virtio), as a sandboxed process (seccomp which whitelists only 8 system calls), or in smaller containments (GenodeOS, muen separation kernel) -- even a prototypical ESP32 backend is available.",
                         "description": "Starting with an operating system from scratch is tough, lots of engineering hours have been put into the omnipresent ones. Reducing the required effort by declaring certain subsystems being out of scope -- e.g. hardware drivers, preemptive multitasking, multicore -- decreases the required person-power.\r\n\r\nThe MirageOS project started as research project more than a decade ago at the University of Cambridge, as a minimal guest for Xen written in the functional programming language OCaml. Network protocols (TCP/IP, DHCP, TLS, DNS, ..), a branchable immutable store (similar and interoperable with git) are available. The trusted computing base is roughly two orders of magnitude smaller than contemporary operating systems. The performance is in the same ballpark as conventional systems. The boot time is measured in milliseconds instead of seconds.\r\n\r\nNot only the binary size of a unikernel image is much smaller, also the required resources are smaller: memory usage easily drops by a factor of 25, CPU usage drops by a factor of 10.\r\n\r\nMore recently we focused on deployment: integration of logging, metrics (influx, grafana), an orchestration system (remote deployment via a TLS handshake, offers console access and an event log) for multi-tenant systems (policies are encoded in the certificate chain).\r\n\r\nWe are developing, mostly thanks to public funding, various useful services: a CalDAV server storing its content in a remote git repository, an OpenVPN client and server, DNS resolver and server (storing zone files in a remote git repository) with let's encrypt integration, a firewall for QubesOS, image viewer mainly for QubesOS, ...\r\n\r\nThe experience while developing such a huge project is that lots of components can be developed and tested by separate groups - and even used in a variety of different applications. The integration of the components is achieved in a type-safe way with module types in OCaml. This means that lots of errors are caught by the compiler, instead of at runtime.",
                         "recording_license": "",
                         "do_not_record": false,
@@ -886,8 +886,20 @@
                         "links": [{
                             "url": "https://mirage.io",
                             "title": "MirageOS website"
+                        }, {
+                            "url": "https://hannes.nqsb.io",
+                            "title": "Blog with articles and tutorials"
+                        }, {
+                            "url": "https://robur.coop",
+                            "title": "robur"
+                        }, {
+                            "url": "https://ocaml.org",
+                            "title": "OCaml"
                         }],
-                        "attachments": []
+                        "attachments": [{
+                            "url": "/system/event_attachments/attachments/000/004/050/original/talk.pdf?1577440685",
+                            "title": "slides.7.pdf"
+                        }]
                     }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10703.html",
                         "id": 10703,
@@ -1114,44 +1126,53 @@
                             "url": "https://research.checkpoint.com/select-code_execution-from-using-sqlite/",
                             "title": "A detailed whitepaper of the vulnerabilities and exploitation technique "
                         }],
-                        "attachments": []
+                        "attachments": [{
+                            "url": "/system/event_attachments/attachments/000/004/053/original/36C3-SQLite3-OmerGull.pdf?1577457573",
+                            "title": "36C3-SQLite3-OmerGull.pdf"
+                        }]
                     }],
                     "Eliza": [{
-                        "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11239.html",
-                        "id": 11239,
-                        "guid": "0d0cb392-278b-4b74-abfc-58a87a38a074",
-                        "logo": "/system/events/logos/000/011/239/large/amz_2.png?1576581694",
+                        "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11247.html",
+                        "id": 11247,
+                        "guid": "bfe5b7b4-8b06-4cce-b979-5a6c0b4995f3",
+                        "logo": null,
                         "date": "2019-12-27T11:30:00+01:00",
                         "start": "11:30",
                         "duration": "01:00",
                         "room": "Eliza",
-                        "slug": "36c3-11239-environmental_impact_of_surveillance_adtech_and_legacy_code",
-                        "title": "Environmental impact of Surveillance, Adtech and Legacy Code",
-                        "subtitle": "The hidden economic and environmental costs of user monetization processes",
-                        "track": "Art \u0026 Culture",
+                        "slug": "36c3-11247-technical_aspects_of_the_surveillance_in_and_around_the_ecuadorian_embassy_in_london",
+                        "title": "Technical aspects of the surveillance in and around the Ecuadorian embassy in London",
+                        "subtitle": "Details about the man hunt for Julian Assange and Wikileaks",
+                        "track": "CCC",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "During this talk, Joana will reveal the hidden economic and\r\nenvironmental costs of user monetization processes taking Amazon as a case study.",
-                        "description": "This talk will shed light on the often unacknowledged but aggressive exploitation of online users, embedded at the core of the so-called internet companies’ business strategies. Such strategies rely on apparently neutral, personalized user experiences afforded by attractive interfaces. These interfaces obfuscate sophisticated business models embedded in endless pages of indecipherable code, all of which are activated by user labor. In turn, these strategies have a significant energy cost, part of which is involuntarily assumed by the user. To put it bluntly, the user is not just exploited by means of their free labor but is also forced to assume the energy costs of such exploitation. ",
+                        "abstract": "The talk explains and illustrates the procedural and technical details of the surveillance in and around the Ecuadorian embassy in London during the time Julian Assange stayed in there from June 2012 until April 2019. ",
+                        "description": "In the aftermath of Assange's expel from the ecuadorian embassy in London and his arrest based on a US extradition warrant evidence appeared that the \"Security\" measures of the embassy had at some point switched from protecting Assange and the embassy to an extremely detailled surveillance operation both against Assange and his visitors. The Spanish company \"Undercover Global\" that has been in charge of the embassy between 2015 and April 2018 and its owner and CEO is under investigation for spying on behalf of the CIA. Material from the second company that has taken over the embassy \"Security\" in April 2018 has found its way into an attempted extortion and is also subject to a legal investigation.\r\n\r\nThe talk will contain material both documenting the surveillance measures installed as well as audio and video material obtained by the surveillance gear. It will also briefly touch on surveillance measures experienced elsewhere by friends, lawyers, media partners and associates of Assange and Wikileaks in the context of the ongoing man hunt.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
-                            "id": 6683,
-                            "public_name": "Joana Moll"
+                            "id": 1752,
+                            "public_name": "andy"
                         }],
                         "links": [{
-                            "url": "http://www.janavirgin.com/index.html",
-                            "title": "Main website"
+                            "url": "https://osint.info/index.php?title=UNDERCOVER_GLOBAL_S.L.",
+                            "title": "Undercover Global S.L. - a spanish company - worked both for the ecuadorian Government and other interested parties and did \"security\" in the Embassy from 2015 till 2018"
+                        }, {
+                            "url": "https://osint.info/index.php?title=PROMSECURITY",
+                            "title": "Prom Security - an ecudorian company - took over the embassy \"security\" from April 2018"
+                        }, {
+                            "url": "https://osint.info/index.php?title=ASSANGE,_JULIAN",
+                            "title": "Context on Julian Assange"
+                        }, {
+                            "url": "https://osint.info/index.php?title=WIKILEAKS",
+                            "title": "Context on Wikileaks"
                         }],
-                        "attachments": [{
-                            "url": "/system/event_attachments/attachments/000/004/031/original/microsoft-project-natick-2.png?1574520281",
-                            "title": "Picture for the lecture"
-                        }]
+                        "attachments": []
                     }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11034.html",
                         "id": 11034,
                         "guid": "5ef93193-8ad9-4cb3-8804-548bbd6faf24",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/011/034/large/icon_cropped.png?1577305720",
                         "date": "2019-12-27T12:50:00+01:00",
                         "start": "12:50",
                         "duration": "01:00",
@@ -1464,19 +1485,19 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11086.html",
                         "id": 11086,
                         "guid": "3e0a51f5-f60a-4a90-a78a-3a311c6ffe41",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/011/086/large/Signal_Blue_Icon.png?1577362494",
                         "date": "2019-12-28T16:10:00+01:00",
                         "start": "16:10",
                         "duration": "00:40",
                         "room": "Ada",
                         "slug": "36c3-11086-the_ecosystem_is_moving",
                         "title": "The ecosystem is moving",
-                        "subtitle": "Challenges for distributed and decentralized technology",
+                        "subtitle": "Challenges for distributed and decentralized technology from the perspective of Signal development",
                         "track": "Ethics, Society \u0026 Politics",
                         "type": "lecture",
                         "language": "en",
                         "abstract": "Considerations for distributed and decentralized technologies from the perspective of a product that many would like to see decentralize.",
-                        "description": "Amongst an environment of enthusiasm for blockchain-based technologies, efforts to decentralize the internet, and tremendous investment in distributed systems, there has been relatively little product movement in this area from the mobile and consumer internet spaces.\r\n\r\nThis is an exploration of challenges for distributed technologies, as well as some considerations for what they do and don't provide, from the perspective of someone working on user-focused mobile communication.",
+                        "description": "Amongst an environment of enthusiasm for blockchain-based technologies, efforts to decentralize the internet, and tremendous investment in distributed systems, there has been relatively little product movement in this area from the mobile and consumer internet spaces.\r\n\r\nThis is an exploration of challenges for distributed technologies, as well as some considerations for what they do and don't provide, from the perspective of someone working on user-focused mobile communication. This also includes a look at how Signal addresses some of the same problems that decentralized and distributed technologies hope to solve.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -1658,8 +1679,8 @@
                         "id": 11242,
                         "guid": "7c4d240d-bdd2-4441-a044-83651b62068d",
                         "logo": null,
-                        "date": "2019-12-29T00:30:00+01:00",
-                        "start": "00:30",
+                        "date": "2019-12-29T00:50:00+01:00",
+                        "start": "00:50",
                         "duration": "01:00",
                         "room": "Ada",
                         "slug": "36c3-11242-chaos_communication_slam",
@@ -1778,7 +1799,7 @@
                         "track": "Ethics, Society \u0026 Politics",
                         "type": "lecture",
                         "language": "de",
-                        "abstract": "Der Hackerparagraph § 202c StGB ist seit August 2007 in Kraft. Das Bundesverfassungsgericht nahm eine dagegen gerichtete Verfassungsbeschwerde nicht an, wies aber darauf hin, dass er verfassungskonform auszulegen sein. Wie ist also die Rechtslage? Und wie sieht die Realität aus? Ein Beispiel aus der Praxis zeigt, was da draußen los ist.",
+                        "abstract": "Der Hackerparagraph § 202c StGB ist seit August 2007 in Kraft. Das Bundesverfassungsgericht nahm eine dagegen gerichtete Verfassungsbeschwerde nicht an, wies aber darauf hin, dass er verfassungskonform auszulegen sei. Wie ist also die Rechtslage? Und wie sieht die Realität der Strafverfolgung aus? Reality Check!",
                         "description": "Wie war das nochmal mit diesem umstrittenen Hackerparagraphen? Welche Rolle spielt er in der Praxis der Strafverfolgung? Kann mich so ein Ermittlungsverfahren am  Ende selber betreffen?\r\nUnd wie gehen die Strafverfolgungsbehörden bei Ermittlungen wegen des Verdachts auf Straftaten nach § 202c StGB vor? Dies wird anhand eines von einer Schwerpunktstaatsanwaltschaft für Cybercrime geführten Strafverfahrens beantwortet. Der Vortrag stellt Rechtslage und Realität gegenüber. Um es vorweg zu nehmen: Sowas kann man sich gar nicht ausdenken.",
                         "recording_license": "",
                         "do_not_record": false,
@@ -1795,7 +1816,7 @@
                         "logo": null,
                         "date": "2019-12-28T18:10:00+01:00",
                         "start": "18:10",
-                        "duration": "01:40",
+                        "duration": "02:20",
                         "room": "Borg",
                         "slug": "36c3-11225-der_dezentrale_jahresruckblick_des_ccc",
                         "title": "Der dezentrale Jahresrückblick des CCC",
@@ -1853,8 +1874,8 @@
                         "track": "Security",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "Xbox 360 video game console had a number of widely known hacks for firmware of its optical disc drives. However, it was never the case with Blu-ray disc drives of Sony PlayStation video game consoles. In fact, up until recently there was no much information available on this subject publicly. In this presentation, I would like to share my journey of delving deep into internals and security of Sony PlayStation Blu-ray disc drives. As games are distributed within optical media, those embedded devices were intended to contain the best security possible. I will demonstrate a multiple hardware hacks and several software vulnerabilities that allowed to dump firmware and get code execution on multiple models of Sony PlayStation Blu-ray disc drives.",
-                        "description": "In this presentation, I will share the following:\r\n1)\tI will provide in-depth analysis of vulnerabilities and their exploitation to achieve code execution on multiple models of Sony PlayStation Blu-ray disc drives\r\n2)\tI will discuss problems that I’ve encountered while reverse engineering the firmware and how I solved (some of) them\r\n3)\tI will talk about security features of Sony PlayStation Blu-ray disc drives\r\n4)\tI will explain what engineers did right and how achieving code execution on the drive doesn’t lead to full compromise of security",
+                        "abstract": "Xbox 360 video game console had a number of widely known hacks for firmware of its optical disc drives. However, it was never the case with Blu-ray disc drives of Sony PlayStation video game consoles. In fact, up until recently there was no much information available on this subject publicly.",
+                        "description": "In this presentation, I would like to share my journey of delving deep into internals and security of Sony PlayStation Blu-ray disc drives. As games are distributed within optical media, those embedded devices were intended to contain the best security possible. I will demonstrate a multiple hardware hacks and several software vulnerabilities that allowed to dump firmware and get code execution on multiple models of Sony PlayStation Blu-ray disc drives.\r\n\r\nIn this presentation, I will share the following:\r\n1)\tI will provide in-depth analysis of vulnerabilities and their exploitation to achieve code execution on multiple models of Sony PlayStation Blu-ray disc drives\r\n2)\tI will discuss problems that I’ve encountered while reverse engineering the firmware and how I solved (some of) them\r\n3)\tI will talk about security features of Sony PlayStation Blu-ray disc drives\r\n4)\tI will explain what engineers did right and how achieving code execution on the drive doesn’t lead to full compromise of security",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -1938,7 +1959,7 @@
                         "do_not_record": false,
                         "persons": [{
                             "id": 9534,
-                            "public_name": "mrchrisadams"
+                            "public_name": "Chris Adams"
                         }],
                         "links": [{
                             "url": "https://www.thegreenwebfoundation.org/news/packets-yet-another-lever-for-a-low-carbon-internet/",
@@ -2022,7 +2043,7 @@
                         "abstract": "Extinction Rebellion (XR) ist eine global agierende, schnell wachsende, klimaaktivistische Graswurzel-Bewegung, die mit gewaltfreien Aktionen zivilen Ungehorsams auf die drohende Klimakatastrophe hinweist und Regierungen zum Handeln bewegen will. Die Ortsgruppe Berlin präsentiert in einer Art Jahresrückblick eine Auswahl an aktuellen Aktionen und stellt vor, wo wir als Bewegung gerade stehen, was wir bislang erreicht haben und was weiterhin gebraucht wird, um ein dringend notwendiges politisches Umsteuern einzuleiten. Let's act now.",
                         "description": "Extinction Rebellion (XR) hat ein turbulentes erstes Jahr hinter sich. Im letzten Herbst wurden in London die fünf wichtigsten Brücken über die Themse besetzt und die drohende Klimakatastrophe begann – endlich! – ins öffentliche Bewusstsein zu rücken. In diesem Herbst gab es koordinierte Aktionen und Blockaden mit Zehntausenden Teilnehmer:innen bereits in über 60 Metropolen auf der ganzen Welt. Über zweitausend Menschen sind dabei verhaftetet worden.\r\n\r\nKlimapolitisch hat sich dennoch so gut wie nichts getan. Während Regierungen entweder regungslos verharren oder aber den Klimanotstand ausrufen und zugleich neue Infrastruktur für fossile Brennstoffe bewilligen, arbeitet die Leugner:innenmaschinerie auf Hochtouren und bemüht sich um die Konstruktion alternativer Fakten. \r\n\r\nGleichzeitig erleben wir immer wieder, dass unsere wissenschaftlichen Prognosen nicht stimmen und sich der Klimawandel in seinem Verlauf schneller und heftiger vollzieht als vorhergesagt. Hitzewellen, Waldbrände, Dürren, Ernteausfälle, Wasserknappheit sind nicht mehr zu ignorieren.\r\n\r\nEs ist daher unumgänglich, den politischen Druck zu erhöhen, indem mehr Aktionen an mehr Orten mit noch viel mehr Menschen und auf vielen verschiedenen Ebenen durchgeführt werden. XR kann jede Art von Unterstützung gut gebrauchen – egal ob es um Nachhilfe in puncto Privacy geht, um Operational Security, um Soft- und Hardware oder um eigenständigen Hacktivismus. Wichtig ist nur: Wir müssen uns jetzt aufraffen, zusammentun und aktiv werden. The time is now.",
                         "recording_license": "",
-                        "do_not_record": false,
+                        "do_not_record": true,
                         "persons": [{
                             "id": 9118,
                             "public_name": "Maria"
@@ -2118,7 +2139,7 @@
                             "public_name": "renataavila"
                         }, {
                             "id": 9752,
-                            "public_name": "naomi@auerfeld.com"
+                            "public_name": " Naomi Colvin"
                         }, {
                             "id": 9873,
                             "public_name": "Angela Richter"
@@ -2147,14 +2168,14 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10800.html",
                         "id": 10800,
                         "guid": "05930be8-d978-4499-ad35-6068d0575666",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/800/large/megaphone.jpg?1577341577",
                         "date": "2019-12-28T22:10:00+01:00",
                         "start": "22:10",
                         "duration": "01:00",
                         "room": "Clarke",
                         "slug": "36c3-10800-creating_resilient_and_sustainable_mobile_phones",
                         "title": "Creating Resilient and Sustainable Mobile Phones",
-                        "subtitle": "",
+                        "subtitle": "Be prepared for the coming Digital Winter. And play Impossible Mission.",
                         "track": "Resilience \u0026 Sustainability",
                         "type": "lecture",
                         "language": "en",
@@ -2166,7 +2187,16 @@
                             "id": 8890,
                             "public_name": "Paul Gardner-Stephen"
                         }],
-                        "links": [],
+                        "links": [{
+                            "url": "mega65.org",
+                            "title": "MEGA65 Home Page"
+                        }, {
+                            "url": "c65blogspot.com.au",
+                            "title": "MEGA65 Blog"
+                        }, {
+                            "url": "github.com/mega65/mega65-core",
+                            "title": "MEGA65 Source Repository"
+                        }],
                         "attachments": []
                     }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10983.html",
@@ -2267,11 +2297,11 @@
                         "room": "Dijkstra",
                         "slug": "36c3-10859-trustzone-m_eh_breaking_armv8-m_s_security",
                         "title": "TrustZone-M(eh): Breaking ARMv8-M's security",
-                        "subtitle": "How secure is the next generation of 'secure' processor features?",
+                        "subtitle": "Hardware attacks on the latest generation of ARM Cortex-M processors.",
                         "track": "Hardware \u0026 Making",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "Most modern embedded devices have something to protect: Whether it's cryptographic keys for your bitcoins, the password to your WiFi, or the integrity of the engine-control unit code for your car.\r\n\r\nTo protect these devices, vendors often utilise the latest processors with the newest security features: From read-out protections, crypto storage, secure-boot up to TrustZone-M on the latest ARM processors.\r\n\r\nIn this talk, we break these features: We show how it is possible to bypass the security features of modern IoT/embedded processors using fault-injection attacks, including breaking TrustZone-M on the new ARMv8-M processors, and presenting hardware attacks on RISC-V processors.\r\n\r\nWe are also releasing and open-sourcing our entire soft- and hardware toolchain for doing so, making it possible to integrate fault-injection testing into the secure development lifecycle.",
+                        "abstract": "Most modern embedded devices have something to protect: Whether it's cryptographic keys for your bitcoins, the password to your WiFi, or the integrity of the engine-control unit code for your car.\r\n\r\nTo protect these devices, vendors often utilise the latest processors with the newest security features: From read-out protections, crypto storage, secure-boot up to TrustZone-M on the latest ARM processors.\r\n\r\nIn this talk, we break these features: We show how it is possible to bypass the security features of modern IoT/embedded processors using fault-injection attacks, including breaking TrustZone-M on the new ARMv8-M processors.\r\n\r\nWe are also releasing and open-sourcing our entire soft- and hardware toolchain for doing so, making it possible to integrate fault-injection testing into the secure development lifecycle.",
                         "description": "Modern devices, especially secure ones, often rely on the security of the underlying silicon: Read-out protection, secure-boot, JTAG locking, integrated crypto accelerators or advanced features such as TrustZone are just some of the features utilized by modern embedded devices.\r\n\r\nProcessor vendors are keeping up with this demand by releasing new, secure processors every year. Often, device vendors place a significant trust into the security claims of the processors. In this talk, we look at using fault-injection attacks to bypass security features of modern processors, allowing us to defeat the latest chip security measures such as TrustZone-M on the new ARMv8 processors.\r\n\r\nAfter a quick introduction into the theory of glitching, we introduce our fully open-source FPGA platform for glitching: An FPGA-based glitcher with a fully open-source toolchain \u0026 hardware, making glitching accessible to a wider audience and significantly reducing the costs of getting started with it - going as far as being able to integrate glitch-testing into the Secure Development Lifecycle of a product.\r\n\r\nThen, we look at how to conduct glitching attacks on real-world targets, beyond academic environments, including how to prepare a device for glitching and how to find potential glitch targets.\r\n\r\nAfterwards, we demonstrate fault-injection vulnerabilities we found in modern, widely-used IoT/embedded processors and devices, allowing us to bypass security features integrated into the chip, such as:\r\n\r\n- Re-enabling locked JTAG\r\n- Bypassing a secure bootloader\r\n- Recovering symmetric crypto keys by glitching the AES implementation\r\n- Bypassing secure-boot\r\n- Fully bypassing TrustZone-M security features on some new ARMv8M processors\r\n\r\nWe will also demonstrating how to bypass security features and how to break the reference secure bootloader of the Microchip SAM L11, one of the newest, TrustZone-M enabled ARM Cortex-M processors, using roughly $5 of equipment.\r\n\r\nAfter the talk, PCBs of our hardware platform will be given out to attendees.",
                         "recording_license": "",
                         "do_not_record": false,
@@ -2297,7 +2327,7 @@
                         "type": "lecture",
                         "language": "de",
                         "abstract": "Für Sinti*zze und Roma*nja gehören Anfeindungen zum Alltag. Auch bei Ermittlungsbehörden stehen sie unter Generalverdacht: Es steht zu befürchten, dass die Polizei in unterschiedlichen Bundesländern rechtswidrig Daten zu ethnischer Herkunft erhebt und veröffentlicht.\r\n\r\nWarum ist es so gefährlich, ethnische Herkunft in Polizeidatenbanken zu erfassen? Und was für Konsequenzen hat es, sie in Berichterstattung zu erwähnen? Wann darf die Polizei überhaupt Daten zu ethnischer Herkunft erheben? Und wann und mit welchen Methoden tut sie es vielleicht trotz Verbots? ",
-                        "description": "Für Sinti*zze und Roma*nja gehören auch in Deutschland Anfeindungen in allen Lebenslagen zum Alltag. Auch bei Ermittlungsbehörden stehen sie unter Generalverdacht: Es steht zu befürchten, dass die Polizei in unterschiedlichen Bundesländern rechtswidrig Daten zu ethnischer Herkunft erhebt und veröffentlicht. In Pressemitteilungen der Polizei tauchen immer wieder Hinweise auf die ethnische Herkunft auf, vor allem bei Tatverdächtigen, seltener bei Opfern oder Zeug*innen. Die Berliner Polizei hat in der Kriminalstatistik 2017 den Hinweis veröffentlicht, dass die Mehrheit der Tatverdächtigen von „Trickdiebstahl in Wohnungen“ Angehörige der Volksgruppe Sinti und Roma seien: Dass es rechtswidrig ist, wenn die Polizei die zugrunde liegenden Daten tatsächlich erhebt, ist unstreitig. \r\n\r\nIn Kooperation mit dem Zentralrat hat die Gesellschaft für Freiheitsrechte e.V. (GFF) im Fall der Berliner Polizeikriminalstatistik bei der Berliner Landesdatenschutzbeauftragten ein Beschwerdeverfahren wegen des Verdachts auf Diskriminierung von Sinti*zze und Roma*nja lanciert. Beide Organisationen prüfen gemeinsam weitere rechtliche Möglichkeiten.\r\n\r\nWarum ist es so gefährlich, ethnische Herkunft in Polizeidatenbanken zu erfassen? Und was für Konsequenzen hat es, sie in Berichterstattung zu erwähnen? Wann darf die Polizei überhaupt Daten zu ethnischer Herkunft erheben? Und wann tut sie es vielleicht trotz Verbots? Und mit welchen Methoden erhebt die Polizei überhaupt die ethnische Herkunft? \r\n\r\nDie Gesellschaft für Freiheitsrechte e.V. (GFF) und der Zentralrat Deutscher Sinti und Roma wollen diese Fragen gemeinsam mit dem Publikum diskutieren. \r\n\r\nAnja Reuss ist Politische Referentin des Zentralrats Deutscher Sinti und Roma, der politischen Interessenvertretung der deutschen Sinti und Roma mit Sitz in Heidelberg. Als Dachverband setzt sich der Zentralrat auf nationaler und internationaler Ebene für eine gleichberechtigte Teilhabe von Sinti und Roma in Politik und Gesellschaft sowie für die Auseinandersetzung mit und Bekämpfung von Antiziganismus ein.\r\n\r\nLea Beckmann ist Juristin und Verfahrenskoordinatorin der Gesellschaft für Freiheitsrechte e.V. (GFF). Die GFF ist eine NGO, die durch strategische Prozesse Grund- und Menschenrechte stärkt und zivilgesellschaftlichen Partnerorganisationen rechtlich unterstützt. In ihren Verfahren setzt sich die GFF dabei immer wieder kritisch mit polizeilichen Ermittlungsbefugnissen auseinander, sei dies im Zusammenhang mit dem Einsatz von Späh-Software oder bei der Datenerhebung. ",
+                        "description": "Für Sinti*zze und Roma*nja gehören auch in Deutschland Anfeindungen in allen Lebenslagen zum Alltag. Auch bei Ermittlungsbehörden stehen sie unter Generalverdacht: Es steht zu befürchten, dass die Polizei in unterschiedlichen Bundesländern rechtswidrig Daten zu ethnischer Herkunft erhebt und veröffentlicht. In Pressemitteilungen der Polizei tauchen immer wieder Hinweise auf die ethnische Herkunft auf, vor allem bei Tatverdächtigen, seltener bei Opfern oder Zeug*innen. Die Berliner Polizei hat in der Kriminalstatistik 2017 den Hinweis veröffentlicht, dass die Mehrheit der Tatverdächtigen von „Trickdiebstahl in Wohnungen“ Angehörige der Volksgruppe Sinti und Roma seien: Dass es rechtswidrig ist, wenn die Polizei die zugrunde liegenden Daten tatsächlich erhebt, ist unstreitig. \r\n\r\nIn Kooperation mit dem Zentralrat hat die Gesellschaft für Freiheitsrechte e.V. (GFF) im Fall der Berliner Polizeikriminalstatistik bei der Berliner Landesdatenschutzbeauftragten ein Beschwerdeverfahren wegen des Verdachts auf Diskriminierung von Sinti*zze und Roma*nja lanciert. Beide Organisationen prüfen gemeinsam weitere rechtliche Möglichkeiten.\r\n\r\nWarum ist es so gefährlich, ethnische Herkunft in Polizeidatenbanken zu erfassen? Und was für Konsequenzen hat es, sie in Berichterstattung zu erwähnen? Wann darf die Polizei überhaupt Daten zu ethnischer Herkunft erheben? Und wann tut sie es vielleicht trotz Verbots? Und mit welchen Methoden erhebt die Polizei überhaupt die ethnische Herkunft? \r\n\r\nDie Gesellschaft für Freiheitsrechte e.V. (GFF) und der Zentralrat Deutscher Sinti und Roma wollen diese Fragen gemeinsam mit dem Publikum diskutieren. \r\n\r\nAnja Reuss ist Politische Referentin des Zentralrats Deutscher Sinti und Roma, der politischen Interessenvertretung der deutschen Sinti und Roma mit Sitz in Heidelberg. Als Dachverband setzt sich der Zentralrat auf nationaler und internationaler Ebene für eine gleichberechtigte Teilhabe von Sinti und Roma in Politik und Gesellschaft sowie für die Auseinandersetzung mit und Bekämpfung von Antiziganismus ein.\r\n\r\nLea Beckmann ist Juristin und Verfahrenskoordinatorin der Gesellschaft für Freiheitsrechte e.V. (GFF). Die GFF ist eine NGO, die durch strategische Prozesse Grund- und Menschenrechte stärkt und zivilgesellschaftlichen Partnerorganisationen rechtlich unterstützt. In ihren Verfahren setzt sich die GFF dabei immer wieder kritisch mit polizeilichen Ermittlungsbefugnissen auseinander, sei dies im Zusammenhang mit dem Einsatz von Späh-Software oder bei der Datenerhebung. \r\n",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -2316,6 +2346,15 @@
                         }, {
                             "url": "https://taz.de/Polizei-unter-Diskrimierungsverdacht/!5626822/",
                             "title": "TAZ-Artikel: Polizei unter Diskriminierungsverdacht"
+                        }, {
+                            "url": "https://zentralrat.sintiundroma.de/themenseite-dna/",
+                            "title": "Antiziganistismus und erweiterte DNA-Analysen"
+                        }, {
+                            "url": "https://zentralrat.sintiundroma.de/diskriminierung-von-sinti-und-roma-ein-senator-seine-polizisten-und-86-trickdiebe/",
+                            "title": "Zentralrat zur PKS 2017 Berlin "
+                        }, {
+                            "url": "https://zentralrat.sintiundroma.de/download/9262",
+                            "title": "Markus End (2019): Antiziganismus und Polizei"
                         }],
                         "attachments": []
                     }, {
@@ -2500,7 +2539,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10902.html",
                         "id": 10902,
                         "guid": "d8b2af5e-29da-4cc7-9d72-8329df1411b1",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/902/large/Bildschirmfoto_2019-12-27_um_14.42.48.png?1577454190",
                         "date": "2019-12-28T12:50:00+01:00",
                         "start": "12:50",
                         "duration": "01:00",
@@ -2520,7 +2559,10 @@
                             "public_name": "Caroline"
                         }],
                         "links": [],
-                        "attachments": []
+                        "attachments": [{
+                            "url": "/system/event_attachments/attachments/000/004/051/original/UltrafastImaging_Caroline_36C3_v2.pdf?1577454234",
+                            "title": "Slides"
+                        }]
                     }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10892.html",
                         "id": 10892,
@@ -2548,7 +2590,7 @@
                             "public_name": "Kire"
                         }, {
                             "id": 6379,
-                            "public_name": "Hakuna MaMate"
+                            "public_name": "Ganti"
                         }],
                         "links": [],
                         "attachments": []
@@ -2665,40 +2707,6 @@
                         }, {
                             "url": "http://jasmineguffond.com/",
                             "title": "jasmineguffond.com"
-                        }],
-                        "attachments": []
-                    }, {
-                        "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10909.html",
-                        "id": 10909,
-                        "guid": "60017c5f-e30d-493c-afd7-9a44f6b0e8f2",
-                        "logo": null,
-                        "date": "2019-12-28T20:50:00+01:00",
-                        "start": "20:50",
-                        "duration": "01:00",
-                        "room": "Eliza",
-                        "slug": "36c3-10909-reusing_ict_equipment_why_how",
-                        "title": "Reusing ICT equipment, why \u0026 how",
-                        "subtitle": "Practical experiences and software design for repurposing ICT equipment for secondary schools in Malawi",
-                        "track": "Resilience \u0026 Sustainability",
-                        "type": "lecture",
-                        "language": "en",
-                        "abstract": "Since 2011, FAIR (FAIR Allocation of Infotech Resources) have reused 3,000 computers from Denmark 11,000 computers from Norway. We'll go through how we're setup, and how youths in Malawi are maintaining and using these computers.",
-                        "description": "As the wheels of economy turn, companies and public institutions are incentivized to replace their ICT equipment, leaving behind equipment that can be repurposed for the greatest possible human value and impact in the hands of those that need it the most.\r\n\r\nFAIR Denmark is a civic society that has worked to source and redistribute this equipment in an overall program to give ICT access to youths in Malawi: From the logistics and data sanitization to university-based collaborations for training and maintenance in Malawi and offline software platforms for access to quality education at secondary schools in Malawi.\r\n\r\nAll the software and contents that we work with are Open Source / Open Access.\r\n\r\nMaybe you're interested in reuse? Maybe for the sake of the environment or maybe in the interest of helping others? We're going to have to be working together in bigger alliances to avoid the pitfalls of our wasteful culture, planned obsolescence and physical shredding of computer equipment. The the extend of my knowledge and awareness, the talk will try to introduce other actors with similar objectives.",
-                        "recording_license": "",
-                        "do_not_record": false,
-                        "persons": [{
-                            "id": 9660,
-                            "public_name": "benjamin@fairdanmark.dk"
-                        }],
-                        "links": [{
-                            "url": "https://www.fairdanmark.dk/en/",
-                            "title": "FAIR website (English)"
-                        }, {
-                            "url": "https://twitter.com/FairDanmark/",
-                            "title": "Twitter: @fairdanmark"
-                        }, {
-                            "url": "https://lcrs.fairdanmark.dk/",
-                            "title": "Large-scale Computer Reuse Suite (LCRS)"
                         }],
                         "attachments": []
                     }, {
@@ -2833,8 +2841,8 @@
                         "start": "14:10",
                         "duration": "01:00",
                         "room": "Ada",
-                        "slug": "36c3-10541-gefluchtete_schmuggeln_kohlelobby_unterwandern_passe_falschen",
-                        "title": "Geflüchtete schmuggeln, Kohlelobby unterwandern, Pässe fälschen",
+                        "slug": "36c3-10541-hacking_the_media_gefluchtete_schmuggeln_nazis_torten_passe_falschen",
+                        "title": "Hacking the Media: Geflüchtete schmuggeln, Nazis torten, Pässe fälschen",
                         "subtitle": "Warum wir zivilen Ungehorsam und Subversion mehr brauchen denn je",
                         "track": "Ethics, Society \u0026 Politics",
                         "type": "lecture",
@@ -2845,7 +2853,7 @@
                         "do_not_record": false,
                         "persons": [{
                             "id": 9216,
-                            "public_name": "Jean Peters"
+                            "public_name": "Conny Runner"
                         }, {
                             "id": 9889,
                             "public_name": "Ronny Sommer"
@@ -2870,8 +2878,8 @@
                         "track": "Ethics, Society \u0026 Politics",
                         "type": "lecture",
                         "language": "de",
-                        "abstract": "Die GFF hat gemeinsam mit Reporter ohne Grenzen (ROG), dem European Center for Constitutional and Human Rights (ECCHR) und netzpolitik.org Strafanzeige gegen Geschäftsführer der Unternehmen FinFisher GmbH, FinFisher Labs GmbH und Elaman GmbH erstattet. Es liegen dringende Anhaltspunkte dafür vor, dass das Münchener Firmenkonglomerat die Spionagesoftware FinSpy ohne Genehmigung der Bundesregierung an die türkische Regierung verkauft und so zur Überwachung von Oppositionellen und Journalist*innen in der Türkei beigetragen hat.",
-                        "description": "tbd",
+                        "abstract": "Die GFF hat gemeinsam mit Reporter ohne Grenzen (ROG), dem European Center for Constitutional and Human Rights (ECCHR) und netzpolitik.org Strafanzeige gegen die Geschäftsführer der Unternehmen FinFisher GmbH, FinFisher Labs GmbH und Elaman GmbH erstattet.",
+                        "description": "Es liegen dringende Anhaltspunkte dafür vor, dass das Münchener Firmenkonglomerat die Spionagesoftware FinSpy ohne Genehmigung der Bundesregierung an die türkische Regierung verkauft und so zur Überwachung von Oppositionellen und Journalist*innen in der Türkei beigetragen hat.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -3008,7 +3016,7 @@
                         "type": "lecture",
                         "language": "de",
                         "abstract": "Seit spätestens 2005 wird in Deutschland an der Einführung der Telematik Infrastruktur, kurz die TI, gearbeitet. Diese soll nicht weniger als die komplette Digitalisierung der deutschen Medizinbranche bedeuten. Vom Arzt, Krankenhaus, Psychotherapeut bis hin zum Apotheker sollen alle Heilberufler miteinander vernetzt werden. Der Patient soll dabei die Datenhoheit behalten, und seine Daten mittels elektronischer Gesundheitskarte, sowie alternativ per mobiler Smartphone App steuern.",
-                        "description": "Mit Gründung der Gematik GmbH am 11. Januar 2005 begann die offizielle Entwicklung der Telematik-Infrastruktur (TI). Ziel war die Einführung einer elektronischen Gesundheitskarte mitsamt einer Infrastruktur, die langfristig alle Teilnehmer der Medizinischen Versorgung miteinander vernetzen sollte.\r\nDer Arzt speichert alle Befunde samt Röntgen Bilder in der elektronischen Patientenakte (ePA) ab, kommuniziert verschlüsselt mit anderen Ärzten über die „Sichere Kommunikation zwischen Leistungserbringer“ (KOM-LE), der Medikationsplan ist digital verfügbar (eMP), das Rezept wird beim Apotheker digital eingelöst (E-Rezept) und im Notfall sind relevante Gesundheitsdaten (NFDM) auf der elektronischen Gesundheitskarte (eGK) des Patienten abgespeichert. So soll der digitale Arztbesuch der Zukunft aussehen.\r\nAllerdings ist nach 15 Jahren Entwicklung und 1,5 Milliarden Euro Investitionen nur ein Dienst der TI online, das Versichertenstammdatenmanagement (VSDM). Damit können die Stammdaten des Patienten, bspw. Adresse und Krankenkasse online beim Arzt aktualisiert werden, ohne Austausch der elektronischen Gesundheitskarte.\r\nNachdem dieser Dienst nun eingeführt wurde sollen zeitnah die nächsten oben aufgeführten Dienste online gehen. Die Spezifikationen, Zulassungsunterlagen sowie Feldtestkonzepte für diese Dienste sind dafür weitestgehend fertig.\r\nParallel zu der von der Politik und Gematik getriebenen Entwicklung setzten sich technik-affine Personen wie bspw. Thomas Maus [1] mit der Technik auseinander und zeigten viele Probleme und ungelöste Fragestellungen. Nachdem die TI nun größtenteils online ist und die ersten Dienste in der Praxis genutzt werden ist es an der Zeit sich die konkrete Umsetzung anzuschauen, zu evaluieren und bei Bedarf entsprechend zu verbessern.\r\n\r\nDieser Vortrag soll einen aktuellen Überblick auf die Telematikinfrastruktur geben. Es werden die bestehenden Dienste (VSDSM) sowie die schon spezifizierten Dienste wie KOM-LE oder ePA vorgestellt. Insbesondere wird auf die Sicherheit der verschiedenen Systeme eingegangen. Die Schutzziele sowie die spezifizierten Methoden um diese Ziele zu erreichen werden dargestellt und grob analysiert. \r\nDabei zeigt sich dass die TI vor allem ein sehr komplexes System mit aktuell über 7500 Seiten Spezifikationen und mehr als 1000 Seiten sogenannter Konzepten ist.\r\nDazu ist das Projekt ein sogenanntes Running Target mit regelmäßigen Updates der Spezifikationen. Diese werden entweder durch Änderungen der Stand der Technik, oder durch Wünsche von Seiten der Politik, meist durch Gesetzte, in das Projekt hereingetragen.\r\n\r\n[1] https://events.ccc.de/congress/2005/fahrplan/attachments/640-Gesundheitstelematik22C3v1.0.pdf",
+                        "description": "Mit Gründung der Gematik GmbH am 11. Januar 2005 begann die offizielle Entwicklung der Telematik-Infrastruktur (TI). Ziel war die Einführung einer elektronischen Gesundheitskarte mitsamt einer Infrastruktur, die langfristig alle Teilnehmer der Medizinischen Versorgung miteinander vernetzen sollte.\r\nDer Arzt speichert alle Befunde samt Röntgen Bilder in der elektronischen Patientenakte (ePA) ab, kommuniziert verschlüsselt mit anderen Ärzten über die „Sichere Kommunikation zwischen Leistungserbringer“ (KOM-LE), der Medikationsplan ist digital verfügbar (eMP), das Rezept wird beim Apotheker digital eingelöst (E-Rezept) und im Notfall sind relevante Gesundheitsdaten (NFDM) auf der elektronischen Gesundheitskarte (eGK) des Patienten abgespeichert. So soll der digitale Arztbesuch der Zukunft aussehen.\r\nAllerdings ist nach 15 Jahren Entwicklung und 2 Milliarden Euro Investitionen nur ein Dienst der TI online, das Versichertenstammdatenmanagement (VSDM). Damit können die Stammdaten des Patienten, bspw. Adresse und Krankenkasse online beim Arzt aktualisiert werden, ohne Austausch der elektronischen Gesundheitskarte.\r\nNachdem dieser Dienst nun eingeführt wurde sollen zeitnah die nächsten oben aufgeführten Dienste online gehen. Die Spezifikationen, Zulassungsunterlagen sowie Feldtestkonzepte für diese Dienste sind dafür weitestgehend fertig.\r\nParallel zu der von der Politik und Gematik getriebenen Entwicklung setzten sich technik-affine Personen wie bspw. Thomas Maus mit der Technik auseinander und zeigten potentielle Probleme und ungelöste Fragestellungen. Nachdem die TI nun größtenteils online ist und die ersten Dienste in der Praxis genutzt werden ist es an der Zeit sich die konkrete Umsetzung anzuschauen, zu evaluieren und bei Bedarf entsprechend zu verbessern.\r\n\r\nDieser Vortrag soll einen aktuellen Überblick auf die Telematikinfrastruktur geben. Es werden die bestehenden Dienste (VSDSM) sowie die schon spezifizierten Dienste wie KOM-LE oder ePA vorgestellt. Insbesondere wird auf die Sicherheit der verschiedenen Systeme eingegangen. Die Schutzziele sowie die spezifizierten Methoden um diese Ziele zu erreichen werden dargestellt und grob analysiert. \r\nDabei zeigt sich dass die TI vor allem ein sehr komplexes System mit aktuell knapp 8000 Seiten Spezifikationen plus gute 1000 Seiten Konzepten ist.\r\nDazu ist das Projekt ein sogenanntes Running Target mit regelmäßigen Updates der Spezifikationen. Diese werden entweder durch Änderungen der Stand der Technik, oder durch Wünsche von Seiten der Politik, meist durch Gesetzte, in das Projekt hereingetragen.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -3016,9 +3024,6 @@
                             "public_name": "Christoph Saatjohann"
                         }],
                         "links": [{
-                            "url": "https://events.ccc.de/congress/2005/fahrplan/attachments/640-Gesundheitstelematik22C3v1.0.pdf",
-                            "title": "Thomas Maus 2005 über die TI"
-                        }, {
                             "url": "https://fachportal.gematik.de/spezifikationen/",
                             "title": "TI Spezifikationen"
                         }],
@@ -3039,7 +3044,7 @@
                         "type": "lecture",
                         "language": "de",
                         "abstract": "Der Vortrag gibt auf der Basis umfangreicher korpuslinguistischer Analysen einen Überblick über den Fundus herabwürdigender und ausgrenzender Ausdrücke, die in rechten und rechtsextremen Onlinediskursen geprägt wurden. In den tiefensemantischen Strukturen des invektiven Wortschatzes der neuen Rechten wird ein stark schematisiertes Weltbild sichtbar, das von der grundlegenden Verachtung nicht nur des Fremden, sondern auch des eigenen Landes, seiner Institutionen, seiner Werte und seiner Bevölkerung geprägt ist. ",
-                        "description": "Das gesteigerte Maß an Ausgrenzung und gesellschaftlicher Polarisierung, das seit dem Wiedererstarken rechter Parteien und Denkweisen in Deutschland zu verzeichnen ist, ist nicht die einzige Errungenschaft, die wir den neuen Rechten zu verdanken haben. Sie haben auch den Wortschatz um ein schier unerschöpfliches Repertoire an Schimpfwörtern bereichert. Deren Spektrum reicht von unüblichen Verknüpfungen von Wortbestandteilen wie bei \"Journhalunke\" oder \"GEZStapo\", über die produktive Verfremdung von Eigennamen wie im Fall von \"K(r)amp(f)-K(n)arrenbauer\" oder \"Merkill\", Hyperbolisierungen wie \"Superübergutbestmenschen\" oder Satzkomposita wie \"IchseheauswieeinkonservativerCSUKatholikundwerdedeshalbvondenganzenDeppengewähltweildasjanichtsoeinGrünerist\" (Winfried Kretschmann) bis hin zu Gleichsetzungen zur Denunziation von Kritik wie in \"Waffen=Rassismus=rächtz=Nazi=Gefahr=Erderwärmung\". \r\n\r\nIm Vortrag sollen zunächst die wichtigsten sprachlichen Strategien zur Bildung herabwürdigender Ausdrücke vorgestellt werden, ehe in einem zweiten Schritt der invektive Wortschatz zu einzelnen Politik- und Gesellschaftsbereichen in Auswahl präsentiert wird. Basis der Untersuchung bildet eine umfangreiche korpuslinguistische Analyse einschlägiger rechter und rechtsextremer \"Nachrichten\"-Seiten, Blogs, Kommentarspalten und Foren aus den Jahren von 2012 bis 2019, die mehr als 25.000 Schimpfwörter zutage färderte.\r\n\r\nDer Vortrag will nicht nur das Offensichtliche zeigen: Dass für die neuen Rechten herabwürdigendes und ausgrenzenden Sprechen zentrales Medium der politischen Auseinandersetzung ist. Vielmehr wird in den vielfältigen Formen herabwürdigenden Sprechens ein Weltbild sichtbar, das von radikaler Vereinfachung und simplen Grundunterscheidungen geprägt ist. Auch wird sich zeigen, dass die vermeintlichen Patrioten sich als eine Schmähgemeinschaft konstituieren und das Land, in dem sie leben, und seine Bürger_innen und Institutionen zutiefst verachten. \r\n",
+                        "description": "Das gesteigerte Maß an Ausgrenzung und gesellschaftlicher Polarisierung, das seit dem Wiedererstarken rechter Parteien und Denkweisen in Deutschland zu verzeichnen ist, ist nicht die einzige Errungenschaft, die wir den neuen Rechten zu verdanken haben. Sie haben auch den Wortschatz um ein schier unerschöpfliches Repertoire an Schimpfwörtern bereichert. Deren Spektrum reicht von unüblichen Verknüpfungen von Wortbestandteilen wie bei \"Journhalunke\" oder \"GEZStapo\", über die produktive Verfremdung von Eigennamen wie im Fall von \"K(r)amp(f)-K(n)arrenbauer\" oder \"Merkill\", Hyperbolisierungen wie \"Superübergutbestmenschen\" oder Satzkomposita wie \"IchseheauswieeinkonservativerCSUKatholikundwerdedeshalbvondenganzenDeppengewähltweildasjanichtsoeinGrünerist\" (Winfried Kretschmann) bis hin zu Gleichsetzungen zur Denunziation von Kritik wie in \"Waffen=Rassismus=rächtz=Nazi=Gefahr=Erderwärmung\". \r\n\r\nIm Vortrag sollen zunächst die wichtigsten sprachlichen Strategien zur Bildung herabwürdigender Ausdrücke vorgestellt werden, ehe in einem zweiten Schritt der invektive Wortschatz zu einzelnen Politik- und Gesellschaftsbereichen in Auswahl präsentiert wird. Basis der Untersuchung bildet eine umfangreiche korpuslinguistische Analyse einschlägiger rechter und rechtsextremer \"Nachrichten\"-Seiten, Blogs, Kommentarspalten und Foren aus den Jahren von 2012 bis 2019, die mehr als 25.000 Schimpfwörter zutage färderte.\r\n\r\nDer Vortrag will nicht nur das Offensichtliche zeigen: Dass für die neuen Rechten herabwürdigendes und ausgrenzenden Sprechen zentrales Medium der politischen Auseinandersetzung ist. Vielmehr wird in den vielfältigen Formen herabwürdigenden Sprechens ein Weltbild sichtbar, das von wenigen Grundunterscheidungen geprägt ist. Auch wird sich zeigen, dass die neuen Rechten sich als eine Schmähgemeinschaft konstituieren und das Land, in dem sie leben, seine Bürger_innen und seine Institutionen nachhaltig verachten. \r\n",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -3053,8 +3058,8 @@
                         "id": 10776,
                         "guid": "3bb36130-4ae2-482d-9dde-7c1295269ed8",
                         "logo": null,
-                        "date": "2019-12-30T00:40:00+01:00",
-                        "start": "00:40",
+                        "date": "2019-12-30T00:50:00+01:00",
+                        "start": "00:50",
                         "duration": "01:00",
                         "room": "Ada",
                         "slug": "36c3-10776-hebocon",
@@ -3274,8 +3279,14 @@
                             "id": 7606,
                             "public_name": "manuel"
                         }],
-                        "links": [],
-                        "attachments": []
+                        "links": [{
+                            "url": "https://github.com/mikesierra7/36C3_Klima",
+                            "title": "GitHub: Beispiel Skripte (Englisch)"
+                        }],
+                        "attachments": [{
+                            "url": "/system/event_attachments/attachments/000/004/052/original/Ressources.pdf?1577457174",
+                            "title": "Ressources"
+                        }]
                     }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10682.html",
                         "id": 10682,
@@ -3292,7 +3303,7 @@
                         "type": "lecture",
                         "language": "de",
                         "abstract": "So wie Farnpflanzen ihre Sporen aus der Kapsel mit bis zu 10m/s heraus in die Welt katapultieren, auf dass sie dort auf fruchtbaren Boden fallen, werden unsere 8 Expert*innen ihr Nerd- und Fach-Wissen weitergeben – spektakulär, wirkungsvoll und unterhaltsam. So bunt wie die besten Slams, so dicht wie die besten Lightning Talks: 8 Antworten auf die Frage, warum Techies und Ökos zusammengehören.",
-                        "description": "Bei der Bits\u0026Bäume 2018 kamen Aktivist*innen der Tech-Community und jene der Nachhaltigkeitsrichtungen zusammen, um einander ihre Fragen und Lösungsansätze zu erklären, sie zu diskutieren und gemeinsam eine bessere Zukunft zu erdenken. Wichtiger Teil war dabei auch einzutauchen in die jeweilig anderen Mikrokosmen, einander abzuholen und die Schnittstellen zu finden. Das erste \"Sporangium\" hat in diesem Sinne wichtige Themen beider Bereiche aufgegriffen. Für de C3 liegt nun der Fokus auf der Verbindung von Technologie und Nachhaltigkeit: Wie kann digitale Nachhaltigkeit, wie nachhaltige Digitalisierung aussehen?\r\n\r\nSpeaker*innen:\r\ntba – Klimawandel?! Echt jetzt?!!!\r\ntba – technologische Fragen in der Entwicklungsarbeit\r\nCarina Haupt: Nachhaltige Softwareentwicklung (für weniger explodierende Raketen)\r\nElenos Manifesti: Wir fordern! Das Bits\u0026Bäume-Manifest\r\nIsabella Hermann: Ökos im Weltraum? Nachhaltigkeit in Science Fiction\r\njoliyea – Raum für Wissen\r\nLisa Passing: Ökostrom != Ökostrom. Down the green energy rabbit hole\r\nViktor Schlüter: Datenschutz? Klimaschutz? Zukunft!\r\n\r\n\r\nDurchs Sporangium katapultieren wie immer julika \u0026 Rainer",
+                        "description": "Bei der Bits\u0026Bäume 2018 kamen Aktivist*innen der Tech-Community und jene der Nachhaltigkeitsrichtungen zusammen, um einander ihre Fragen und Lösungsansätze zu erklären, sie zu diskutieren und gemeinsam eine bessere Zukunft zu erdenken. Wichtiger Teil war dabei auch einzutauchen in die jeweilig anderen Mikrokosmen, einander abzuholen und die Schnittstellen zu finden. Das erste „Sporangium“ hat in diesem Sinne wichtige Themen beider Bereiche aufgegriffen. Für den C3 liegt nun der Fokus auf der Verbindung von Technologie und Nachhaltigkeit: Wie kann digitale Nachhaltigkeit, wie nachhaltige Digitalisierung aussehen?\r\n\r\nSpeaker*innen (A-Z...äh...V!):\r\n* Anja Höfner – Das Märchen von der Dematerialisierung durch Technik \r\n* Carina Haupt: Nachhaltige Softwareentwicklung (für weniger explodierende Raketen) \r\n* Elenos Manifesti \u0026 der Chor der Vermummten: Wir fordern! Das Bits\u0026Bäume-Manifest \r\n* Isabella Hermann: Utopia Outer Space? Die Zukunft der Menschheit in Science-Fiction-Filmen \r\n* joliyea – Raum für Wissen. Wo wir uns treffen, um die Welt zu retten \r\n* Kathrin Henneberger – Ja, Klimakrise! Immernoch!!\r\n* Lisa Passing: Ökostrom != Ökostrom. Down the green energy rabbit hole \r\n* Viktor Schlüter: Datenschutz? Klimaschutz? Zukunft! \r\n\r\n* Durchs Sporangium katapultieren wie immer julika \u0026 Rainer",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -3319,10 +3330,16 @@
                         }, {
                             "id": 3752,
                             "public_name": "Carina Haupt"
+                        }, {
+                            "id": 9904,
+                            "public_name": "Kathrin Henneberger "
+                        }, {
+                            "id": 8992,
+                            "public_name": "Anja Höfner"
                         }],
                         "links": [{
                             "url": "https://media.ccc.de/v/bub2018-249-sporangium#t=107",
-                            "title": "das erste Sporangium bei der Bits\u0026Bäume 2018"
+                            "title": "Sporangium v1.0 bei der Bits\u0026Bäume 2018"
                         }],
                         "attachments": []
                     }],
@@ -3375,16 +3392,10 @@
                         "do_not_record": false,
                         "persons": [{
                             "id": 9145,
-                            "public_name": "yann@NextGenQ.com"
+                            "public_name": "Yann ALLAIN"
                         }],
-                        "links": [{
-                            "url": "https://cyberweek.ae/materials/D3%20TRACK%202%20-%20Build%20a%20Computer%20at%20Home%20-%20Hacker%20Style%20-%20Yann%20Allain.pdf",
-                            "title": "Link to my last talk on this subject in HITB abu dabi : Build a quantum computer @ home - Hacker style "
-                        }],
-                        "attachments": [{
-                            "url": "/system/event_attachments/attachments/000/003/906/original/D3_TRACK_2_-_Build_a_Computer_at_Home_-_Hacker_Style_-_Yann_Allain%281%29.pdf?1571984756",
-                            "title": "Build a quantum computer @ home - Hacker style "
-                        }]
+                        "links": [],
+                        "attachments": []
                     }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10730.html",
                         "id": 10730,
@@ -3733,8 +3744,8 @@
                         "track": "Art \u0026 Culture",
                         "type": "lecture",
                         "language": "de",
-                        "abstract": "Simon: Kann künstliche Intelligenz Kunst erzeugen? \r\nFlorina: Können Menschen von künstlich intelligenten Systemen erzeugte Kunst verstehen?\r\nSimon: Ist Kunst ein Weg zu neuen Stufen eines kybernetischen Verstandes? \r\nFlorina: Wie können Mensch und Maschine sich in künstlerischen Prozessen einander verstehen lernen? \r\nSimon: Derr Stand der KI-Kunst ist keine Kunst oder keine KI.\r\nFlorina: Ein schwer zu bestimmender Standpunkt, da das Verständnis was Kunst ist von unserer Fähigkeit abhängt sie als solche anzunehmen.\r\nSimon: Was ist zu erwarten?\r\nFlorina: Wir werden mit unserer menschlichen Eitelkeit konfrontiert werden, nicht die Einzigen zu sein, die schöpferisch und auch künstlerische Relevanz in Betrachtern auslösen. Dies liegt mitunter an unseren bisherigen Kunstbegriffen und -verständnissen, die oftmals mit Intentionalität assoziiert sind.\r\nEliza: Warum?\r\nFlorina Speth und Simon Hegelich widmen sich diesen Fragen in einem dialogischen Gespräch, wobei sie ihre großen Leidenschaften;- Kunst, maschinelles Lernen, Hegelsche Dialektik, Zukunftsforschung, Science Fiction, Kybernetik und Transhumanismus- der Erweiterung durch Diskurs unterziehen.",
-                        "description": "Künstlich intelligente Systeme werden seit den 70er Jahren zunehmend  in künstlerischen Schaffensprozesse einbezogen. Ob Computer auch autonom Kunst generieren können, ist keine Frage der Leistungsfähigkeit solcher Systeme, es wirft vielmehr die Frage auf, inwieweit tradierte Kunstbegriffe neu gedacht werden können. Die Beschäftigung mit KI und Kunst birgt im Vergleich zu laufenden KI-Debatten eine Reihe zusätzlicher Denkfreiheitsgrade: Sie ist erfahrbar! Gerade weil Kunst als Konzept schwierig zu fassen ist, uns gleichzeitig Künstlerisches inspiriert, zum Spekulieren, Träumen und Empfinden anregt, lässt sich vor diesem Hintergrund ganz anders über KIs und ihre Potentiale diskutieren. Unter Einbezug des technischen Standes derzeitiger Deep Learning Systeme und der eigenen künstlerischen Erfahrung fächern wir diese Potentiale auf.\r\nWir stellen den Diskurs um Grundfragen zum Verhältnis Mensch-KI-Kunst neue Fragen diametral gegenüber: \r\nKann künstliche Intelligenz Kunst erzeugen?\r\nWie können wir Kunst von künstlich intelligenten Systemen verstehen?\r\nKann Kunst KI erzeugen und versteht das noch jemand?\r\n\r\nFlorina Speth (Zukunftsforscherin, Multiinstrumentalistin, Cellistin, Komponistin experimenteller Musik) und Simon Hegelich (KI-Entwickler, Philosoph, Professor für Political Data Science, Videoartist und Synthinerd) widmen sich einem dialogischen Diskurs und schmeißen ihre großen Leidenschaften zusammen: Kunst, maschinelles Lernen, Hegelsche Dialektik, Zukunftsforschung, Science Fiction, Kybernetik und Transhumanismus. Es könnte explosiv werden.",
+                        "abstract": "Kann künstliche Intelligenz Kunst erzeugen? \r\nKönnen Menschen von künstlich intelligenten Systemen erzeugte Kunst verstehen? Ist Kunst ein Weg zu neuen Stufen eines kybernetischen Verstandes? \r\nDer Stand der KI-Kunst ist keine Kunst oder keine KI.\r\nAber wir werden mit unserer menschlichen Eitelkeit konfrontiert werden, nicht die Einzigen zu sein, die schöpferisch und auch künstlerische Relevanz in Betrachtern auslösen. Dies liegt mitunter an unseren bisherigen Kunstbegriffen und -verständnissen, die oftmals mit Intentionalität assoziiert sind.\r\nEliza: Warum?\r\nSimon Hegelich widmen sich diesen Fragen und zeigt eigene (?) Werke (Videos, Bilder, Gedichte), die mit KI erzeugt wurden, wobei er seine großen Leidenschaften;- Kunst, maschinelles Lernen, Hegelsche Dialektik, Science Fiction, Kybernetik und Transhumanismus- der Erweiterung durch Diskurs unterzieht.",
+                        "description": "Künstlich intelligente Systeme werden seit den 70er Jahren zunehmend  in künstlerischen Schaffensprozesse einbezogen. Ob Computer auch autonom Kunst generieren können, ist keine Frage der Leistungsfähigkeit solcher Systeme, es wirft vielmehr die Frage auf, inwieweit tradierte Kunstbegriffe neu gedacht werden können. Die Beschäftigung mit KI und Kunst birgt im Vergleich zu laufenden KI-Debatten eine Reihe zusätzlicher Denkfreiheitsgrade: Sie ist erfahrbar! Gerade weil Kunst als Konzept schwierig zu fassen ist, uns gleichzeitig Künstlerisches inspiriert, zum Spekulieren, Träumen und Empfinden anregt, lässt sich vor diesem Hintergrund ganz anders über KIs und ihre Potentiale diskutieren. Unter Einbezug des technischen Standes derzeitiger Deep Learning Systeme und der eigenen künstlerischen Erfahrung werden diese Potentiale aufgefächert.\r\nWir stellen den Diskurs um Grundfragen zum Verhältnis Mensch-KI-Kunst neue Fragen diametral gegenüber: \r\nKann künstliche Intelligenz Kunst erzeugen?\r\nWie können wir Kunst von künstlich intelligenten Systemen verstehen?\r\nKann Kunst KI erzeugen und versteht das noch jemand?\r\n\r\nSimon Hegelich (KI-Entwickler, Philosoph, Professor für Political Data Science, Videoartist und Synthinerd) widmet sich diesen Fragen in eine Präsentation und schmeißt seine großen Leidenschaften zusammen: Kunst, maschinelles Lernen, Hegelsche Dialektik, Science Fiction, Kybernetik und Transhumanismus. Es könnte explosiv werden.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -3742,9 +3753,6 @@
                             "public_name": "Simon Hegelich"
                         }],
                         "links": [{
-                            "url": "https://soundcloud.com/florinaspeth",
-                            "title": "Soundcloud Florina"
-                        }, {
                             "url": "https://www.youtube.com/watch?v=mgSQv0IsVvM",
                             "title": "TEDx Talk Artificial Spirits"
                         }, {
@@ -3767,8 +3775,8 @@
                         "track": "Hardware \u0026 Making",
                         "type": "lecture",
                         "language": "de",
-                        "abstract": "Seit 2018 betreibt Eventphone ein neues Telefonsystem auf den chaosnahen Events. Natürlich wird neue Soft- und Hardware sofort zum Forschungsgegenstand. Schnell gab es die üblichen Fragen: Wie funktioniert das genau? Ist das alles an Features? Kann man das updaten? Kann man nicht kompatible Geräte vielleicht kompatibel machen? Was kann man noch verbessern? Ist das Sicher? Und natürlich haben wir Antworten und möchten unser Wissen mit euch teilen. Es gibt einen Überblick über DECT, kaputte Crypto™ und was man mit Kreativität daraus machen kann. Unser Anspruch ist, dass wir es so erklären, dass alle Zuschauerinnen und Zuschauer ein bisschen mehr über DECT wissen und mindestens einmal gelacht haben.",
-                        "description": "Seit dem Easterhegg 2018 betreibt Eventphone das PoC (Phone Operation Center) mit neuer Hard- und Software. Wer ist Eventphone bzw. das PoC und was machen die? Neben vielen selbst entwickelten Komponenten nutzen wir eine DECT over IP Lösung des kanadischen Telekommunikationsunternehmens Mitel. Wir geben euch eine Architekturübersicht der neuen Anlage und sprechen über Antennen, Software sowie Lizenzierung. Nachdem wir die größten Probleme, die wir mit dem alten System hatten, vollständig gelöst haben schauten wir etwas genauer unter die Haube. Bei den ersten Analysen entdeckten wir einen unkritischen aber witzigen Fehler, den wir euch zeigen wollen. Unser primäres Ziel war es die Kompatibilität zu erhöhen, denn es gab einige Geräte die trotz DECT Standard nicht mit der Anlage funktionierten oder sich sehr sonderlich verhielten. Warum eigentlich? Wir fingen an die Kommunikation der Geräte zu analysieren und fanden heraus: Wer ein Byte verliert, hat acht Bit zu wenig. Es folgt: Eine DECT Anmeldung als Theaterstück. Aber halt! Ist das nicht alles verschlüsselt? Woher wisst ihr das? Es folgt: die Geschichte der Mitel Crypto und was daraus entstand: rfpproxy. Es folgt: Eine DECT Anmeldung mit rfpproxy als Theaterstück. Dann sammelten wir Metadaten und löschten sie wieder, mit Unterstützung der Feuerwehr. Und dann? Dann haben wir viel gespielt, analysiert und entwickelt. Weil die Zeit knapp ist zeigen wir euch 3 kleine Beispiele. Musik während des Telefonats über Vanity Number, die Akte AVM und Telefonbuchfunktionen. Am Ende geben wir euch Informationen zum Weitermachen sowie einen Ausblick. Außerdem wollen euch motivieren uns zu helfen. Wir hätten gern einen Wireshark Dissector. Stay connected!",
+                        "abstract": "Seit 2018 betreibt Eventphone ein neues Telefonsystem auf den chaosnahen Events. Natürlich wird neue Soft- und Hardware sofort zum Forschungsgegenstand. Schnell gab es die üblichen Fragen: Wie funktioniert das genau? Ist das alles an Features? Kann man das updaten? Kann man nicht kompatible Geräte vielleicht kompatibel machen? Was kann man noch verbessern? Ist das sicher?",
+                        "description": "Natürlich haben wir Antworten und möchten unser Wissen mit euch teilen. Es gibt einen Überblick über DECT, kaputte Crypto™ und was man mit Kreativität daraus machen kann. Unser Anspruch ist, dass wir es so erklären, dass alle Zuschauerinnen und Zuschauer ein bisschen mehr über DECT wissen und mindestens einmal gelacht haben.\r\n\r\nSeit dem Easterhegg 2018 betreibt Eventphone das PoC (Phone Operation Center) mit neuer Hard- und Software. Wer ist Eventphone bzw. das PoC und was machen die? Neben vielen selbst entwickelten Komponenten nutzen wir eine DECT-over-IP-Lösung des kanadischen Telekommunikationsunternehmens Mitel. Wir geben euch eine Architekturübersicht der neuen Anlage und sprechen über Antennen, Software sowie Lizenzierung. Nachdem wir die größten Probleme, die wir mit dem alten System hatten, vollständig gelöst haben, schauten wir etwas genauer unter die Haube. Bei den ersten Analysen entdeckten wir einen unkritischen, aber witzigen Fehler, den wir euch zeigen wollen. Unser primäres Ziel war es, die Kompatibilität zu erhöhen, denn es gab einige Geräte, die trotz DECT-Standard nicht mit der Anlage funktionierten oder sich sehr sonderlich verhielten. Warum eigentlich? Wir fingen an, die Kommunikation der Geräte zu analysieren, und fanden heraus: Wer ein Byte verliert, hat acht Bit zu wenig. Es folgt: eine DECT-Anmeldung als Theaterstück. Aber halt! Ist das nicht alles verschlüsselt? Woher wisst ihr das? Es folgt: die Geschichte der Mitel Crypto und was daraus entstand: rfpproxy. Es folgt: eine DECT-Anmeldung mit rfpproxy als Theaterstück. Dann sammelten wir Metadaten und löschten sie wieder, mit Unterstützung der Feuerwehr. Und dann? Dann haben wir viel gespielt, analysiert und entwickelt. Weil die Zeit knapp ist zeigen wir euch 3 kleine Beispiele. Musik während des Telefonats über Vanity Number, die Akte AVM und Telefonbuchfunktionen. Am Ende geben wir euch Informationen zum Weitermachen sowie einen Ausblick. Außerdem wollen euch motivieren uns zu helfen. Wir hätten gern einen Wireshark Dissector. Stay connected!",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -3789,10 +3797,10 @@
                             "title": "Das neue Eventphone (PoC) Telefonsystem (Easterhegg 2019)"
                         }, {
                             "url": "https://eventphone.de/blog/2018/03/30/dect-anmeldung/",
-                            "title": "Die neue DECT Anmeldung"
+                            "title": "Die neue DECT-Anmeldung"
                         }, {
                             "url": "https://eventphone.de/blog/2018/04/01/dect-deregistrierung-easterhegg-2018/",
-                            "title": "DECT Deregistrierung (Easterhegg 2018)"
+                            "title": "DECT-Deregistrierung (Easterhegg 2018)"
                         }],
                         "attachments": [{
                             "url": "/system/event_attachments/attachments/000/003/867/original/Mitel-DECT.jpg?1571665830",
@@ -4036,11 +4044,11 @@
                             "id": 9735,
                             "public_name": "Moritz Chollet"
                         }, {
-                            "id": 9736,
-                            "public_name": "Hellmut von Koerber"
-                        }, {
                             "id": 9877,
                             "public_name": "Malte Larsen"
+                        }, {
+                            "id": 7615,
+                            "public_name": "Maya Minder"
                         }],
                         "links": [{
                             "url": "https://mikrobiomik.org/en/",
@@ -4190,27 +4198,30 @@
                         }],
                         "attachments": []
                     }, {
-                        "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10720.html",
-                        "id": 10720,
-                        "guid": "24c6b9ca-d6f8-4e82-934d-4ea5dab47682",
-                        "logo": null,
+                        "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11178.html",
+                        "id": 11178,
+                        "guid": "9af057bd-eb94-41f6-8005-f322ecf66662",
+                        "logo": "/system/events/logos/000/011/178/large/fck.PNG?1576712719",
                         "date": "2019-12-29T21:50:00+01:00",
                         "start": "21:50",
                         "duration": "00:40",
                         "room": "Eliza",
-                        "slug": "36c3-10720-how_data-driven_technology_helps_the_expansion_of_solar_and_wind_energy_in_south_korea",
-                        "title": "How Data-driven Technology Helps the Expansion of Solar and Wind Energy in South Korea",
-                        "subtitle": "",
-                        "track": "Resilience \u0026 Sustainability",
+                        "slug": "36c3-11178-art_against_facebook",
+                        "title": "Art against Facebook",
+                        "subtitle": "Art against Facebook Graffiti in the ruins of the feed and the party-info-capital is emigrating",
+                        "track": "Art \u0026 Culture",
                         "type": "lecture",
                         "language": "en",
-                        "abstract": "Different from conventional fossil fuel power of total predictability, the power generation of volatile renewable energy (e.g., wind and solar) is intermittent and largely dependent on the weather. Because a reliable electric supply is more essential to increase the mix of volatile renewable energy, the precise prediction of its generation a key to bring forward the energy transition.\r\n\r\nThis talk will present experimental results of South Korean solar and wind power plants as a promising example of applying solar and wind power forecasting. These results will address the influence of rising environmental problems, such as micro-dusts and typhoons. A micro-dust (or fine dust, Asian dust) has been arisen as a disastrous issue in Asia due to the recent severe air pollution problems. Also the climate change has led to more frequent and stronger occurrences of typhoons in East Asia.\r\n",
-                        "description": "In order to push forward the energy transition to renewable energy, while ensuring the reliable supply of the electricity and the proper management of distributed energy resources, we must resolve the following problem: accurate forecasting of solar and wind power generation.\r\n\r\nNevertheless this is a quite challenging task involving the prediction of meteorological variables (irradiance, cloud index, wind speed, pressure, temperature and more) and the simulation of power plants with taking shadows for solar, turbulence for wind, and the directions and land types of installments into account. The appropriate strategies for predicting those meteorological variables and conditions of power plants vary up to forecasting horizon also in\r\nterms of whether to use surface observation data, numerical weather prediction, or satellite data.\r\n\r\nIn this talk, we will present cases of\r\n\r\n(1) developing a solar map in Korea;\r\n\r\n(2) applying solar power forecasting on Korean solar power plants;\r\n\r\n(3) applying wind power forecasting on wind power plants in Jeju, an island in Korea; and\r\n\r\n(4) analyzing the influence of micro-dusts and typhoons to solar energy generation in Korea.\r\n\r\nBoth micro-dusts and typhoons have recently arisen as crucial issues due to the recent severe air pollution problem in Asia and the more frequent and stronger occurrences of typhoons as a result of the climate change. \r\n\r\nAlong with the talk we would like to emphasize that the advancement of the current forecasting technology is the result of interdisciplinary research of many fascinating fields: from data assimilation based on meteorology and historical physical simulation to image analysis for satellite data based on the recent AI technology. This is only possible because a large part of those data is publicly available as open data. Open data and open source projects are playing a vital role in accelerating the further development of interdisciplinary collaboration, now that more data for surface observatories, meteorological predictions, satellites and power plants have become publicly available as well as related libraries for accessing satellite data and simulating power plants.",
+                        "abstract": "Currently Facebook has a tight grip on the cultural scene with its events-calendar and with Instagram as a spectacular image feed. But there is graffiti in the ruins of the feed and the party-info-capital is emigrating. The talk calls upon the critical net scene to contribute arguments and skills - theory and practice - in order to build bridges and include many.",
+                        "description": "Currently Facebook has a tight grip on the cultural scene with its events-calendar and with Instagram as a spectacular image feed. Even the leftist-critical scene of alternative culture and protests is busy contributing for the sake of outreach. Their contributions feed the filter systems, and profiling and affect loops run hot.\r\nBut an opposition is rising. Graffiti and net-art are merging with hacking. Activists in Berlin, Paris, Rio and Sao Paulo are using facebook graffiti, through circulating UTF-8 textbombs that cross the layout of the feed (Check the wiki for workshop materials from 34C3).\r\nThe Berlin network Reclaim Club Culture meanwhile is calling for a Facebook Exodus (CCCamp2019). They want to motivate the club and cultural scene to support free alternatives, by moving their biggest information capital, which are the event announcements. Once the information monopoly is cut through, maybe more people will make the step to leave the platform they don't even like anymore.\r\nAll of this is part of a bigger network of refusal, from Fuck Off Google (31C3) to Facebook Resistance Artists. The talk calls upon the critical net scene to contribute arguments and skills - theory and practice - in order to build bridges and include many.",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
-                            "id": 9535,
-                            "public_name": "Heuna Kim"
+                            "id": 9777,
+                            "public_name": "el"
+                        }, {
+                            "id": 8761,
+                            "public_name": "Rosa Rave"
                         }],
                         "links": [],
                         "attachments": []
@@ -4490,8 +4501,8 @@
                         "track": "Science",
                         "type": "lecture",
                         "language": "de",
-                        "abstract": "Weltweit verlaufen die Entwicklungstrends des Markthochlaufs der Elektromobilität und die Weiterentwicklung relevanter Batteriefertigungs- und Recyclingtechnologien hoch dynamisch. Maßgebliche Faktoren für die Entstehung eines industriellen Batterierecycling-Marktes nehmen dabei erst langsam Gestalt an, der regulatorische Rahmen ist noch modellierbar. Zugleich ist der Technologiepfad Elektromobilität als eingeschlagen zu begreifen: Die Vorgaben des Klimaschutzplans der Bundes-regierung zur CO2-Reduktion begründen Umbrüche in der Automobilbranche, die mittelfristig zu steigenden Verkehrs-anteilen von Fahrzeugen mit rein elektrischem oder hybridem Antrieb an den PKW-Neuzulassungen führen werden. \r\n\r\nDamit steigt der Bedarf an geeigneten Traktionsbatterien und die Nachfrage nach den zu ihrer Herstellung erforderlichen, endlichen Rohstoffen. Daraus erwächst mit einem der Batterielebensdauer entsprechenden zeitlichen Versatz bis 2030 ein relevantes Altbatterie-Aufkommen. Da die Batterien zudem zahlreiche Gift- und Gefahrstoffe enthalten, kommt dem Aufbau einer industriellen Recyclingstrecke für Traktionsbatterien nicht nur ökonomisch, sondern auch ökologisch eine strategische Schlüsselrolle zu. Die dafür zukünftig industriell notwendigen Recyclingkapazitäten sind derzeit weder vorhanden noch im Aufbau befindlich. \r\n\r\nMit der Zielstellung, die Lausitz als Energieregion zu erhalten und die Gleichwertigkeit der Lebensverhältnisse auch für strukturschwache Regionen herzustellen, gehen wir der Frage nach, ob durch die Errichtung einer Recyclingstrecke für Traktionsbatterien der Elektro-Mobilität ein Beitrag zur Gestaltung des Strukturwandels geleistet werden kann, der in der Region mit dem Ausstieg aus der Braunkohle in eine neue Runde geht.\r\n\r\nDies einerseits im Hinblick auf die Schaffung von Beschäftigung, um die im Kontext des Braunkohleausstiegs drohenden Verluste von Industriearbeitsplätzen zu kompensieren. Andererseits unter Maßgabe der Transformation in eine nachhaltige „Energieregion der Zukunft“. Um Entwicklungschancen im Zuge des Aufschwungs der Elektro-Mobilität aufzuzeigen, werden die endogenen Potentiale der Lausitz analysiert, der technologsche Entwicklungsstand des Batterierecycling aufgezeigt und weitere Umsetzungsvoraussetzungen geprüft.\r\n\r\nSchließlich werden Gestaltungsfelder aufgefächert, worin Handlungsempfehlungen für ein integriertes Entwicklungskonzept formuliert sind, die u.a. auf die Etablierung einer Kreislaufwirtschaft und Bottom-up Partizipation der Bevölkerung abstellen. Sie vermitteln Ideen, wie sich die Ansiedlung der Zukunftstechnologie industrielles Batterierecycling in der Lausitz unterstützen ließe und bieten Hilfestellung für die Gestaltung des Strukturwandels unter der Prämisse einer „Just Transition“ - damit ökologische nicht gegen ökonomische Interessen ausgespielt und  die Menschen nicht zu den Verlierern des Strukturwandels werden. ",
-                        "description": "Die Maßnahmenpläne der Bundesregierung für die Energie- und Mobilitätswende zur Erreichung der UN-Klimaziele führen gegenwärtig zu einer  Zuspitzung der Debatten über den Gestaltungsrahmen, der politischen Entscheidungsträger*innen in unserer repräsentativen Demokratie zugebilligt werden sollte. Das Spektrum reicht dabei von der hauptsächlich von jungen Menschen getragenen internationalen Protestbewegung „Fridays for Future“, die sich für die umgehende Herstellung von CO2-Neutralität ausspricht, über die Ablehnung einer staatlichen Umweltpolitik mit wirtschaftlicher Lenkungswirkung bis hin zur Leugnung des Klimawandels. Differenzen bestehen zwischen den Interessengruppen auch im Hinblick auf die Wahrnehmung der (eigenen) wirtschaftlichen Lage, der Wirtschaftsweise und bezüglich des Demokratieverständnisses. Neben den  Grünen (in den Ballungsräumen) hat die AfD zuletzt kräftige Zuwächse verbuchen und sich in vielen ländlichen Räumen als starke (und mitunter stärkste) politische Kraft etablieren können.\r\n\r\nDeutlich wird, dass der gesellschaftliche Kitt eines geteilten Wertekanons in Deutschland zu bröckeln scheint und die ins Haus stehenden Umbrüche zahlreiche Zukunftsängste in der Bevölkerung geschürt haben, die sich zuletzt in den Wahlkabinen Bahn brachen und die politische Entwicklung unzweifelhaft beeinflussen. Wir betrachten es deshalb als von besonders hoher Relevanz, uns exemplarisch mit einer „innerdeutschen“ Fragestellung zu beschäftigen. Die Analyse der sozialen und wirtschaftlichen Entwicklung vor allem Ostdeutschlands ist nicht allein deshalb wichtig, weil die Herstellung bundesweit einheitlicher Lebensbedingungen bis heute nicht gelingen konnte - auch mit Blick auf wirtschaftliche Vergleichsdaten, soziale Errungenschaften, kulturelle Vielfalt und Teilhabe besteht hier Nachholbedarf. \r\nIn der Lausitz, einer Region mit einem überdurchschnittlich hohen Anteil einer hoch qualifizierten Facharbeiterschaft, liegen die Löhne nach wie vor weit hinter dem Bundesschnitt zurück. Zwar ist die Arbeitslosigkeit auch in der Lausitz gegenwärtig gering und die mit der massiven De-Industrialisierung nach der Wende einsetzende Abwanderungsdynamik hat sich deutlich abgeschwächt, aber das Geburtendefizit dauert an und die Überalterung der Gesellschaft nimmt weiter zu. Bis 2030 wird von einer weiteren Bevölkerungsabnahme um bis zu zehn Prozent ausgegangen wird. Zugleich wurde der Bildungssektor in den vergangenen Jahren vergleichsweise stark geschröpft - eine Entwicklung, die dem Diktum lebenslangen Lernens widerspricht. Gleichzeitig steht in der Lausitz mit der Braunkohle ein Identitätsfaktor und großer, auch indirekt beschäftigungsbedeutsamer Industriezweig zur Disposition. Diesen Entwicklungen muss jetzt mit der Schaffung nachhaltiger Perspektiven etwas entgegengesetzt werden. \r\nDie vorliegende Studie geht der Frage nach, ob die Region den Markthochlauf der Elektromobilität mit der Errichtung eines Recyclingwerkes für Traktionsbatterien als Baustein zur Gestaltung einer „Energieregion der Zukunft“ nutzen kann: Durch die Aufbereitung von Hintergründen und die Entwicklung von Zukunftsperspektiven wird relevantes Handlungswissen für die Etablierung eines Batterierecyclingwerkes in der Lausitz erschlossen, um dem dort seit drei Jahrzehnten andauernden Strukturwandel weiter aktiv zu begegnen, der mit dem vorgesehenen Braunkohleausstieg in eine neue Runde geht.\r\nAusgehend davon, dass es die Menschen vor Ort sind, die beteiligt werden müssen, um verloren gegangene Glaubwürdigkeit wieder herzustellen, verweist das Autorenteam darauf, dass neben  der Beschäftigungssicherung die Herstellung gleichwertiger Lebensverhältnisse, basierend auf einer funktionierenden Daseinsvorsorge, von ebenso großer Relevanz ist wie eine zukünftig Ressourcen schonende Wirtschaftsweise, um weitere ökologische Schäden zu vermeiden. Herausgestellt wird, dass die Lausitz über zahlreiche endogene Potentiale verfügt, die als Standortvorteile begriffen und stärker genutzt werden könnten. Neben der gut ausgebildeten Facharbeiterschaft, vor allem im Bereich der metallbe- und –verarbeitenden Vorleistungsgüter- und Zulieferindustrie, sind dies eine hoch leistungsfähige (Energie-)Netzinfrastruktur und eine bereits rund um die regenerative Energieerzeugung und –speicherung entstandene innovative Unternehmenslandschaft.  \r\nMit der diesjährigen Verleihung des Nobelpreises für Chemie an die drei Entwickler von Lithium-Ionen-Batterien Goodenough, Whittingham und Yoshino unterstreicht die schwedische Akademie die bahnbrechende Bedeutung dieser Technologie, die den Grundstein gelegt habe für drahtlose Kommunikation und für eine von fossilen Brennstoffen freie Zukunft. Seit ihrer Markteinführung 1991 kommen diese leichten, hunderte Male wieder aufladbaren Batterien in Gebrauchsgegenständen von Mobiltelefonen über Laptops bis hin zu  elektrisch betriebenen Fahrzeugen zum Einsatz. \r\nDie Studie verdeutlicht neben dem aktuellen technologischen Entwicklungsstand das Innovationspotential der Li-Io-Batterien für regionale Märkte, was mit dem erwarteten großindustriellen Einsatz der Technologie im Zuge des Aufschwungs der Elektromobilität einhergeht. Darüber hinausgehend nimmt sich das Autorenteam auch der offenen Flanken dieser Batterierevolution an, indem sie ihre Chancen und Risiken diskutiert. Demnach stellt sich das Recycling von Lithium-Ionen-Batterien zukünftig als dringliche Notwendigkeit dar, denn  \r\n    • die zu ihrer Herstellung erforderlichen Rohstoffe sind endlich, \r\n    • sie werden zum Teil unter Menschen unwürdigen Arbeitsbedingungen und mit erheblichen ökologischen Folgeschäden in z.T. politisch instabilen Ländern abgebaut, \r\n    • die globalen Rohstoffmärkte sind (aufgrund dessen und aufgrund der Marktdominanz einzelner Staaten) sehr volatil, \r\n    • es ist ein Beitrag dazu, die automobile Wertschöpfungskette vollständig innereuropäisch und in Deutschland abzubilden und\r\n    • eine sichere und verantwortungsvolle Entsorgung bzw. Wiederverwertung der Batterien, die hochgiftige Substanzen enthalten, zu gewährleisten.\r\nDie Recycling von Li-Io-Batterien kann, so das Autorenteam, eingebettet in eine integrierte Strategie nachhaltigen Wirtschaftens das Prinzip der Kreislaufwirtschaft stärken. Dazu werden exemplarisch die notwendigen Voraussetzungen in der vom Braunkohleausstieg betroffenen Lausitz analysiert, um exemplarisch aufzuzeigen, wie sich Zukunftstechnologien so verankern lassen, dass \r\n    • ökologische nicht gegen soziale Interessen ausgespielt werden,\r\n    • der Wegfall hochwertiger Industriearbeitsplätze unter den Bedingungen Guter Arbeit kompensiert werden könnte,\r\n    • eine Energieregion der Zukunft mit Modellcharakter entsteht, in der auch kommende Generationen ein Auskommen in lebenswerter Umwelt finden und\r\n    • durch Partizipation der Bevölkerung die im Zuge der Nachwende-Transformationserfahrungen verloren gegangene Glaubwürdigkeit (wieder-)hergestellt werden kann. \r\nDer Technologiepfad der Elektromobilität gilt als eingeschlagen, der Erfolg ihres Markthochlaufs bleibt ebenso wie die Durchsetzungsfähigkeit der Politik zur Erreichung Klimaschutzziele und eine nachhaltige Verwendung der angekündigten Strukturhilfen abzuwarten. Zeitlich korrelierend mit dem für spätestens 2038 vorgesehenen Ausstieg aus der fossilen Energiewirtschaft spannen das Wachstum der Elektromobilität und das daraus anfallende Recyclingvolumen an Traktionsbatterien den in der Studie betrachteten Planungshorizont von rund 20 Jahren auf. Die Nachwendeerfahrung zeigt, dass ein Zeitfenster von 20 oder 30 Jahren nicht besonders groß ist, weshalb umgehend damit begonnen werden sollte, die Lausitz durch die Verankerung ressourcenschonender Wertschöpfungssysteme, durch Investitionen in Zukunftstechnologien und die Stärkung von Aus- und Weiterbildungsmöglichkeiten als „Industrie- und Energieregion der Zukunft“ zu entwickeln. ",
+                        "abstract": "Weltweit verlaufen die Entwicklungstrends des Markthochlaufs der Elektromobilität und die Weiterentwicklung relevanter Batteriefertigungs- und Recyclingtechnologien hoch dynamisch. Maßgebliche Faktoren für die Entstehung eines industriellen Batterierecycling-Marktes nehmen dabei erst langsam Gestalt an, der regulatorische Rahmen ist noch modellierbar. Zugleich ist der Technologiepfad Elektromobilität als eingeschlagen zu begreifen - die Notwendigkeit einer Verkehrswende zur Reduzierung des CO2-Ausstoßes begründet Umbrüche in der Automobilbranche, die mittelfristig zu steigenden Verkehrsanteilen von Fahrzeugen mit rein elektrischem oder hybridem Antrieb an den PKW-Neuzulassungen führen werden. Damit steigt der Bedarf an geeigneten Traktionsbatterien und die Nachfrage nach den zu ihrer Herstellung erforderlichen, endlichen Rohstoffen.\r\n\r\nIm Energiesektor stellt der Beschluss zum Kohleausstieg 2038 eine Zäsur dar:  Mit der Zielstellung, die Lausitz – bislang Braunkohlerevier -  als Energieregion zu erhalten und die Angleichung der Lebensverhältnisse in der strukturschwachen Region zu schaffen, gehen wir der Frage nach, ob durch die Errichtung einer Recyclingstrecke für Traktionsbatterien der Elektro-Mobilität ein Beitrag zur Gestaltung einer „Energieregion der Zukunft“ geleistet werden kann. Dies einerseits im Hinblick auf die Schaffung von Beschäftigung, um die im Kontext des Braunkohleausstiegs drohenden Verluste von Industriearbeitsplätzen zu kompensieren. Andererseits unter Maßgabe der Etablierung einer nachhaltigen, regional verankerten Kreislaufwirtschaft.\r\n",
+                        "description": "Um nachhaltige Entwicklungschancen für die Lausitz im Zuge des Aufschwungs der Elektro-Mobilität abzuleiten, werden \r\n•\tdie endogenen Potentiale der Region analysiert, \r\n•\tdas zukünftige Altbatterie-Aufkommen und der technologische Entwicklungsstand des Li-Io-Batterierecycling aufgezeigt sowie\r\n•\tdie regulatorischen Rahmenbedingungen auf den Prüfstand gestellt.\r\nWir zeigen die offenen Flanken der Lithium-Ionen-„Batterierevolution“ auf, indem wir auch ihre Risiken diskutieren: Das Recycling der Lithium-Ionen-Batterien stellt sich demnach zukünftig als dringliche Notwendigkeit dar, denn  \r\n\r\n•\tdie zu ihrer Herstellung erforderlichen Rohstoffe sind endlich, \r\n•\tsie werden zum Teil unter Menschen unwürdigen Arbeitsbedingungen und mit erheblichen ökologischen Folgeschäden abgebaut,    \r\n•\tes ist eine sichere und verantwortungsvolle Entsorgung bzw. Wiederverwertung der Batterien, die hochgiftige Substanzen enthalten, zu gewährleisten.\r\n\r\nSchließlich werden Handlungsempfehlungen für ein integriertes Entwicklungskonzept formuliert, die auf die Etablierung einer Kreislaufwirtschaft und Bottom-up Partizipation der Bevölkerung abstellen. Sie vermitteln Ideen, wie sich die Ansiedlung einer Zukunftstechnologie – wie des industriellen Batterierecycling - in „Regionen mit hohen Zukunftsrisiken“ unterstützen lässt und wie sich Strukturwandel so gestalten lässt, dass ökologische und soziale nicht gegen ökonomische Interessen ausgespielt werden.\r\n",
                         "recording_license": "",
                         "do_not_record": false,
                         "persons": [{
@@ -4502,10 +4513,7 @@
                             "url": "https://www.otto-brenner-stiftung.de/stiftung-neue-laender-snl/projektergebnisse-der-snl/petitel/studie-batterie-recycling-als-beschaeftigungs-perspektive-fuer-die-lausitz/peaktion/show/pecon/Projectresults/",
                             "title": "2018/12 | Studie \"Batterie-Recycling als Beschäftigungsperspektive für die Lausitz\""
                         }],
-                        "attachments": [{
-                            "url": "/system/event_attachments/attachments/000/004/035/original/Batt_Rec_Lau_Leipzig_123019.pptx?1577031864",
-                            "title": "Batt_Rec_Lau_PPP_Folien"
-                        }]
+                        "attachments": []
                     }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11235.html",
                         "id": 11235,
@@ -4536,7 +4544,7 @@
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10592.html",
                         "id": 10592,
                         "guid": "95eba607-f3bd-4ee6-b822-57a0efb3cf2f",
-                        "logo": null,
+                        "logo": "/system/events/logos/000/010/592/large/Stempel-8.6.png?1577273820",
                         "date": "2019-12-30T11:30:00+01:00",
                         "start": "11:30",
                         "duration": "00:40",
@@ -4655,34 +4663,6 @@
                         "attachments": []
                     }],
                     "Dijkstra": [{
-                        "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/11178.html",
-                        "id": 11178,
-                        "guid": "9af057bd-eb94-41f6-8005-f322ecf66662",
-                        "logo": "/system/events/logos/000/011/178/large/fck.PNG?1576712719",
-                        "date": "2019-12-30T11:30:00+01:00",
-                        "start": "11:30",
-                        "duration": "00:40",
-                        "room": "Dijkstra",
-                        "slug": "36c3-11178-art_against_facebook",
-                        "title": "Art against Facebook",
-                        "subtitle": "Art against Facebook Graffiti in the ruins of the feed and the party-info-capital is emigrating",
-                        "track": "Art \u0026 Culture",
-                        "type": "lecture",
-                        "language": "en",
-                        "abstract": "Currently Facebook has a tight grip on the cultural scene with its events-calendar and with Instagram as a spectacular image feed. But there is graffiti in the ruins of the feed and the party-info-capital is emigrating. The talk calls upon the critical net scene to contribute arguments and skills - theory and practice - in order to build bridges and include many.",
-                        "description": "Currently Facebook has a tight grip on the cultural scene with its events-calendar and with Instagram as a spectacular image feed. Even the leftist-critical scene of alternative culture and protests is busy contributing for the sake of outreach. Their contributions feed the filter systems, and profiling and affect loops run hot.\r\nBut an opposition is rising. Graffiti and net-art are merging with hacking. Activists in Berlin, Paris, Rio and Sao Paulo are using facebook graffiti, through circulating UTF-8 textbombs that cross the layout of the feed (Check the wiki for workshop materials from 34C3).\r\nThe Berlin network Reclaim Club Culture meanwhile is calling for a Facebook Exodus (CCCamp2019). They want to motivate the club and cultural scene to support free alternatives, by moving their biggest information capital, which are the event announcements. Once the information monopoly is cut through, maybe more people will make the step to leave the platform they don't even like anymore.\r\nAll of this is part of a bigger network of refusal, from Fuck Off Google (31C3) to Facebook Resistance Artists. The talk calls upon the critical net scene to contribute arguments and skills - theory and practice - in order to build bridges and include many.",
-                        "recording_license": "",
-                        "do_not_record": false,
-                        "persons": [{
-                            "id": 9777,
-                            "public_name": "el"
-                        }, {
-                            "id": 8761,
-                            "public_name": "Rosa Rave"
-                        }],
-                        "links": [],
-                        "attachments": []
-                    }, {
                         "url": "https://fahrplan.events.ccc.de/congress/2019/Fahrplan/events/10795.html",
                         "id": 10795,
                         "guid": "a5d6dd63-ef24-4686-9a89-e06cb179d531",
@@ -4840,5 +4820,5 @@
             }]
         }
     },
-    "timestamp": "2019-12-23T17:34:29.191Z"
+    "timestamp": "2019-12-27T23:11:57.501Z"
 }
