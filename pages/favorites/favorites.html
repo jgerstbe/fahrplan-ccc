@@ -18,6 +18,8 @@
             <span [ngStyle]="{color: tracks[room.track]}">
               {{room.track}}
             </span>
+            <br>
+            <i>{{favoriteService.friendsInSession(room.guid)}}</i>
           </ion-label>
           <ion-icon name="{{favoriteService.isFavorite(room.guid)}}" style="color:gold;" item-end (click)="removeFavorite(room)"></ion-icon>
       </ion-item>
