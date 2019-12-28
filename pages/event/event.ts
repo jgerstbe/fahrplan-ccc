@@ -23,10 +23,24 @@ export class EventPage {
 
   ngOnInit() {
     this.tracks = this.eventService.tracks;
-    this.eventService.conference.days.forEach(day => {
+    this.eventService.conference.days.forEach((day, index) => {
       const parsedDay = new Day(day.index, day.date, day.day_start, day.day_end, day.rooms);
       this.days.push(parsedDay);
+      if (index === this.eventService.conference.days.length-1) {
+        setTimeout(() => this.scrollToActiveDay(), 100);
+      }
     });
+  }
+
+  scrollToActiveDay() {
+    // mark active day if today is a congress day
+    const today = new Date().getUTCDay();
+    const isToday = this.days.filter(d => d.date.getUTCDay() === today);
+    const activeDay = isToday.length > 0 ? isToday[0].index-1 : 0;
+    const elem = document.querySelector('#day-'+activeDay);
+    if (elem !== null) {
+      elem.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
   }
 
   clickDetail(event) {

@@ -23,7 +23,7 @@ export class FavoritesPage {
   tracks;
   activeDay: number = 0;
 
-   ionViewDidEnter() {
+  ionViewDidEnter() {
     this.init();
   }
 
@@ -32,7 +32,7 @@ export class FavoritesPage {
     this.tracks = this.eventService.tracks;
 
     // filter favs
-    this.days.map(day => {
+    this.days.map((day, index) => {
       day.rooms = day.rooms.filter(room => {
         if (this.favoriteService.favorites.indexOf(room.guid) !== -1) {
           // enthalten
@@ -40,13 +40,21 @@ export class FavoritesPage {
         } 
         return false;
       })
+      if (index === this.days.length-1) {
+        setTimeout(() => this.scrollToActiveDay(), 100);
+      }
     })
+  }
 
+  scrollToActiveDay() {
     // mark active day if today is a congress day
     const today = new Date().getUTCDay();
     const isToday = this.days.filter(d => d.date.getUTCDay() === today);
-    console.log("activeDay is today", isToday.length?true:false);
     this.activeDay = isToday.length > 0 ? isToday[0].index-1 : this.activeDay;
+    const elem = document.querySelector('#day-'+this.activeDay);
+    if (elem !== null) {
+      elem.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
   }
 
   clickDetail(event) {

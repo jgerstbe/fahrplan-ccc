@@ -7,8 +7,8 @@
 </ion-header>
 
 <ion-content>
-	<ion-item-group *ngFor="let day of days">
-		<ion-item-divider color="dark">{{day.date.toDateString()}}</ion-item-divider>
+	<ion-item-group *ngFor="let day of days; let i = index">
+		<ion-item-divider color="dark" id="day-{{i}}">{{day.date.toDateString()}}</ion-item-divider>
 		<ion-item-group *ngFor="let room of day.roomList; let i = index;">
       <ion-item-divider color="light">{{room}}</ion-item-divider>
 			<ion-item *ngFor="let event of day.rooms[room]" (click)="clickDetail(event)">

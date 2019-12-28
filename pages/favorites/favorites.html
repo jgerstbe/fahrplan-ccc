@@ -6,8 +6,8 @@
 
 <ion-content>
 	<ion-list>
-    <ion-item-group *ngFor="let day of days">
-		  <ion-item-divider color="light">{{day.date.toDateString()}}</ion-item-divider>
+    <ion-item-group *ngFor="let day of days; let i = index;">
+		  <ion-item-divider color="light" id="day-{{i}}">{{day.date.toDateString()}}</ion-item-divider>
       <ion-item *ngFor="let room of day.rooms">
           <ion-icon name="bookmark" [ngStyle]="{color: tracks[room.track]}" item-start></ion-icon>
           <ion-label (click)="clickDetail(room)">
