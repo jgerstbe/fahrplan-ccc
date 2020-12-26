@@ -1,32 +1,61 @@
-import { Injectable } from '@angular/core';
-import { Day } from ' ./models';
-import * as tracks from './tracks.json';
-import * as fahrplan from './36c3.json';
+import { Injectable } from "@angular/core";
+import { Day } from " ./models";
+import * as tracks from "./tracks.json";
+import * as fahrplan from "./36c3.json";
+import { HttpClient } from "@angular/common/http";
+import { BehaviorSubject } from "rxjs";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root"
 })
 export class EventService {
   public daysWithSessionsByTime: Day[] = [];
   public tracks = tracks;
   public conference;
+  public onSchedule: BehaviorSubject<any> = new BehaviorSubject(null);
 
-  constructor() {
-    this.conference = fahrplan.schedule.conference;
-    this.daysWithSessionsByTime = this.parseDaysBySessionTime(fahrplan);
+  constructor(private http: HttpClient) {
+    // this.conference = fahrplan.schedule.conference;
+    // this.daysWithSessionsByTime = this.parseDaysBySessionTiWme(fahrplan);
+    this.initService();
+  }
+
+  initService() {
+    this.http
+      .get(
+        "https://cors-anywhere.herokuapp.com/https://fahrplan.events.ccc.de/rc3/2020/Fahrplan/schedule.json"
+      )
+      .subscribe(
+        data => {
+          this.conference = data.schedule.conference;
+          this.daysWithSessionsByTime = this.parseDaysBySessionTime(data);
+          this.onSchedule.next(data);
+        },
+        error => {
+          console.error("Could not load schedule.", error);
+        }
+      );
   }
 
   /**
    * Parse days with session information by rooms.
    */
-  parseDaysBySessionTime(fahrplan:any) {
+  parseDaysBySessionTime(fahrplan: any) {
     const local_days: Day[] = [];
     fahrplan.schedule.conference.days.forEach(day => {
-      const parsedDay = new Day(day.index, day.date, day.day_start, day.day_end, day.rooms);
+      const parsedDay = new Day(
+        day.index,
+        day.date,
+        day.day_start,
+        day.day_end,
+        day.rooms
+      );
       // merge rooms into a single list
       // let allRooms = parsedDay.rooms.Adams.concat(parsedDay.rooms.Borg, parsedDay.rooms.Clarke, parsedDay.rooms.Dijkstra, parsedDay.rooms.Eliza);
       let allRooms = [];
-      Object.keys(parsedDay.rooms).map((key:string) => allRooms.push(...Object.values(parsedDay.rooms[key])));
+      Object.keys(parsedDay.rooms).map((key: string) =>
+        allRooms.push(...Object.values(parsedDay.rooms[key]))
+      );
       // sort rooms
       allRooms.sort(function(a, b) {
         // const startA = Number(a.start.replace(":", ""));
@@ -79,7 +108,7 @@ export class EventService {
     m = startMinutes + durationMinutes;
 
     if (m > 60) {
-      h += (m - m % 60) / 60;
+      h += (m - (m % 60)) / 60;
       m = m % 60;
     }
 
@@ -89,5 +118,4 @@ export class EventService {
 
     return h + ":" + m;
   }
-
 }
