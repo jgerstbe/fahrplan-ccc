@@ -21,9 +21,11 @@ export class FavoriteService {
   }
 
   public isFavorite(guid) {
-    const index = this.favorites.indexOf(guid);
-    if (index != -1) {
-      return "star";
+    if (this.favorites && guid) {
+      const index = this.favorites.indexOf(guid);
+      if (index != -1) {
+        return "star";
+      }
     }
     return "star-outline";
   }
@@ -42,6 +44,9 @@ export class FavoriteService {
   load() {
     const loadLocal = () => {
       let local = localStorage.getItem(this.favLocator);
+      if (local === null) {
+        return;
+      }
       this.favorites = JSON.parse(local);
     };
     // api
