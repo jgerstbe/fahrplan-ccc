@@ -27,9 +27,15 @@
 			</ion-item>
 		</ion-item-group>
 		<ion-item-group *ngIf="streamUrl">
-			<ion-item-divider color="light">Stream</ion-item-divider>
+			<ion-item-divider color="light">Stream: {{event.room}}</ion-item-divider>
 			<ion-item>
-				<video style="width:100%;" [src]="streamUrl" controls></video>
+				<!-- <video style="width:100%;" [src]="streamUrl" controls></video> -->
+				<iframe *ngIf="event.room == 'rC1'"
+					src="https://streaming.media.ccc.de/rc3/embed/one/dash/native/no-autoplay" [width]="videoWidth"
+					[height]="videoHeight" frameborder="none" allowfullscreen="allowfullscreen"></iframe>
+				<iframe *ngIf="event.room == 'rC2'"
+					src="https://streaming.media.ccc.de/rc3/embed/two/dash/native/no-autoplay" [width]="videoWidth"
+					[height]="videoHeight" frameborder="none" allowfullscreen="allowfullscreen"></iframe>
 			</ion-item>
 		</ion-item-group>
 		<ion-item-group *ngIf="event.description">
@@ -42,7 +48,7 @@
 		<ion-item>
 			<strong class="col-6">Day&nbsp;</strong> {{event.date.toLocaleDateString()}}
 		</ion-item>
-		<ion-item>
+		<ion-item id="videoItem">
 			<strong>Start time&nbsp;</strong> {{event.start}}
 		</ion-item>
 		<ion-item>

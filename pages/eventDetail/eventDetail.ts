@@ -14,6 +14,8 @@ export class EventDetailPage {
   keys: string[];
   tracks = tracks;
   streamUrl: string;
+  videoWidth: number = 0;
+  videoHeight: number = 0;
 
   constructor(
     params: NavParams,
@@ -29,10 +31,26 @@ export class EventDetailPage {
 
   getStream(room: string) {
     console.log("getStream", room);
+    const calcPlayerSize = () => {
+      console.log(
+        "videoItem",
+        document.querySelector("#videoItem")
+          ? document.querySelector("#videoItem").offsetWidth
+          : 0
+      );
+      if (!document.querySelector("#videoItem")) {
+        return setTimeout(calcPlayerSize, 100);
+      }
+      this.videoWidth = document.querySelector("#videoItem").offsetWidth - 30;
+      this.videoHeight = this.videoWidth / 1.77;
+      console.log(this.videoWidth, this.videoHeight);
+    };
     if (room === "rC1") {
       this.streamUrl = "https://cdn.c3voc.de/rc1_native_hd.webm";
+      calcPlayerSize();
     } else if (room == "rC2") {
       this.streamUrl = "https://cdn.c3voc.de/rc2_native_hd.webm";
+      calcPlayerSize();
     } else {
       delete this.streamUrl;
     }
