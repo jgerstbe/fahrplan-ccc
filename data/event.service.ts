@@ -116,6 +116,10 @@ export class EventService {
       h -= 24;
     }
 
-    return h + ":" + m;
+    if ((m + "").length === 1) {
+      return h + ":0" + m;
+    } else {
+      return h + ":" + m;
+    }
   }
 }
