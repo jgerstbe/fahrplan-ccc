@@ -1,12 +1,12 @@
-import { Injectable } from "@angular/core";
-import { Day } from " ./models";
-import * as tracks from "./tracks.json";
-import * as fahrplan from "./36c3.json";
-import { HttpClient } from "@angular/common/http";
-import { BehaviorSubject } from "rxjs";
+import { Injectable } from '@angular/core';
+import { Day } from ' ./models';
+import * as tracks from './tracks.json';
+import * as fahrplan from './36c3.json';
+import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root',
 })
 export class EventService {
   public daysWithSessionsByTime: Day[] = [];
@@ -22,17 +22,15 @@ export class EventService {
 
   initService() {
     this.http
-      .get(
-        "https://cors-anywhere.herokuapp.com/https://fahrplan.events.ccc.de/rc3/2020/Fahrplan/schedule.json"
-      )
+      .get('https://pretalx.c3voc.de/rc3-2021/schedule/export/schedule.json')
       .subscribe(
-        data => {
+        (data: any) => {
           this.conference = data.schedule.conference;
           this.daysWithSessionsByTime = this.parseDaysBySessionTime(data);
           this.onSchedule.next(data);
         },
-        error => {
-          console.error("Could not load schedule.", error);
+        (error) => {
+          console.error('Could not load schedule.', error);
         }
       );
   }
@@ -42,7 +40,7 @@ export class EventService {
    */
   parseDaysBySessionTime(fahrplan: any) {
     const local_days: Day[] = [];
-    fahrplan.schedule.conference.days.forEach(day => {
+    fahrplan.schedule.conference.days.forEach((day) => {
       const parsedDay = new Day(
         day.index,
         day.date,
@@ -57,7 +55,7 @@ export class EventService {
         allRooms.push(...Object.values(parsedDay.rooms[key]))
       );
       // sort rooms
-      allRooms.sort(function(a, b) {
+      allRooms.sort(function (a, b) {
         // const startA = Number(a.start.replace(":", ""));
         // const startB = Number(b.start.replace(":", ""));
         // const startA = new Date(a.date);
@@ -72,8 +70,8 @@ export class EventService {
           return -1;
         }
         if (startA === startB) {
-          const durA = Number(a.duration.replace(":", ""));
-          const durB = Number(b.duration.replace(":", ""));
+          const durA = Number(a.duration.replace(':', ''));
+          const durB = Number(b.duration.replace(':', ''));
           if (durA > durB) {
             return 1;
           }
@@ -95,8 +93,8 @@ export class EventService {
    * Calculat a sessions end time.
    */
   calcEnd(start, duration) {
-    start = start.split(":");
-    duration = duration.split(":");
+    start = start.split(':');
+    duration = duration.split(':');
     const startHour: number = Number(start[0]),
       startMinutes: number = Number(start[1]),
       durationHour: number = Number(duration[0]),
@@ -116,10 +114,10 @@ export class EventService {
       h -= 24;
     }
 
-    if ((m + "").length === 1) {
-      return h + ":0" + m;
+    if ((m + '').length === 1) {
+      return h + ':0' + m;
     } else {
-      return h + ":" + m;
+      return h + ':' + m;
     }
   }
 }

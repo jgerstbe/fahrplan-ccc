@@ -1,66 +1,96 @@
 <ion-header>
-	<ion-navbar>
-		<ion-title>
-			Sync & Settings
-		</ion-title>
-		<!-- <ion-buttons end>
+  <ion-navbar>
+    <ion-title> Sync & Settings </ion-title>
+    <!-- <ion-buttons end>
 			<button ion-button icon-only (click)="closeModal()">
         <ion-icon name="close"></ion-icon>
       </button>
     </ion-buttons> -->
-	</ion-navbar>
+  </ion-navbar>
 </ion-header>
 
 <ion-content>
-	<ion-list>
-		<ion-item-divider color="light">
-			Nickname
-		</ion-item-divider>
-		<ion-item>
-			<ion-label floating>Nickname</ion-label>
-			<ion-input [(ngModel)]="favoriteService.nickname" type="text"></ion-input>
-		</ion-item>
-		<ion-item>
-			<button ion-button color="primary" full round (click)="favoriteService.save()">Save</button>
-		</ion-item>
-		<ion-item-divider color="light">Friends</ion-item-divider>
-		<ion-item>
-			<ion-label floating>Friend ID</ion-label>
-			<ion-input [(ngModel)]="friend_id" type="text"></ion-input>
-		</ion-item>
-		<ion-item>
-			<button ion-button color="secondary" full round (click)="onAddFriend()">Add Friend</button>
-		</ion-item>
-		<ion-item *ngFor="let f of favoriteService.friends">
-			<!-- <ion-label>{{f}}</ion-label> -->
-			<span (click)="openFriendsSchedule(f)">{{favoriteService.friendsNicks.get(f) ? favoriteService.friendsNicks.get(f) : f}}</span>
-			<ion-icon name="trash" (click)="onDeleteFriend(f)" class="f-del"></ion-icon>
-		</ion-item>
-		<ion-item-divider color="light">
-			Sync
-			<ion-icon name="create" (click)="editUUID ? editUUID = false: editUUID = true" class="f-del"></ion-icon>
-		</ion-item-divider>
-		<ion-item>
-			<ion-label floating>UUID</ion-label>
-			<ion-input [(ngModel)]="favoriteService.uuid" type="text" [disabled]="!editUUID"></ion-input>
-		</ion-item>
-		<ion-item *ngIf="editUUID">
-			<button ion-button color="secondary" full round (click)="saveUUID()">Save</button>
-		</ion-item>
-		<ion-item-divider color="light">Source</ion-item-divider>
-		<ion-item>
-			<!-- <span class="break">
+  <ion-list>
+    <ion-item-divider color="light"> Nickname </ion-item-divider>
+    <ion-item>
+      <ion-label floating>Nickname</ion-label>
+      <ion-input [(ngModel)]="favoriteService.nickname" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button
+        ion-button
+        color="primary"
+        full
+        round
+        (click)="favoriteService.save()"
+      >
+        Save
+      </button>
+    </ion-item>
+    <ion-item-divider color="light">Friends</ion-item-divider>
+    <ion-item>
+      <ion-label floating>Friend ID</ion-label>
+      <ion-input [(ngModel)]="friend_id" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button color="secondary" full round (click)="onAddFriend()">
+        Add Friend
+      </button>
+    </ion-item>
+    <ion-item *ngFor="let f of favoriteService.friends">
+      <!-- <ion-label>{{f}}</ion-label> -->
+      <span (click)="openFriendsSchedule(f)"
+        >{{favoriteService.friendsNicks.get(f) ?
+        favoriteService.friendsNicks.get(f) : f}}</span
+      >
+      <ion-icon
+        name="trash"
+        (click)="onDeleteFriend(f)"
+        class="f-del"
+      ></ion-icon>
+    </ion-item>
+    <ion-item-divider color="light">
+      Sync
+      <ion-icon
+        name="create"
+        (click)="editUUID ? editUUID = false: editUUID = true"
+        class="f-del"
+      ></ion-icon>
+    </ion-item-divider>
+    <ion-item>
+      <ion-label floating>UUID</ion-label>
+      <ion-input
+        [(ngModel)]="favoriteService.uuid"
+        type="text"
+        [disabled]="!editUUID"
+      ></ion-input>
+    </ion-item>
+    <ion-item *ngIf="editUUID">
+      <button ion-button color="secondary" full round (click)="saveUUID()">
+        Save
+      </button>
+    </ion-item>
+    <ion-item-divider color="light">Source</ion-item-divider>
+    <ion-item>
+      <!-- <span class="break">
 			  Based on data from <a target="_blank" [attr.href]="fahrplan.schedule.base_url">fahrplan</a>, version provided by {{fahrplan.schedule.version}}. Retrieved on {{fahrplan.timestamp.toLocaleString()}}.
       </span> -->
-			<span class="break">
-        Based on data from official <a target="_blank" href="https://fahrplan.events.ccc.de/rc3/2020/Fahrplan/index.html">fahrplan</a>.
+      <span class="break">
+        Based on data from c3vox
+        <a target="_blank" href="https://pretalx.c3voc.de/rc3-2021/schedule"
+          >pretalx schedule</a
+        >.
       </span>
-		</ion-item>
-		<ion-item-divider color="light">NFO</ion-item-divider>
-		<ion-item>
-			<span class="break">
-			  Developed with <ion-icon name="heart"></ion-icon> by <a target="_blankt" href="https://github.com/jgerstbe">@jgerstbe</a> on <a target="_blankt" href="https://github.com/jgerstbe/fahrplan-ccc">github</a>.
+    </ion-item>
+    <ion-item-divider color="light">NFO</ion-item-divider>
+    <ion-item>
+      <span class="break">
+        Developed with <ion-icon name="heart"></ion-icon> by
+        <a target="_blankt" href="https://github.com/jgerstbe">@jgerstbe</a> on
+        <a target="_blankt" href="https://github.com/jgerstbe/fahrplan-ccc"
+          >github</a
+        >.
       </span>
-		</ion-item>
-	</ion-list>
+    </ion-item>
+  </ion-list>
 </ion-content>
