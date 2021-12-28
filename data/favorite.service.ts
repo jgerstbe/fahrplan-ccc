@@ -7,7 +7,7 @@ import { forkJoin } from 'rxjs';
   providedIn: 'root',
 })
 export class FavoriteService {
-  jsonbox: string = 'https://krat.es/c89a335db8a4ed59ad52';
+  jsonbox: string = 'https://krat.es/c89a335db8a4ed59ad52/';
   favLocator: string = 'fpccc_favorites_2021';
   public favorites: string[] = [];
   public friends: string[] = [];
@@ -54,8 +54,9 @@ export class FavoriteService {
       const uuid = localStorage.getItem('fpccc_uuid');
       if (uuid !== null) {
         this.uuid = uuid;
-        this.http.get(this.jsonbox + uuid).subscribe(
+        this.http.get(this.jsonbox + 'record/' + uuid).subscribe(
           (data: any) => {
+            data = data[0];
             console.log('LOAD', data);
             this.nickname = data.nickname ? data.nickname : 'Anon_' + uuid;
             this.favorites =
@@ -152,8 +153,9 @@ export class FavoriteService {
   }
 
   loadFriendsFavorites(friendsUuid: string) {
-    return this.http.get(this.jsonbox + friendsUuid).pipe(
+    return this.http.get(this.jsonbox + 'record/' + friendsUuid).pipe(
       tap((friend: any) => {
+        friend = friend[0];
         this.friendsNicks.set(friend._id, friend.nickname);
         this.localFriends.set(friend._id, friend);
       })
