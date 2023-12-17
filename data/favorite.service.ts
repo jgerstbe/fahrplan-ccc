@@ -8,7 +8,8 @@ import { forkJoin, from } from 'rxjs';
 })
 export class FavoriteService {
   pantryId: string = 'e21fbbbb-ce47-4cf8-a624-7f5550c5e9aa';
-  jsonbox: string = `https://getpantry.cloud/apiv1/pantry/${this.pantryId}/`;
+  jsonbox: string =
+    'https://getpantry.cloud/apiv1/pantry/' + this.pantryId + '/';
   favLocator: string = 'fpccc_favorites_2023';
   public favorites: string[] = [];
   public friends: string[] = [];
