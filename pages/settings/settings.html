@@ -53,6 +53,15 @@
       ></ion-icon>
     </ion-item-divider>
     <ion-item>
+      <small>
+        Sync is powered by
+        <a href="https://getpantry.cloud/" target="_blank">getpantry.cloud</a>.
+        All data is public.<br />
+        Go to the site and visit the dashboard to delete data:<br />
+        <code>{{ this.favoriteService.pantryId }}</code>
+      </small>
+    </ion-item>
+    <ion-item>
       <ion-label floating>UUID</ion-label>
       <ion-input
         [(ngModel)]="favoriteService.uuid"
