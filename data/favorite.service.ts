@@ -111,14 +111,15 @@ export class FavoriteService {
       friendsNicks: this.friendsNicks,
     };
     if (uuid) {
-      this.http.put(this.jsonbox + 'basket/' + uuid, data).subscribe(
-        (data) => console.log('SAVE', data),
-        (error) => {
-          console.error('Could not save data.', error);
-          // try posting if it is an old user id
-          this.createEntry(uuid, data);
-        }
-      );
+      // this.http.put(this.jsonbox + 'basket/' + uuid, data).subscribe(
+      //   (data) => console.log('SAVE', data),
+      //   (error) => {
+      //     console.error('Could not save data.', error);
+      //     // try posting if it is an old user id
+      //     this.createEntry(uuid, data);
+      //   }
+      // );
+      this.createEntry(uuid, data);
     } else {
       this.createEntry(this.uid(), data);
     }
@@ -156,6 +157,8 @@ export class FavoriteService {
     if (index === -1) {
       this.friends.push(uuid);
       this.save();
+      // set timeout because of api limits
+      setTimeout(() => this.loadFriendsFavorites(uuid).subscribe(), 1100);
     }
   }
 
@@ -165,6 +168,7 @@ export class FavoriteService {
       this.friends.splice(index, 1);
       this.save();
     }
+    this.localFriends.delete(uuid);
   }
 
   loadFriendsFavorites(friendsUuid: string) {
@@ -181,6 +185,7 @@ export class FavoriteService {
   //   return forkJoin(obs);
   // }
   loadAllFriends() {
+    // use delay because of api limits
     const obs = from(this.friends).pipe(
       concatMap((f) => this.loadFriendsFavorites(f).pipe(delay(1200)))
     );
