@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { tap } from 'rxjs/operators';
-import { forkJoin } from 'rxjs';
+import { concatMap, delay, tap, toArray } from 'rxjs/operators';
+import { forkJoin, from } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FavoriteService {
-  jsonbox: string = 'https://krat.es/43bf708f1b97e1a9ed82/';
+  jsonbox: string =
+    'https://getpantry.cloud/apiv1/pantry/e21fbbbb-ce47-4cf8-a624-7f5550c5e9aa/';
   favLocator: string = 'fpccc_favorites_2023';
   public favorites: string[] = [];
   public friends: string[] = [];
@@ -54,9 +55,8 @@ export class FavoriteService {
       const uuid = localStorage.getItem('fpccc_uuid');
       if (uuid !== null) {
         this.uuid = uuid;
-        this.http.get(this.jsonbox + 'record/' + uuid).subscribe(
+        this.http.get(this.jsonbox + 'basket/' + uuid).subscribe(
           (data: any) => {
-            data = data[0];
             console.log('LOAD', data);
             this.nickname = data.nickname ? data.nickname : 'Anon_' + uuid;
             this.favorites =
@@ -90,50 +90,65 @@ export class FavoriteService {
   save() {
     console.log('favorites', this.favorites);
     localStorage.setItem(this.favLocator, JSON.stringify(this.favorites));
-    if (this.uuid !== null) {
+    if (this.uuid) {
       localStorage.setItem('fpccc_uuid', this.uuid);
     }
     // save to api
-    if (true) {
-      const uuid =
-        this.uuid && this.uuid.length > 0
-          ? this.uuid
-          : localStorage.getItem('fpccc_uuid') &&
-            localStorage.getItem('fpccc_uuid').length > 0
-          ? localStorage.getItem('fpccc_uuid')
-          : null;
-      const data = {
-        nickname: this.nickname
-          ? this.nickname
-          : 'Anon' + (uuid ? '_' + uuid : ''),
-        favorites: this.favorites,
-        friends: this.friends,
-        friendsNicks: this.friendsNicks,
-      };
-      const createEntry = () => {
-        this.http.post(this.jsonbox, data).subscribe(
-          (data: any) => {
-            console.log('CREATE + SAVE', data);
-            localStorage.setItem('fpccc_uuid', data._id);
-            this.uuid = data._id;
-            this.nickname = data.nickname;
-          },
-          (error) => console.error('Could not save data.', error)
-        );
-      };
-      if (uuid !== null) {
-        this.http.put(this.jsonbox + uuid, data).subscribe(
-          (data) => console.log('SAVE', data),
-          (error) => {
-            console.error('Could not save data.', error);
-            // try posting if it is an old user id
-            createEntry();
-          }
-        );
-      } else {
-        createEntry();
-      }
+    if (!this.favorites.length) return;
+    const uuid =
+      this.uuid && this.uuid.length > 0
+        ? this.uuid
+        : localStorage.getItem('fpccc_uuid') &&
+          localStorage.getItem('fpccc_uuid').length > 0
+        ? localStorage.getItem('fpccc_uuid')
+        : null;
+    const data = {
+      nickname: this.nickname
+        ? this.nickname
+        : 'Anon' + (uuid ? '_' + uuid : ''),
+      favorites: this.favorites,
+      friends: this.friends,
+      friendsNicks: this.friendsNicks,
+    };
+    if (uuid) {
+      this.http.put(this.jsonbox + 'basket/' + uuid, data).subscribe(
+        (data) => console.log('SAVE', data),
+        (error) => {
+          console.error('Could not save data.', error);
+          // try posting if it is an old user id
+          this.createEntry(uuid, data);
+        }
+      );
+    } else {
+      this.createEntry(this.uid(), data);
     }
+  }
+
+  uid() {
+    return Date.now().toString(36) + Math.random().toString(36).substr(2);
+  }
+
+  createEntry(uuid: string, data: any) {
+    fetch(this.jsonbox + 'basket/' + uuid, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then((response) => {
+        console.log('CREATE + SAVE', response);
+        localStorage.setItem('fpccc_uuid', uuid);
+        this.uuid = uuid;
+        this.nickname = data?.nickname;
+      })
+      .catch((error) => console.error('Could not save data.', error));
   }
 
   addFriend(uuid: string) {
@@ -153,18 +168,23 @@ export class FavoriteService {
   }
 
   loadFriendsFavorites(friendsUuid: string) {
-    return this.http.get(this.jsonbox + 'record/' + friendsUuid).pipe(
+    return this.http.get(this.jsonbox + 'basket/' + friendsUuid).pipe(
       tap((friend: any) => {
-        friend = friend[0];
-        this.friendsNicks.set(friend._id, friend.nickname);
-        this.localFriends.set(friend._id, friend);
+        this.friendsNicks.set(friendsUuid, friend.nickname);
+        this.localFriends.set(friendsUuid, friend);
       })
     );
   }
 
+  // loadAllFriends() {
+  //   const obs = this.friends.map((f: any) => this.loadFriendsFavorites(f));
+  //   return forkJoin(obs);
+  // }
   loadAllFriends() {
-    const obs = this.friends.map((f: any) => this.loadFriendsFavorites(f));
-    return forkJoin(obs);
+    const obs = from(this.friends).pipe(
+      concatMap((f) => this.loadFriendsFavorites(f).pipe(delay(1200)))
+    );
+    return obs.pipe(toArray());
   }
 
   friendsInSession(sessId: string) {
