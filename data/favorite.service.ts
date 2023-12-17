@@ -7,8 +7,8 @@ import { forkJoin } from 'rxjs';
   providedIn: 'root',
 })
 export class FavoriteService {
-  jsonbox: string = 'https://krat.es/c89a335db8a4ed59ad52/';
-  favLocator: string = 'fpccc_favorites_2021';
+  jsonbox: string = 'https://krat.es/43bf708f1b97e1a9ed82/';
+  favLocator: string = 'fpccc_favorites_2023';
   public favorites: string[] = [];
   public friends: string[] = [];
   public localFriends: Map<string, string> = new Map();

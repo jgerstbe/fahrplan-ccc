@@ -33,7 +33,6 @@ export class EventService {
           baseUrl: data.schedule.base_url,
           timestamp: data.schedule.version,
         };
-        console.log(this.version);
       },
       (error) => {
         console.error('Could not load schedule.', error);
