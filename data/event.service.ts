@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Day } from ' ./models';
-import * as tracks from './tracks.json';
-import * as fahrplan from './36c3.json';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
 
@@ -10,29 +8,45 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class EventService {
   public daysWithSessionsByTime: Day[] = [];
-  public tracks = tracks;
+  public tracks = {};
   public conference;
+  public version;
   public onSchedule: BehaviorSubject<any> = new BehaviorSubject(null);
 
   constructor(private http: HttpClient) {
-    // this.conference = fahrplan.schedule.conference;
-    // this.daysWithSessionsByTime = this.parseDaysBySessionTiWme(fahrplan);
     this.initService();
   }
 
   initService() {
-    this.http
-      .get('https://pretalx.c3voc.de/rc3-2021/schedule/export/schedule.json')
-      .subscribe(
-        (data: any) => {
-          this.conference = data.schedule.conference;
-          this.daysWithSessionsByTime = this.parseDaysBySessionTime(data);
-          this.onSchedule.next(data);
-        },
-        (error) => {
-          console.error('Could not load schedule.', error);
-        }
+    const congressUrl =
+      'https://corsproxy.io/?' +
+      encodeURIComponent(
+        'https://fahrplan.events.ccc.de/congress/2023/fahrplan/schedule.json'
       );
+    this.http.get(congressUrl).subscribe(
+      (data: any) => {
+        this.conference = data.schedule.conference;
+        this.tracks = this.parseTracks(data);
+        this.daysWithSessionsByTime = this.parseDaysBySessionTime(data);
+        this.onSchedule.next(data);
+        this.version = {
+          baseUrl: data.schedule.base_url,
+          timestamp: data.schedule.version,
+        };
+        console.log(this.version);
+      },
+      (error) => {
+        console.error('Could not load schedule.', error);
+      }
+    );
+  }
+
+  parseTracks(fahrplan: any) {
+    const tracks = {};
+    fahrplan.schedule.conference.tracks.forEach((t) => {
+      tracks[t.name] = t.color;
+    });
+    return tracks ?? {};
   }
 
   /**
@@ -56,12 +70,12 @@ export class EventService {
       );
       // sort rooms
       allRooms.sort(function (a, b) {
-        // const startA = Number(a.start.replace(":", ""));
-        // const startB = Number(b.start.replace(":", ""));
+        const startA = Number(a.start.replace(':', ''));
+        const startB = Number(b.start.replace(':', ''));
         // const startA = new Date(a.date);
         // const startB = new Date(b.date);
-        const startA = a.date;
-        const startB = b.date;
+        // const startA = a.date;
+        // const startB = b.date;
         // compare
         if (startA > startB) {
           return 1;
@@ -105,7 +119,7 @@ export class EventService {
     h = startHour + durationHour;
     m = startMinutes + durationMinutes;
 
-    if (m > 60) {
+    if (m >= 60) {
       h += (m - (m % 60)) / 60;
       m = m % 60;
     }

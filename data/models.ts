@@ -3,15 +3,15 @@ export class Day {
   date: Date;
   day_start: Date;
   day_end: Date;
-  rooms : any[]
+  rooms: any[];
   roomList: string[];
 
   constructor(
     index: number,
     date: string,
-    day_start:string,
-    day_end:string,
-    rooms:any
+    day_start: string,
+    day_end: string,
+    rooms: any
   ) {
     this.index = index;
     this.date = new Date(date);
@@ -22,15 +22,11 @@ export class Day {
   }
 }
 
-export class Room {
-
-}
-
 export class Event {
   url: string;
   id: number;
   guid: string;
-  logo: null
+  logo: null;
   date: Date;
   start: string;
   duration: string;

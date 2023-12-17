@@ -1,11 +1,6 @@
 <ion-header>
   <ion-navbar>
     <ion-title> Sync & Settings </ion-title>
-    <!-- <ion-buttons end>
-			<button ion-button icon-only (click)="closeModal()">
-        <ion-icon name="close"></ion-icon>
-      </button>
-    </ion-buttons> -->
   </ion-navbar>
 </ion-header>
 
@@ -72,15 +67,17 @@
     </ion-item>
     <ion-item-divider color="light">Source</ion-item-divider>
     <ion-item>
-      <!-- <span class="break">
-			  Based on data from <a target="_blank" [attr.href]="fahrplan.schedule.base_url">fahrplan</a>, version provided by {{fahrplan.schedule.version}}. Retrieved on {{fahrplan.timestamp.toLocaleString()}}.
-      </span> -->
       <span class="break">
+        Based on data from
+        <a target="_blank" [attr.href]="fahrplan.baseUrl">fahrplan</a>.
+        Retrieved on {{fahrplan.timestamp.toLocaleString()}}.
+      </span>
+      <!-- <span class="break">
         Based on data from c3vox
         <a target="_blank" href="https://pretalx.c3voc.de/rc3-2021/schedule"
           >pretalx schedule</a
         >.
-      </span>
+      </span> -->
     </ion-item>
     <ion-item-divider color="light">NFO</ion-item-divider>
     <ion-item>

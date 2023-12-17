@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 import { NavParams, ViewController } from "ionic-angular";
 import { Event } from "../../data/models";
-import * as tracks from "../../data/tracks.json";
 import { FavoriteService } from "../../data/favorite.service";
+import { EventService } from "../../data/event.service";
 
 @Component({
   selector: "page-eventDetail",
@@ -12,7 +12,7 @@ import { FavoriteService } from "../../data/favorite.service";
 export class EventDetailPage {
   event: Event;
   keys: string[];
-  tracks = tracks;
+  tracks = {};
   streamUrl: string;
   videoWidth: number = 0;
   videoHeight: number = 0;
@@ -20,13 +20,15 @@ export class EventDetailPage {
   constructor(
     params: NavParams,
     public viewCtrl: ViewController,
-    public favoriteService: FavoriteService
+    public favoriteService: FavoriteService,
+    public eventService: EventService
   ) {
     console.log("params", params);
     this.event = params.data.event;
     this.event.date = new Date(this.event.date);
     this.keys = Object.keys(this.event);
     this.getStream(this.event.room);
+    this.tracks = this.eventService.tracks;
   }
 
   getStream(room: string) {

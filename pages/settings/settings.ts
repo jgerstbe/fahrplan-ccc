@@ -1,26 +1,28 @@
-import { Component } from "@angular/core";
-import { ModalController, NavController } from "ionic-angular";
-import { User } from "../../data/models";
-import { FavoriteService } from "../../data/favorite.service";
-import { FriendsPage } from "../friends/friends";
+import { Component } from '@angular/core';
+import { ModalController, NavController } from 'ionic-angular';
+import { User } from '../../data/models';
+import { FavoriteService } from '../../data/favorite.service';
+import { FriendsPage } from '../friends/friends';
+import { EventService } from '../../data/event.service';
 
 @Component({
-  selector: "page-settings",
-  templateUrl: "settings.html",
-  styleUrls: ["settings.css"]
+  selector: 'page-settings',
+  templateUrl: 'settings.html',
+  styleUrls: ['settings.css'],
 })
 export class SettingsPage {
   fahrplan;
-  friend_id: string = "";
+  friend_id: string = '';
   editUUID: boolean = false;
 
   constructor(
     public navCtrl: NavController,
     public modalCtrl: ModalController,
-    public favoriteService: FavoriteService
+    public favoriteService: FavoriteService,
+    public eventService: EventService
   ) {
-    // this.fahrplan = fahrplan;
-    // this.fahrplan.timestamp = new Date(this.fahrplan.timestamp);
+    this.fahrplan = this.eventService.version;
+    this.fahrplan.timestamp = new Date(this.fahrplan.timestamp);
   }
 
   ngOnInit() {}
@@ -28,7 +30,7 @@ export class SettingsPage {
   onAddFriend() {
     console.warn(this.friend_id);
     this.favoriteService.addFriend(this.friend_id);
-    this.friend_id = "";
+    this.friend_id = '';
   }
 
   onDeleteFriend(id) {
@@ -36,7 +38,7 @@ export class SettingsPage {
   }
 
   saveUUID() {
-    localStorage.setItem("fpccc_uuid", this.favoriteService.uuid);
+    localStorage.setItem('fpccc_uuid', this.favoriteService.uuid);
     this.favoriteService.favorites = [];
     this.favoriteService.friends = [];
     this.favoriteService.load();
