@@ -8,7 +8,7 @@ import { EventService } from '../../data/event.service';
 @Component({
   selector: 'page-settings',
   templateUrl: 'settings.html',
-  styleUrls: ['settings.css'],
+  styleUrls: ['settings.css', '../../styles/sticky.css'],
 })
 export class SettingsPage {
   fahrplan;

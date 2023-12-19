@@ -12,7 +12,7 @@
 <ion-content>
   <ion-list>
     <ion-item-group *ngFor="let day of days">
-      <ion-item-divider color="light"
+      <ion-item-divider class="sticky" color="light"
         >{{day.date.toDateString()}}</ion-item-divider
       >
       <ion-item *ngFor="let room of day.rooms">

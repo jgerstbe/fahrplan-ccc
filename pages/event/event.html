@@ -8,7 +8,7 @@
 
 <ion-content>
   <ion-item-group *ngFor="let day of days; let i = index">
-    <ion-item-divider color="dark" id="day-{{i}}"
+    <ion-item-divider class="sticky" color="dark" id="day-{{i}}"
       >{{day.date.toDateString()}}</ion-item-divider
     >
     <ion-item-group *ngFor="let room of day.roomList; let i = index;">

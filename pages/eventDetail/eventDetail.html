@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title> {{event.type.toUpperCase()}} </ion-title>
+    <ion-title> {{event.title}} </ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="viewCtrl.dismiss()">
         <ion-icon name="close"></ion-icon>
@@ -21,12 +21,6 @@
   </ion-fab>
 
   <ion-list>
-    <ion-item-group>
-      <ion-item>
-        <h1>{{event.title}}</h1>
-        <h2>{{event.subtitle}}</h2>
-      </ion-item>
-    </ion-item-group>
     <!-- <ion-item-group *ngIf="streamUrl">
 			<ion-item-divider color="light">Stream: {{event.room}}</ion-item-divider>
 			<ion-item>
@@ -38,34 +32,44 @@
 					[height]="videoHeight" frameborder="none" allowfullscreen="allowfullscreen"></iframe>
 			</ion-item>
 		</ion-item-group> -->
+    <ion-item-group *ngIf="event.subtitle">
+      <ion-item-divider color="light"> Subtitle </ion-item-divider>
+      <ion-item> {{event.subtitle}} </ion-item>
+    </ion-item-group>
     <ion-item-group *ngIf="event.description">
-      <ion-item-divider color="light">Description</ion-item-divider>
+      <ion-item-divider color="light"> Description </ion-item-divider>
       <ion-item>
         <span class="desc" [innerHtml]="event.description"></span>
       </ion-item>
     </ion-item-group>
-    <ion-item-divider color="light">Info</ion-item-divider>
-    <ion-item>
-      <strong class="col-6">Day&nbsp;</strong>
-      {{event.date.toLocaleDateString()}}
-    </ion-item>
-    <ion-item id="videoItem">
-      <strong>Start time&nbsp;</strong> {{event.start}}
-    </ion-item>
-    <ion-item> <strong>Duration&nbsp;</strong> {{event.duration}} </ion-item>
-    <ion-item> <strong>Room&nbsp;</strong> {{event.room}} </ion-item>
-    <ion-item>
-      <strong>Track&nbsp;</strong>
-      <span [ngStyle]="{color: tracks[event.track]}">{{event.track}}</span>
-    </ion-item>
-    <ion-item>
-      <strong>URL&nbsp;</strong>
-      <a href="{{event.url}}" target="_blank">CCC Event Hub Page</a>
-    </ion-item>
-    <ion-item-divider color="light">Friends</ion-item-divider>
-    <ion-item>
-      {{favoriteService.friendsInSession(event.guid) || 'No friends are
-      attending this session.'}}
-    </ion-item>
+    <ion-item-group>
+      <ion-item-divider color="light"> Info </ion-item-divider>
+      <ion-item>
+        <strong class="col-6">Type&nbsp;</strong>
+        {{event.type}}
+      </ion-item>
+      <ion-item>
+        <strong class="col-6">Day&nbsp;</strong>
+        {{event.date.toLocaleDateString()}}
+      </ion-item>
+      <ion-item id="videoItem">
+        <strong>Start time&nbsp;</strong> {{event.start}}
+      </ion-item>
+      <ion-item> <strong>Duration&nbsp;</strong> {{event.duration}} </ion-item>
+      <ion-item> <strong>Room&nbsp;</strong> {{event.room}} </ion-item>
+      <ion-item>
+        <strong>Track&nbsp;</strong>
+        <span [ngStyle]="{color: tracks[event.track]}">{{event.track}}</span>
+      </ion-item>
+      <ion-item>
+        <strong>URL&nbsp;</strong>
+        <a href="{{event.url}}" target="_blank">CCC Event Hub Page</a>
+      </ion-item>
+      <ion-item-divider color="light">Friends</ion-item-divider>
+      <ion-item>
+        {{ favoriteService.friendsInSession(event.guid) || 'No friends are
+        attending this session.' }}
+      </ion-item>
+    </ion-item-group>
   </ion-list>
 </ion-content>

@@ -6,7 +6,7 @@
 
 <ion-content>
   <ion-list>
-    <ion-item-divider color="light"> Nickname </ion-item-divider>
+    <ion-item-divider class="sticky" color="light"> Nickname </ion-item-divider>
     <ion-item>
       <ion-label floating>Nickname</ion-label>
       <ion-input [(ngModel)]="favoriteService.nickname" type="text"></ion-input>
@@ -22,7 +22,7 @@
         Save
       </button>
     </ion-item>
-    <ion-item-divider color="light">Friends</ion-item-divider>
+    <ion-item-divider class="sticky" color="light">Friends</ion-item-divider>
     <ion-item>
       <ion-label floating>Friend ID</ion-label>
       <ion-input [(ngModel)]="friend_id" type="text"></ion-input>
@@ -44,7 +44,7 @@
         class="f-del"
       ></ion-icon>
     </ion-item>
-    <ion-item-divider color="light">
+    <ion-item-divider class="sticky" color="light">
       Sync
       <ion-icon
         name="create"
@@ -54,10 +54,12 @@
     </ion-item-divider>
     <ion-item>
       <small>
+        Simply add a session as favorite to generate your sync id.<br />
         Sync is powered by
         <a href="https://getpantry.cloud/" target="_blank">getpantry.cloud</a>.
         All data is public.<br />
-        Go to the site and visit the dashboard to delete data:<br />
+        Go to the site and visit dashboard for the following id<br />
+        to be able to remove your data:<br />
         <code>{{ this.favoriteService.pantryId }}</code>
       </small>
     </ion-item>
@@ -74,7 +76,7 @@
         Save
       </button>
     </ion-item>
-    <ion-item-divider color="light">Source</ion-item-divider>
+    <ion-item-divider class="sticky" color="light">Source</ion-item-divider>
     <ion-item>
       <span class="break">
         Based on data from
@@ -88,7 +90,7 @@
         >.
       </span> -->
     </ion-item>
-    <ion-item-divider color="light">NFO</ion-item-divider>
+    <ion-item-divider class="sticky" color="light">NFO</ion-item-divider>
     <ion-item>
       <span class="break">
         Developed with <ion-icon name="heart"></ion-icon> by

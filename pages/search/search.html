@@ -4,7 +4,10 @@
   </ion-navbar>
 </ion-header> -->
 <ion-content>
-  <ion-searchbar class="sticky" (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-searchbar
+    class="sticky bg-white"
+    (ionInput)="getItems($event)"
+  ></ion-searchbar>
   <ion-list>
     <ion-item *ngFor="let session of sessions" (click)="clickDetail(session)">
       {{ session.title }}

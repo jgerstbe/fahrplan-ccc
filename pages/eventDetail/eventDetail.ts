@@ -1,13 +1,13 @@
-import { Component } from "@angular/core";
-import { NavParams, ViewController } from "ionic-angular";
-import { Event } from "../../data/models";
-import { FavoriteService } from "../../data/favorite.service";
-import { EventService } from "../../data/event.service";
+import { Component } from '@angular/core';
+import { NavParams, ViewController } from 'ionic-angular';
+import { Event } from '../../data/models';
+import { FavoriteService } from '../../data/favorite.service';
+import { EventService } from '../../data/event.service';
 
 @Component({
-  selector: "page-eventDetail",
-  templateUrl: "eventDetail.html",
-  styleUrls: ["eventDetail.css"]
+  selector: 'page-eventDetail',
+  templateUrl: 'eventDetail.html',
+  styleUrls: ['eventDetail.css'],
 })
 export class EventDetailPage {
   event: Event;
@@ -23,7 +23,7 @@ export class EventDetailPage {
     public favoriteService: FavoriteService,
     public eventService: EventService
   ) {
-    console.log("params", params);
+    console.log('params', params);
     this.event = params.data.event;
     this.event.date = new Date(this.event.date);
     this.keys = Object.keys(this.event);
@@ -32,26 +32,26 @@ export class EventDetailPage {
   }
 
   getStream(room: string) {
-    console.log("getStream", room);
+    console.log('getStream', room);
     const calcPlayerSize = () => {
       console.log(
-        "videoItem",
-        document.querySelector("#videoItem")
-          ? document.querySelector("#videoItem").offsetWidth
+        'videoItem',
+        document.querySelector('#videoItem')
+          ? document.querySelector('#videoItem').offsetWidth
           : 0
       );
-      if (!document.querySelector("#videoItem")) {
+      if (!document.querySelector('#videoItem')) {
         return setTimeout(calcPlayerSize, 100);
       }
-      this.videoWidth = document.querySelector("#videoItem").offsetWidth - 30;
+      this.videoWidth = document.querySelector('#videoItem').offsetWidth - 30;
       this.videoHeight = this.videoWidth / 1.77;
       console.log(this.videoWidth, this.videoHeight);
     };
-    if (room === "rC1") {
-      this.streamUrl = "https://cdn.c3voc.de/rc1_native_hd.webm";
+    if (room === 'rC1') {
+      this.streamUrl = 'https://cdn.c3voc.de/rc1_native_hd.webm';
       calcPlayerSize();
-    } else if (room == "rC2") {
-      this.streamUrl = "https://cdn.c3voc.de/rc2_native_hd.webm";
+    } else if (room == 'rC2') {
+      this.streamUrl = 'https://cdn.c3voc.de/rc2_native_hd.webm';
       calcPlayerSize();
     } else {
       delete this.streamUrl;

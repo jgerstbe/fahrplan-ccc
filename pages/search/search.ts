@@ -6,7 +6,7 @@ import { EventDetailPage } from '../eventDetail/eventDetail';
 @Component({
   selector: 'page-search',
   templateUrl: 'search.html',
-  styleUrls: ['search.css'],
+  styleUrls: ['../../styles/sticky.css', '../../styles/bg.css'],
 })
 export class SearchPage {
   sessions = [];

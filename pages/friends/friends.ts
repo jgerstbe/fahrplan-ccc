@@ -9,7 +9,7 @@ import { cloneDeep } from 'lodash';
 @Component({
   selector: 'page-friends',
   templateUrl: 'friends.html',
-  styleUrls: ['friends.css'],
+  styleUrls: ['../../styles/sticky.css'],
 })
 export class FriendsPage {
   constructor(

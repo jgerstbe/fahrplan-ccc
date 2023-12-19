@@ -8,7 +8,7 @@ import { EventService } from '../../data/event.service';
 @Component({
   selector: 'page-calendar',
   templateUrl: 'calendar.html',
-  styleUrls: ['calendar.css'],
+  styleUrls: ['../../styles/sticky.css', '../../styles/bg.css'],
 })
 export class CalendarPage {
   constructor(
