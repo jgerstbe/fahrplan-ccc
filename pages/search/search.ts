@@ -49,4 +49,19 @@ export class SearchPage {
     let profileModal = this.modalCtrl.create(EventDetailPage, data);
     profileModal.present();
   }
+
+  getItems(ev) {
+    // Reset items back to all of the items
+    this.init();
+
+    // set val to the value of the ev target
+    var val = ev.target.value;
+
+    // if the value is an empty string don't filter the items
+    if (val && val.trim() != '') {
+      this.sessions = this.sessions.filter((item) => {
+        return item.title.toLowerCase().indexOf(val.toLowerCase()) > -1;
+      });
+    }
+  }
 }
