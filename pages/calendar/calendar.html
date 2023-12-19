@@ -1,37 +1,47 @@
-<ion-header>
-	<ion-navbar>
-		<ion-title>Calendar</ion-title>
-	</ion-navbar>
-</ion-header>
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Calendar</ion-title>
+  </ion-navbar>
+</ion-header> -->
 
 <ion-content>
-	<div>
-		<ion-segment [(ngModel)]="activeDay">
-			<ion-segment-button *ngFor="let day of days; let i = index" [value]="i" (click)="activeDay = i">
-				{{day.date.toLocaleDateString()}}
-			</ion-segment-button>
-		</ion-segment>
-	</div>
+  <ion-segment class="sticky" [(ngModel)]="activeDay">
+    <ion-segment-button
+      *ngFor="let day of days; let i = index"
+      [value]="i"
+      (click)="activeDay = i"
+    >
+      {{day.date.toLocaleDateString()}}
+    </ion-segment-button>
+  </ion-segment>
 
-	<ion-list *ngIf="days[activeDay]">
-		<ion-item *ngFor="let room of days[activeDay].rooms" (click)="clickDetail(room)">
-			<ion-icon name="bookmark" [ngStyle]="{color: tracks[room.track]}" item-start>
-			</ion-icon>
-			<ion-label>
-				{{room.title}}
-				<br>
-          {{room.start}} - {{eventService.calcEnd(room.start, room.duration)}}, {{room.room}}
-				<br>
-				<span [ngStyle]="{color: tracks[room.track]}">
-            {{room.track}}
-          </span>
-				<br>
-				<i>{{favoriteService.friendsInSession(room.guid)}}</i>
-			</ion-label>
-			<ion-icon *ngIf="favoriteService.isFavorite(room.guid) === 'star'"
-				name="{{favoriteService.isFavorite(room.guid)}}" item-end></ion-icon>
-			<!--  style="color:gold;" (click)="favoriteService.toggle(room.guid)"></ion-icon> -->
-		</ion-item>
-	</ion-list>
-
+  <ion-list *ngIf="days[activeDay]">
+    <ion-item
+      *ngFor="let room of days[activeDay].rooms"
+      (click)="clickDetail(room)"
+    >
+      <ion-icon
+        name="bookmark"
+        [ngStyle]="{color: tracks[room.track]}"
+        item-start
+      >
+      </ion-icon>
+      <ion-label>
+        {{room.title}}
+        <br />
+        {{room.start}} - {{eventService.calcEnd(room.start, room.duration)}},
+        {{room.room}}
+        <br />
+        <span [ngStyle]="{color: tracks[room.track]}"> {{room.track}} </span>
+        <br />
+        <i>{{favoriteService.friendsInSession(room.guid)}}</i>
+      </ion-label>
+      <ion-icon
+        *ngIf="favoriteService.isFavorite(room.guid) === 'star'"
+        name="{{favoriteService.isFavorite(room.guid)}}"
+        item-end
+      ></ion-icon>
+      <!--  style="color:gold;" (click)="favoriteService.toggle(room.guid)"></ion-icon> -->
+    </ion-item>
+  </ion-list>
 </ion-content>

@@ -1,0 +1,7 @@
+.sticky {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* Adjust the background color as needed */
+  z-index: 1;
+}

@@ -1,29 +1,38 @@
-<ion-header>
+<!-- <ion-header>
 	<ion-navbar>
 		<ion-title>Favorites</ion-title>
 	</ion-navbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content>
-	<ion-list>
+  <ion-list>
     <ion-item-group *ngFor="let day of days; let i = index;">
-		  <ion-item-divider color="light" id="day-{{i}}">{{day.date.toDateString()}}</ion-item-divider>
+      <ion-item-divider color="light" id="day-{{i}}"
+        >{{day.date.toDateString()}}</ion-item-divider
+      >
       <ion-item *ngFor="let room of day.rooms">
-          <ion-icon name="bookmark" [ngStyle]="{color: tracks[room.track]}" item-start></ion-icon>
-          <ion-label (click)="clickDetail(room)">
-            {{room.title}}
-            <br>
-            {{room.start}} - {{eventService.calcEnd(room.start, room.duration)}}, {{room.room}}
-            <br>
-            <span [ngStyle]="{color: tracks[room.track]}">
-              {{room.track}}
-            </span>
-            <br>
-            <i>{{favoriteService.friendsInSession(room.guid)}}</i>
-          </ion-label>
-          <ion-icon name="{{favoriteService.isFavorite(room.guid)}}" style="color:gold;" item-end (click)="removeFavorite(room)"></ion-icon>
+        <ion-icon
+          name="bookmark"
+          [ngStyle]="{color: tracks[room.track]}"
+          item-start
+        ></ion-icon>
+        <ion-label (click)="clickDetail(room)">
+          {{room.title}}
+          <br />
+          {{room.start}} - {{eventService.calcEnd(room.start, room.duration)}},
+          {{room.room}}
+          <br />
+          <span [ngStyle]="{color: tracks[room.track]}"> {{room.track}} </span>
+          <br />
+          <i>{{favoriteService.friendsInSession(room.guid)}}</i>
+        </ion-label>
+        <ion-icon
+          name="{{favoriteService.isFavorite(room.guid)}}"
+          style="color: gold"
+          item-end
+          (click)="removeFavorite(room)"
+        ></ion-icon>
       </ion-item>
     </ion-item-group>
   </ion-list>
-
 </ion-content>

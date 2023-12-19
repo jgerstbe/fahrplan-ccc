@@ -11,6 +11,7 @@ import { CalendarPage } from '../pages/calendar/calendar';
 import { TabsPage } from '../pages/tabs/tabs';
 import { FavoritesPage } from '../pages/favorites/favorites';
 import { FriendsPage } from '../pages/friends/friends';
+import { SearchPage } from '../pages/search/search';
 
 @NgModule({
   declarations: [
@@ -21,13 +22,10 @@ import { FriendsPage } from '../pages/friends/friends';
     FriendsPage,
     SettingsPage,
     CalendarPage,
-    TabsPage
+    TabsPage,
+    SearchPage,
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    IonicModule.forRoot(MyApp),
-  ],
+  imports: [BrowserModule, HttpClientModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
@@ -37,10 +35,9 @@ import { FriendsPage } from '../pages/friends/friends';
     FriendsPage,
     SettingsPage,
     CalendarPage,
-    TabsPage
+    TabsPage,
+    SearchPage,
   ],
-  providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }],
 })
 export class AppModule {}
