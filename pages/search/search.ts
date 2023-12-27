@@ -64,4 +64,8 @@ export class SearchPage {
       });
     }
   }
+
+  getPersonsString(persons: Array<{ name: string }>) {
+    return persons.map((p) => p.name).join(', ');
+  }
 }

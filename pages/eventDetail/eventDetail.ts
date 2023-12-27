@@ -16,6 +16,7 @@ export class EventDetailPage {
   streamUrl: string;
   videoWidth: number = 0;
   videoHeight: number = 0;
+  persons: string = '';
 
   constructor(
     params: NavParams,
@@ -29,6 +30,7 @@ export class EventDetailPage {
     this.keys = Object.keys(this.event);
     this.getStream(this.event.room);
     this.tracks = this.eventService.tracks;
+    this.persons = this.event.persons.map((obj) => obj.name).join(', ');
   }
 
   getStream(room: string) {
