@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController } from 'ionic-angular';
 import { EventService } from '../../data/event.service';
+import { FavoriteService } from '../../data/favorite.service';
 import { EventDetailPage } from '../eventDetail/eventDetail';
 
 @Component({
@@ -13,7 +14,8 @@ export class SearchPage {
 
   constructor(
     public modalCtrl: ModalController,
-    public eventService: EventService
+    public eventService: EventService,
+    public favoriteService: FavoriteService
   ) {}
 
   ionViewDidEnter() {
