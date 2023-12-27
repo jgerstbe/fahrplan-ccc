@@ -60,7 +60,14 @@ export class SearchPage {
     // if the value is an empty string don't filter the items
     if (val && val.trim() != '') {
       this.sessions = this.sessions.filter((item) => {
-        return item.title.toLowerCase().indexOf(val.toLowerCase()) > -1;
+        if (item.title.toLowerCase().indexOf(val.toLowerCase()) > -1)
+          return true;
+        if (
+          this.getPersonsString(item.persons)
+            .toLowerCase()
+            .includes(val.toLowerCase())
+        )
+          return true;
       });
     }
   }
