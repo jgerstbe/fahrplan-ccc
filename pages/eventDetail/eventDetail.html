@@ -21,20 +21,64 @@
   </ion-fab>
 
   <ion-list>
-    <!-- <ion-item-group *ngIf="streamUrl">
-			<ion-item-divider color="light">Stream: {{event.room}}</ion-item-divider>
-			<ion-item>
-				<iframe *ngIf="event.room == 'rC1'"
-					src="https://streaming.media.ccc.de/rc3/embed/one/dash/native/no-autoplay" [width]="videoWidth"
-					[height]="videoHeight" frameborder="none" allowfullscreen="allowfullscreen"></iframe>
-				<iframe *ngIf="event.room == 'rC2'"
-					src="https://streaming.media.ccc.de/rc3/embed/two/dash/native/no-autoplay" [width]="videoWidth"
-					[height]="videoHeight" frameborder="none" allowfullscreen="allowfullscreen"></iframe>
-			</ion-item>
-		</ion-item-group> -->
     <ion-item-group *ngIf="event.subtitle">
       <ion-item-divider color="light"> Subtitle </ion-item-divider>
       <ion-item> {{event.subtitle}} </ion-item>
+    </ion-item-group>
+    <ion-item-group *ngIf="hasStream" id="videoItemGroup">
+      <ion-item-divider color="light">Stream: {{event.room}}</ion-item-divider>
+      <ion-item *ngIf="videoWidth && videoHeight">
+        <iframe
+          *ngIf="event.room == 'Saal 1'"
+          src="https://streaming.media.ccc.de/37c3/embed/eins/hls/native"
+          width="{{ videoWidth }}"
+          height="{{ videoHeight }}"
+          frameborder="none"
+          allowfullscreen="allowfullscreen"
+          seamless="seamless"
+          scrolling="no"
+        ></iframe>
+        <iframe
+          *ngIf="event.room == 'Saal Granville'"
+          src="https://streaming.media.ccc.de/37c3/embed/granville/hls/native"
+          [width]="videoWidth"
+          [height]="videoHeight"
+          frameborder="none"
+          allowfullscreen="allowfullscreen"
+          seamless="seamless"
+          scrolling="no"
+        ></iframe>
+        <iframe
+          *ngIf="event.room == 'Saal Zuse'"
+          src="https://streaming.media.ccc.de/37c3/embed/zuse/hls/native"
+          [width]="videoWidth"
+          [height]="videoHeight"
+          frameborder="none"
+          allowfullscreen="allowfullscreen"
+          seamless="seamless"
+          scrolling="no"
+        ></iframe>
+        <iframe
+          *ngIf="event.room == 'Fireshonks'"
+          src="https://streaming.media.ccc.de/37c3/embed/fireshonks/hls/native"
+          [width]="videoWidth"
+          [height]="videoHeight"
+          frameborder="none"
+          allowfullscreen="allowfullscreen"
+          seamless="seamless"
+          scrolling="no"
+        ></iframe>
+        <iframe
+          *ngIf="event.room == 'Fireshonks'"
+          src="https://streaming.media.ccc.de/37c3/embed/sendezentrum/hls/native"
+          [width]="videoWidth"
+          [height]="videoHeight"
+          frameborder="none"
+          allowfullscreen="allowfullscreen"
+          seamless="seamless"
+          scrolling="no"
+        ></iframe>
+      </ion-item>
     </ion-item-group>
     <ion-item-group *ngIf="event.description">
       <ion-item-divider color="light"> Description </ion-item-divider>
@@ -68,6 +112,17 @@
       <ion-item>
         <strong>URL&nbsp;</strong>
         <a href="{{event.url}}" target="_blank">CCC Event Hub Page</a>
+      </ion-item>
+      <ion-item>
+        <strong>Recording&nbsp;</strong>
+        <a
+          href="https://streaming.media.ccc.de/37c3/relive/{{event.guid}}"
+          target="_blank"
+          >Relive</a
+        >&nbsp;
+        <a href="https://media.ccc.de/v/{{event.guid}}" target="_blank">
+          Recording
+        </a>
       </ion-item>
       <ion-item-divider color="light">Friends</ion-item-divider>
       <ion-item>

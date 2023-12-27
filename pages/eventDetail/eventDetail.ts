@@ -13,10 +13,10 @@ export class EventDetailPage {
   event: Event;
   keys: string[];
   tracks = {};
-  streamUrl: string;
   videoWidth: number = 0;
   videoHeight: number = 0;
   persons: string = '';
+  hasStream: boolean = false;
 
   constructor(
     params: NavParams,
@@ -24,39 +24,62 @@ export class EventDetailPage {
     public favoriteService: FavoriteService,
     public eventService: EventService
   ) {
-    console.log('params', params);
+    console.log('EventDetailPage', params);
     this.event = params.data.event;
     this.event.date = new Date(this.event.date);
     this.keys = Object.keys(this.event);
-    this.getStream(this.event.room);
     this.tracks = this.eventService.tracks;
     this.persons = this.event.persons.map((obj) => obj.name).join(', ');
+    this.hasStream = this.checkForStream(this.event.room);
   }
 
-  getStream(room: string) {
-    console.log('getStream', room);
-    const calcPlayerSize = () => {
-      console.log(
-        'videoItem',
-        document.querySelector('#videoItem')
-          ? document.querySelector('#videoItem').offsetWidth
-          : 0
-      );
-      if (!document.querySelector('#videoItem')) {
-        return setTimeout(calcPlayerSize, 100);
-      }
-      this.videoWidth = document.querySelector('#videoItem').offsetWidth - 30;
-      this.videoHeight = this.videoWidth / 1.77;
-      console.log(this.videoWidth, this.videoHeight);
-    };
-    if (room === 'rC1') {
-      this.streamUrl = 'https://cdn.c3voc.de/rc1_native_hd.webm';
-      calcPlayerSize();
-    } else if (room == 'rC2') {
-      this.streamUrl = 'https://cdn.c3voc.de/rc2_native_hd.webm';
-      calcPlayerSize();
-    } else {
-      delete this.streamUrl;
+  checkForStream(room: string) {
+    const roomsWithStream = [
+      'Saal 1',
+      'Saal Zuse',
+      'Saal Granville',
+      'Fireshonks',
+    ];
+    const sessionIsLive = this.checkIfSessionIsLive(
+      this.event.date,
+      this.event.duration
+    );
+    const hasStream = sessionIsLive && roomsWithStream.includes(room);
+    if (hasStream) this.calcPlayerSize();
+    return hasStream;
+  }
+
+  checkIfSessionIsLive(start: Date, duration: string) {
+    const now = new Date();
+    const end = this.addDurationToDate(new Date(start.toISOString()), duration);
+    const isLive = start <= now && now <= end;
+    console.log('is session live', isLive);
+    return isLive;
+  }
+
+  addDurationToDate(date: Date, duration: string) {
+    // Split the duration into hours and minutes
+    let parts = duration.split(':');
+    let hours = parseInt(parts[0]);
+    let minutes = parseInt(parts[1]);
+
+    // Add the hours and minutes to the date
+    date.setHours(date.getHours() + hours);
+    date.setMinutes(date.getMinutes() + minutes + 15);
+
+    return date;
+  }
+
+  calcPlayerSize() {
+    if (!document.querySelector('#videoItem')) {
+      return setTimeout(() => this.calcPlayerSize(), 500);
     }
+    console.log(
+      'videoItemGroup',
+      document.querySelector('#videoItemGroup').offsetWidth
+    );
+    this.videoWidth = document.querySelector('#videoItem').offsetWidth - 30;
+    this.videoHeight = this.videoWidth / 1.77;
+    console.log('calcPlayerSize', this.videoWidth, this.videoHeight);
   }
 }
