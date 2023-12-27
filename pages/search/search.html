@@ -12,7 +12,9 @@
     <ion-item *ngFor="let session of sessions" (click)="clickDetail(session)">
       {{ session.title }}<br />
       <small>
-        <span>{{ session.track}}</span>&nbsp;
+        <span [ngStyle]="{color: eventService.tracks[session.track]}"
+          >{{ session.track || 'No track'}}</span
+        >&nbsp;
         <span>{{ getPersonsString(session.persons) }}</span>
       </small>
     </ion-item>
