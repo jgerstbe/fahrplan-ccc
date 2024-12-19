@@ -7,10 +7,10 @@ import { forkJoin, from } from 'rxjs';
   providedIn: 'root',
 })
 export class FavoriteService {
-  pantryId: string = 'e21fbbbb-ce47-4cf8-a624-7f5550c5e9aa';
+  pantryId: string = '239bdd07-b98c-4a0d-ba14-ced318b54fdd';
   jsonbox: string =
     'https://getpantry.cloud/apiv1/pantry/' + this.pantryId + '/';
-  favLocator: string = 'fpccc_favorites_2023';
+  favLocator: string = 'fpccc_favorites_2024';
   public favorites: string[] = [];
   public friends: string[] = [];
   public localFriends: Map<string, string> = new Map();
