@@ -28,7 +28,7 @@ export class EventService {
         this.onSchedule.next(data);
         this.version = {
           baseUrl: data.schedule.base_url,
-          timestamp: data.schedule.version,
+          version: data.schedule.version,
         };
       },
       (error) => {

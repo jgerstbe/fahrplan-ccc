@@ -28,7 +28,6 @@ export class SettingsPage {
   ngOnInit() {}
 
   onAddFriend() {
-    console.warn(this.friend_id);
     this.favoriteService.addFriend(this.friend_id);
     this.friend_id = '';
   }
