@@ -74,7 +74,7 @@ export class SearchPage {
     }
   }
 
-  getPersonsString(persons: Array<{ name: string }>) {
-    return persons.map((p) => p.name).join(', ');
+  getPersonsString(persons: Array<{ public_name: string }>) {
+    return persons.map((p) => p.public_name).join(', ');
   }
 }

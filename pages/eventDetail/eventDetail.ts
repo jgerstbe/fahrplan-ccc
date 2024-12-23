@@ -29,7 +29,7 @@ export class EventDetailPage {
     this.event.date = new Date(this.event.date);
     this.keys = Object.keys(this.event);
     this.tracks = this.eventService.tracks;
-    this.persons = this.event.persons.map((obj) => obj.name).join(', ');
+    this.persons = this.event.persons.map((obj) => obj.public_name).join(', ');
     this.hasStream = this.checkForStream(this.event.room);
   }
 
