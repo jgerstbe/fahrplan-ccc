@@ -30,49 +30,9 @@
       <ion-item *ngIf="videoWidth && videoHeight">
         <iframe
           *ngIf="event.room == 'Saal 1'"
-          src="https://streaming.media.ccc.de/37c3/embed/eins/hls/native"
+          src="https://streaming.media.ccc.de/38c3/embed/eins/hls/native"
           width="{{ videoWidth }}"
           height="{{ videoHeight }}"
-          frameborder="none"
-          allowfullscreen="allowfullscreen"
-          seamless="seamless"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          *ngIf="event.room == 'Saal Granville'"
-          src="https://streaming.media.ccc.de/37c3/embed/granville/hls/native"
-          [width]="videoWidth"
-          [height]="videoHeight"
-          frameborder="none"
-          allowfullscreen="allowfullscreen"
-          seamless="seamless"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          *ngIf="event.room == 'Saal Zuse'"
-          src="https://streaming.media.ccc.de/37c3/embed/zuse/hls/native"
-          [width]="videoWidth"
-          [height]="videoHeight"
-          frameborder="none"
-          allowfullscreen="allowfullscreen"
-          seamless="seamless"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          *ngIf="event.room == 'Fireshonks'"
-          src="https://streaming.media.ccc.de/37c3/embed/fireshonks/hls/native"
-          [width]="videoWidth"
-          [height]="videoHeight"
-          frameborder="none"
-          allowfullscreen="allowfullscreen"
-          seamless="seamless"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          *ngIf="event.room == 'Fireshonks'"
-          src="https://streaming.media.ccc.de/37c3/embed/sendezentrum/hls/native"
-          [width]="videoWidth"
-          [height]="videoHeight"
           frameborder="none"
           allowfullscreen="allowfullscreen"
           seamless="seamless"
