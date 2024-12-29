@@ -38,6 +38,26 @@
           seamless="seamless"
           scrolling="no"
         ></iframe>
+        <iframe
+          *ngIf="event.room == 'Saal GLITCH'"
+          src="https://streaming.media.ccc.de/38c3/embed/glitch/hls/native"
+          width="{{ videoWidth }}"
+          height="{{ videoHeight }}"
+          frameborder="none"
+          allowfullscreen="allowfullscreen"
+          seamless="seamless"
+          scrolling="no"
+        ></iframe>
+        <iframe
+          *ngIf="event.room == 'Saal ZIGZAG'"
+          src="https://streaming.media.ccc.de/38c3/embed/zigzag/hls/native"
+          width="{{ videoWidth }}"
+          height="{{ videoHeight }}"
+          frameborder="none"
+          allowfullscreen="allowfullscreen"
+          seamless="seamless"
+          scrolling="no"
+        ></iframe>
       </ion-item>
     </ion-item-group>
     <ion-item-group *ngIf="event.description">
