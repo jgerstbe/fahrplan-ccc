@@ -34,12 +34,7 @@ export class EventDetailPage {
   }
 
   checkForStream(room: string) {
-    const roomsWithStream = [
-      'Saal 1',
-      'Saal Zuse',
-      'Saal Granville',
-      'Fireshonks',
-    ];
+    const roomsWithStream = ['Saal 1', 'Saal ZIGZAG', 'Saal GLITCH'];
     const sessionIsLive = this.checkIfSessionIsLive(
       this.event.date,
       this.event.duration
