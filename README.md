@@ -15,6 +15,7 @@ Ionic webapp for the chaos communication congress (CCC) event.
 
 ## history
 
+- 2025-12 update the project for 39c3
 - 2024-12 update the project for 38c3
 - 2023-12 update the project for 37c3
 - 2021-12 update the project for rC3 (2021)

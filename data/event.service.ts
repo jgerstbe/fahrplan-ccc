@@ -19,7 +19,7 @@ export class EventService {
 
   initService() {
     const congressUrl =
-      'https://fahrplan.events.ccc.de/congress/2024/fahrplan/schedule/export/schedule.json';
+      'https://corsproxy.io/?url=https://api.events.ccc.de/congress/2025/schedule.json';
     this.http.get(congressUrl).subscribe(
       (data: any) => {
         this.conference = data.schedule.conference;
