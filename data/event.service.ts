@@ -18,8 +18,7 @@ export class EventService {
   }
 
   initService() {
-    const congressUrl =
-      'https://api.cors.lol/?url=https://fahrplan.events.ccc.de/congress/2025/fahrplan/schedules/schedule.json';
+    const congressUrl = 'https://api.events.ccc.de/congress/2025/schedule.json';
     this.http.get(congressUrl).subscribe(
       (data: any) => {
         this.conference = data.schedule.conference;
